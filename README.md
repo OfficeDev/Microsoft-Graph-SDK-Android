@@ -31,7 +31,7 @@ To use these libraries in your project, follow these general steps, as described
 
 ### Setup
 
-1. From the Android Studio splash screen, click "Start a new Android Studio project". Name your application as you wish; we'll assume the name *O365QuickStart* here.
+1. From the Android Studio splash screen, click "Start a new Android Studio project". Name your application as you wish.
 
 2. Select "Phone and Tablet" and set Minimum SDK as API 18, then click Next. Choose "Blank Activity", then click Next. The defaults are fine for the activity name, so click Finish.
 
@@ -40,7 +40,7 @@ To use these libraries in your project, follow these general steps, as described
 4. In the `dependencies` closure, add the following dependencies to the `compile` configuration:
 
     ```groovy
-    compile 'com.microsoft.services:graph-services:1.0.0-preview'
+    compile 'com.microsoft.services:graph-services:0.8'
     ```
 
     You may want to click the "Sync Project with Gradle Files" button in the toolbar. This will download the dependencies so Android Studio can assist in coding with them.
@@ -193,7 +193,7 @@ With your project prepared, the next step is to initialize the dependency manage
     ```java
     @Override
     public void onSuccess(Boolean result) {
-        mClient = new GraphServiceClient(outlookBaseUrl, mResolver);
+        mClient = new GraphServiceClient(graphBaseUrl, mResolver);
         //call methods with the client.
     }
     ```
