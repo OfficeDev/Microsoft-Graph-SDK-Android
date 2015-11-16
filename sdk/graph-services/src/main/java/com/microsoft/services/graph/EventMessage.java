@@ -26,47 +26,47 @@ public class EventMessage extends Message {
         setODataType("#microsoft.graph.eventMessage");
     }
             
-    private MeetingMessageType MeetingMessageType;
+    private MeetingMessageType meetingMessageType;
      
     /**
-    * Gets the Meeting Message Type.
+    * Gets the meeting Message Type.
     *
     * @return the MeetingMessageType
     */
     public MeetingMessageType getMeetingMessageType() {
-        return this.MeetingMessageType; 
+        return this.meetingMessageType; 
     }
 
     /**
-    * Sets the Meeting Message Type.
+    * Sets the meeting Message Type.
     *
     * @param value the MeetingMessageType
     */
     public void setMeetingMessageType(MeetingMessageType value) { 
-        this.MeetingMessageType = value; 
-        valueChanged("MeetingMessageType", value);
+        this.meetingMessageType = value; 
+        valueChanged("meetingMessageType", value);
 
     }
             
-    private Event Event;
+    private Event event;
      
     /**
-    * Gets the Event.
+    * Gets the event.
     *
     * @return the Event
     */
     public Event getEvent() {
-        return this.Event; 
+        return this.event; 
     }
 
     /**
-    * Sets the Event.
+    * Sets the event.
     *
     * @param value the Event
     */
     public void setEvent(Event value) { 
-        this.Event = value; 
-        valueChanged("Event", value);
+        this.event = value; 
+        valueChanged("event", value);
 
     }
 }

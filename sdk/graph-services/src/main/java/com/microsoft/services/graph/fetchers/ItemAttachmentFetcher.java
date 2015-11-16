@@ -66,7 +66,7 @@ public class ItemAttachmentFetcher extends OrcEntityFetcher<ItemAttachment,ItemA
      * @return the item
      */
     public OutlookItemFetcher getItem() {
-        return new OutlookItemFetcher("Item", this);
+        return new OutlookItemFetcher("item", this);
     }
 
 }

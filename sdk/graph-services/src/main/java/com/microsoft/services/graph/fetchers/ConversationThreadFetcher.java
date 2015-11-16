@@ -67,7 +67,7 @@ public class ConversationThreadFetcher extends OrcEntityFetcher<ConversationThre
      * @return the posts
      */
     public OrcCollectionFetcher<Post, PostFetcher, PostCollectionOperations> getPosts() {
-        return new OrcCollectionFetcher<Post, PostFetcher, PostCollectionOperations>("Posts", this, Post.class, PostCollectionOperations.class);
+        return new OrcCollectionFetcher<Post, PostFetcher, PostCollectionOperations>("posts", this, Post.class, PostCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class ConversationThreadFetcher extends OrcEntityFetcher<ConversationThre
      * @return the post
      */
     public PostFetcher getPost(String id){
-         return new OrcCollectionFetcher<Post, PostFetcher, PostCollectionOperations>("Posts", this, Post.class, PostCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Post, PostFetcher, PostCollectionOperations>("posts", this, Post.class, PostCollectionOperations.class).getById(id);
     }
 
 }

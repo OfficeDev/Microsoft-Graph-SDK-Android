@@ -26,97 +26,97 @@ public class ContactFolder extends Entity {
         setODataType("#microsoft.graph.contactFolder");
     }
             
-    private String ParentFolderId;
+    private String parentFolderId;
      
     /**
-    * Gets the Parent Folder Id.
+    * Gets the parent Folder Id.
     *
     * @return the String
     */
     public String getParentFolderId() {
-        return this.ParentFolderId; 
+        return this.parentFolderId; 
     }
 
     /**
-    * Sets the Parent Folder Id.
+    * Sets the parent Folder Id.
     *
     * @param value the String
     */
     public void setParentFolderId(String value) { 
-        this.ParentFolderId = value; 
-        valueChanged("ParentFolderId", value);
+        this.parentFolderId = value; 
+        valueChanged("parentFolderId", value);
 
     }
             
-    private String DisplayName;
+    private String displayName;
      
     /**
-    * Gets the Display Name.
+    * Gets the display Name.
     *
     * @return the String
     */
     public String getDisplayName() {
-        return this.DisplayName; 
+        return this.displayName; 
     }
 
     /**
-    * Sets the Display Name.
+    * Sets the display Name.
     *
     * @param value the String
     */
     public void setDisplayName(String value) { 
-        this.DisplayName = value; 
-        valueChanged("DisplayName", value);
+        this.displayName = value; 
+        valueChanged("displayName", value);
 
     }
     
         
-    private java.util.List<Contact> Contacts = null;
+    private java.util.List<Contact> contacts = null;
     
     
      
     /**
-    * Gets the Contacts.
+    * Gets the contacts.
     *
     * @return the java.util.List<Contact>
     */
     public java.util.List<Contact> getContacts() {
-        return this.Contacts; 
+        return this.contacts; 
     }
 
     /**
-    * Sets the Contacts.
+    * Sets the contacts.
     *
     * @param value the java.util.List<Contact>
     */
     public void setContacts(java.util.List<Contact> value) { 
-        this.Contacts = value; 
-        valueChanged("Contacts", value);
+        this.contacts = value; 
+        valueChanged("contacts", value);
 
     }
     
         
-    private java.util.List<ContactFolder> ChildFolders = null;
+    private java.util.List<ContactFolder> childFolders = null;
     
     
      
     /**
-    * Gets the Child Folders.
+    * Gets the child Folders.
     *
     * @return the java.util.List<ContactFolder>
     */
     public java.util.List<ContactFolder> getChildFolders() {
-        return this.ChildFolders; 
+        return this.childFolders; 
     }
 
     /**
-    * Sets the Child Folders.
+    * Sets the child Folders.
     *
     * @param value the java.util.List<ContactFolder>
     */
     public void setChildFolders(java.util.List<ContactFolder> value) { 
-        this.ChildFolders = value; 
-        valueChanged("ChildFolders", value);
+        this.childFolders = value; 
+        valueChanged("childFolders", value);
 
     }
 }

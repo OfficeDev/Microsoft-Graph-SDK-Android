@@ -19,23 +19,23 @@ package com.microsoft.services.graph;
 public enum WeekIndex	
 {
     /**
-    * First
+    * first
     */
-    First,
+    first,
     /**
-    * Second
+    * second
     */
-    Second,
+    second,
     /**
-    * Third
+    * third
     */
-    Third,
+    third,
     /**
-    * Fourth
+    * fourth
     */
-    Fourth,
+    fourth,
     /**
-    * Last
+    * last
     */
-    Last,
+    last,
 }

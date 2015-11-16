@@ -67,7 +67,7 @@ public class CalendarGroupFetcher extends OrcEntityFetcher<CalendarGroup,Calenda
      * @return the calendars
      */
     public OrcCollectionFetcher<Calendar, CalendarFetcher, CalendarCollectionOperations> getCalendars() {
-        return new OrcCollectionFetcher<Calendar, CalendarFetcher, CalendarCollectionOperations>("Calendars", this, Calendar.class, CalendarCollectionOperations.class);
+        return new OrcCollectionFetcher<Calendar, CalendarFetcher, CalendarCollectionOperations>("calendars", this, Calendar.class, CalendarCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class CalendarGroupFetcher extends OrcEntityFetcher<CalendarGroup,Calenda
      * @return the calendar
      */
     public CalendarFetcher getCalendar(String id){
-         return new OrcCollectionFetcher<Calendar, CalendarFetcher, CalendarCollectionOperations>("Calendars", this, Calendar.class, CalendarCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Calendar, CalendarFetcher, CalendarCollectionOperations>("calendars", this, Calendar.class, CalendarCollectionOperations.class).getById(id);
     }
 
 }

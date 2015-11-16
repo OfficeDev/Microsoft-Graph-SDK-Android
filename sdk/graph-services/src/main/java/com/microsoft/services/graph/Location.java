@@ -27,47 +27,47 @@ public class Location extends ODataBaseEntity {
         setODataType("#microsoft.graph.location");
     }
 
-    private String DisplayName;
+    private String displayName;
 
     /**
-    * Gets the Display Name.
+    * Gets the display Name.
     *
     * @return the String
     */
     public String getDisplayName() {
-        return this.DisplayName; 
+        return this.displayName; 
     }
 
     /**
-    * Sets the Display Name.
+    * Sets the display Name.
     *
     * @param value the String
     */
     public void setDisplayName(String value) { 
-        this.DisplayName = value;
-        valueChanged("DisplayName", value);
+        this.displayName = value;
+        valueChanged("displayName", value);
 
     }
 
-    private PhysicalAddress Address;
+    private PhysicalAddress address;
 
     /**
-    * Gets the Address.
+    * Gets the address.
     *
     * @return the PhysicalAddress
     */
     public PhysicalAddress getAddress() {
-        return this.Address; 
+        return this.address; 
     }
 
     /**
-    * Sets the Address.
+    * Sets the address.
     *
     * @param value the PhysicalAddress
     */
     public void setAddress(PhysicalAddress value) { 
-        this.Address = value;
-        valueChanged("Address", value);
+        this.address = value;
+        valueChanged("address", value);
 
     }
 }

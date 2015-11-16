@@ -19,15 +19,15 @@ package com.microsoft.services.graph;
 public enum Importance	
 {
     /**
-    * Low
+    * low
     */
-    Low,
+    low,
     /**
-    * Normal
+    * normal
     */
-    Normal,
+    normal,
     /**
-    * High
+    * high
     */
-    High,
+    high,
 }

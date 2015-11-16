@@ -62,7 +62,7 @@ public class MailFolderOperations extends EntityOperations {
     
     
     /**
-     * Copy listenable future.
+     * copy listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */         
@@ -80,7 +80,7 @@ public class MailFolderOperations extends EntityOperations {
     }
 
      /**
-     * CopyRaw listenable future.
+     * copyRaw listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */ 
@@ -96,7 +96,7 @@ public class MailFolderOperations extends EntityOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Copy");
+        request.getUrl().appendPathComponent("microsoft.graph.copy");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -106,7 +106,7 @@ public class MailFolderOperations extends EntityOperations {
     
     
     /**
-     * Move listenable future.
+     * move listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */         
@@ -124,7 +124,7 @@ public class MailFolderOperations extends EntityOperations {
     }
 
      /**
-     * MoveRaw listenable future.
+     * moveRaw listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */ 
@@ -140,7 +140,7 @@ public class MailFolderOperations extends EntityOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Move");
+        request.getUrl().appendPathComponent("microsoft.graph.move");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

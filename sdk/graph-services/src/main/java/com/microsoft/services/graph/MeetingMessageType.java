@@ -19,27 +19,27 @@ package com.microsoft.services.graph;
 public enum MeetingMessageType	
 {
     /**
-    * None
+    * none
     */
-    None,
+    none,
     /**
-    * Meeting Request
+    * meeting Request
     */
-    MeetingRequest,
+    meetingRequest,
     /**
-    * Meeting Cancelled
+    * meeting Cancelled
     */
-    MeetingCancelled,
+    meetingCancelled,
     /**
-    * Meeting Accepted
+    * meeting Accepted
     */
-    MeetingAccepted,
+    meetingAccepted,
     /**
-    * Meeting Tenatively Accepted
+    * meeting Tenatively Accepted
     */
-    MeetingTenativelyAccepted,
+    meetingTenativelyAccepted,
     /**
-    * Meeting Declined
+    * meeting Declined
     */
-    MeetingDeclined,
+    meetingDeclined,
 }

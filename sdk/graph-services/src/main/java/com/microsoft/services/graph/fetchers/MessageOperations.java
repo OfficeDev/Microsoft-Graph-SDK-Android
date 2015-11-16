@@ -62,7 +62,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * Copy listenable future.
+     * copy listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */         
@@ -80,7 +80,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * CopyRaw listenable future.
+     * copyRaw listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */ 
@@ -96,7 +96,7 @@ public class MessageOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Copy");
+        request.getUrl().appendPathComponent("microsoft.graph.copy");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -106,7 +106,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * Move listenable future.
+     * move listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */         
@@ -124,7 +124,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * MoveRaw listenable future.
+     * moveRaw listenable future.
      * @param destinationId the destinationId 
      * @return the listenable future
      */ 
@@ -140,7 +140,7 @@ public class MessageOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Move");
+        request.getUrl().appendPathComponent("microsoft.graph.move");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -150,7 +150,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * CreateReply listenable future.
+     * createReply listenable future.
      * 
      * @return the listenable future
      */         
@@ -166,7 +166,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * CreateReplyRaw listenable future.
+     * createReplyRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -176,7 +176,7 @@ public class MessageOperations extends OutlookItemOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.CreateReply");
+        request.getUrl().appendPathComponent("microsoft.graph.createReply");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -186,7 +186,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * CreateReplyAll listenable future.
+     * createReplyAll listenable future.
      * 
      * @return the listenable future
      */         
@@ -202,7 +202,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * CreateReplyAllRaw listenable future.
+     * createReplyAllRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -212,7 +212,7 @@ public class MessageOperations extends OutlookItemOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.CreateReplyAll");
+        request.getUrl().appendPathComponent("microsoft.graph.createReplyAll");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -222,7 +222,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * CreateForward listenable future.
+     * createForward listenable future.
      * 
      * @return the listenable future
      */         
@@ -238,7 +238,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * CreateForwardRaw listenable future.
+     * createForwardRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -248,7 +248,7 @@ public class MessageOperations extends OutlookItemOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.CreateForward");
+        request.getUrl().appendPathComponent("microsoft.graph.createForward");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -258,7 +258,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * Reply listenable future.
+     * reply listenable future.
      * @param comment the comment 
      * @return the listenable future
      */         
@@ -276,7 +276,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * ReplyRaw listenable future.
+     * replyRaw listenable future.
      * @param comment the comment 
      * @return the listenable future
      */ 
@@ -292,7 +292,7 @@ public class MessageOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Reply");
+        request.getUrl().appendPathComponent("microsoft.graph.reply");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -302,7 +302,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * ReplyAll listenable future.
+     * replyAll listenable future.
      * @param comment the comment 
      * @return the listenable future
      */         
@@ -320,7 +320,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * ReplyAllRaw listenable future.
+     * replyAllRaw listenable future.
      * @param comment the comment 
      * @return the listenable future
      */ 
@@ -336,7 +336,7 @@ public class MessageOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.ReplyAll");
+        request.getUrl().appendPathComponent("microsoft.graph.replyAll");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -346,7 +346,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * Forward listenable future.
+     * forward listenable future.
      * @param comment the comment @param toRecipients the toRecipients 
      * @return the listenable future
      */         
@@ -365,7 +365,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * ForwardRaw listenable future.
+     * forwardRaw listenable future.
      * @param comment the comment @param toRecipients the toRecipients 
      * @return the listenable future
      */ 
@@ -382,7 +382,7 @@ public class MessageOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Forward");
+        request.getUrl().appendPathComponent("microsoft.graph.forward");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -392,7 +392,7 @@ public class MessageOperations extends OutlookItemOperations {
     
     
     /**
-     * Send listenable future.
+     * send listenable future.
      * 
      * @return the listenable future
      */         
@@ -408,7 +408,7 @@ public class MessageOperations extends OutlookItemOperations {
     }
 
      /**
-     * SendRaw listenable future.
+     * sendRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -418,7 +418,7 @@ public class MessageOperations extends OutlookItemOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Send");
+        request.getUrl().appendPathComponent("microsoft.graph.send");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

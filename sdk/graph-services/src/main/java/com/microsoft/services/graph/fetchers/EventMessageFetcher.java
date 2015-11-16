@@ -66,7 +66,7 @@ public class EventMessageFetcher extends OrcEntityFetcher<EventMessage,EventMess
      * @return the event
      */
     public EventFetcher getEvent() {
-        return new EventFetcher("Event", this);
+        return new EventFetcher("event", this);
     }
 
 }

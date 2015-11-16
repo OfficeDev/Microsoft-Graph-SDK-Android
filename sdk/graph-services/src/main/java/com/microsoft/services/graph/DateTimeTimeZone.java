@@ -27,47 +27,47 @@ public class DateTimeTimeZone extends ODataBaseEntity {
         setODataType("#microsoft.graph.dateTimeTimeZone");
     }
 
-    private String DateTime;
+    private String dateTime;
 
     /**
-    * Gets the Date Time.
+    * Gets the date Time.
     *
     * @return the String
     */
     public String getDateTime() {
-        return this.DateTime; 
+        return this.dateTime; 
     }
 
     /**
-    * Sets the Date Time.
+    * Sets the date Time.
     *
     * @param value the String
     */
     public void setDateTime(String value) { 
-        this.DateTime = value;
-        valueChanged("DateTime", value);
+        this.dateTime = value;
+        valueChanged("dateTime", value);
 
     }
 
-    private String TimeZone;
+    private String timeZone;
 
     /**
-    * Gets the Time Zone.
+    * Gets the time Zone.
     *
     * @return the String
     */
     public String getTimeZone() {
-        return this.TimeZone; 
+        return this.timeZone; 
     }
 
     /**
-    * Sets the Time Zone.
+    * Sets the time Zone.
     *
     * @param value the String
     */
     public void setTimeZone(String value) { 
-        this.TimeZone = value;
-        valueChanged("TimeZone", value);
+        this.timeZone = value;
+        valueChanged("timeZone", value);
 
     }
 }

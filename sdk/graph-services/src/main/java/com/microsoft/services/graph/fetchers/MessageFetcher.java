@@ -71,7 +71,7 @@ public class MessageFetcher extends OrcEntityFetcher<Message,MessageOperations>
      * @return the attachments
      */
     public OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations> getAttachments() {
-        return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("Attachments", this, Attachment.class, AttachmentCollectionOperations.class);
+        return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("attachments", this, Attachment.class, AttachmentCollectionOperations.class);
     }
 
     /**
@@ -80,7 +80,7 @@ public class MessageFetcher extends OrcEntityFetcher<Message,MessageOperations>
      * @return the attachment
      */
     public AttachmentFetcher getAttachment(String id){
-         return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("Attachments", this, Attachment.class, AttachmentCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("attachments", this, Attachment.class, AttachmentCollectionOperations.class).getById(id);
     }
 
 }

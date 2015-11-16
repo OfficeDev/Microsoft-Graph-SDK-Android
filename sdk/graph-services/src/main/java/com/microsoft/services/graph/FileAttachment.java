@@ -26,69 +26,69 @@ public class FileAttachment extends Attachment {
         setODataType("#microsoft.graph.fileAttachment");
     }
             
-    private String ContentId;
+    private String contentId;
      
     /**
-    * Gets the Content Id.
+    * Gets the content Id.
     *
     * @return the String
     */
     public String getContentId() {
-        return this.ContentId; 
+        return this.contentId; 
     }
 
     /**
-    * Sets the Content Id.
+    * Sets the content Id.
     *
     * @param value the String
     */
     public void setContentId(String value) { 
-        this.ContentId = value; 
-        valueChanged("ContentId", value);
+        this.contentId = value; 
+        valueChanged("contentId", value);
 
     }
             
-    private String ContentLocation;
+    private String contentLocation;
      
     /**
-    * Gets the Content Location.
+    * Gets the content Location.
     *
     * @return the String
     */
     public String getContentLocation() {
-        return this.ContentLocation; 
+        return this.contentLocation; 
     }
 
     /**
-    * Sets the Content Location.
+    * Sets the content Location.
     *
     * @param value the String
     */
     public void setContentLocation(String value) { 
-        this.ContentLocation = value; 
-        valueChanged("ContentLocation", value);
+        this.contentLocation = value; 
+        valueChanged("contentLocation", value);
 
     }
             
-    private byte[] ContentBytes;
+    private byte[] contentBytes;
      
     /**
-    * Gets the Content Bytes.
+    * Gets the content Bytes.
     *
     * @return the byte[]
     */
     public byte[] getContentBytes() {
-        return this.ContentBytes; 
+        return this.contentBytes; 
     }
 
     /**
-    * Sets the Content Bytes.
+    * Sets the content Bytes.
     *
     * @param value the byte[]
     */
     public void setContentBytes(byte[] value) { 
-        this.ContentBytes = value; 
-        valueChanged("ContentBytes", value);
+        this.contentBytes = value; 
+        valueChanged("contentBytes", value);
 
     }
 }

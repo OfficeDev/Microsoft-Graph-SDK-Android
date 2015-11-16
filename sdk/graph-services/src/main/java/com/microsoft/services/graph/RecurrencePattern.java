@@ -27,157 +27,157 @@ public class RecurrencePattern extends ODataBaseEntity {
         setODataType("#microsoft.graph.recurrencePattern");
     }
 
-    private RecurrencePatternType Type;
+    private RecurrencePatternType type;
 
     /**
-    * Gets the Type.
+    * Gets the type.
     *
     * @return the RecurrencePatternType
     */
     public RecurrencePatternType getType() {
-        return this.Type; 
+        return this.type; 
     }
 
     /**
-    * Sets the Type.
+    * Sets the type.
     *
     * @param value the RecurrencePatternType
     */
     public void setType(RecurrencePatternType value) { 
-        this.Type = value;
-        valueChanged("Type", value);
+        this.type = value;
+        valueChanged("type", value);
 
     }
 
-    private Integer Interval;
+    private Integer interval;
 
     /**
-    * Gets the Interval.
+    * Gets the interval.
     *
     * @return the Integer
     */
     public Integer getInterval() {
-        return this.Interval; 
+        return this.interval; 
     }
 
     /**
-    * Sets the Interval.
+    * Sets the interval.
     *
     * @param value the Integer
     */
     public void setInterval(Integer value) { 
-        this.Interval = value;
-        valueChanged("Interval", value);
+        this.interval = value;
+        valueChanged("interval", value);
 
     }
 
-    private Integer Month;
+    private Integer month;
 
     /**
-    * Gets the Month.
+    * Gets the month.
     *
     * @return the Integer
     */
     public Integer getMonth() {
-        return this.Month; 
+        return this.month; 
     }
 
     /**
-    * Sets the Month.
+    * Sets the month.
     *
     * @param value the Integer
     */
     public void setMonth(Integer value) { 
-        this.Month = value;
-        valueChanged("Month", value);
+        this.month = value;
+        valueChanged("month", value);
 
     }
 
-    private Integer DayOfMonth;
+    private Integer dayOfMonth;
 
     /**
-    * Gets the Day Of Month.
+    * Gets the day Of Month.
     *
     * @return the Integer
     */
     public Integer getDayOfMonth() {
-        return this.DayOfMonth; 
+        return this.dayOfMonth; 
     }
 
     /**
-    * Sets the Day Of Month.
+    * Sets the day Of Month.
     *
     * @param value the Integer
     */
     public void setDayOfMonth(Integer value) { 
-        this.DayOfMonth = value;
-        valueChanged("DayOfMonth", value);
+        this.dayOfMonth = value;
+        valueChanged("dayOfMonth", value);
 
     }
 
-    private java.util.List<DayOfWeek> DaysOfWeek;
+    private java.util.List<DayOfWeek> daysOfWeek;
 
     /**
-    * Gets the Days Of Week.
+    * Gets the days Of Week.
     *
     * @return the java.util.List<DayOfWeek>
     */
     public java.util.List<DayOfWeek> getDaysOfWeek() {
-        return this.DaysOfWeek; 
+        return this.daysOfWeek; 
     }
 
     /**
-    * Sets the Days Of Week.
+    * Sets the days Of Week.
     *
     * @param value the java.util.List<DayOfWeek>
     */
     public void setDaysOfWeek(java.util.List<DayOfWeek> value) { 
-        this.DaysOfWeek = value;
-        valueChanged("DaysOfWeek", value);
+        this.daysOfWeek = value;
+        valueChanged("daysOfWeek", value);
 
     }
 
-    private DayOfWeek FirstDayOfWeek;
+    private DayOfWeek firstDayOfWeek;
 
     /**
-    * Gets the First Day Of Week.
+    * Gets the first Day Of Week.
     *
     * @return the DayOfWeek
     */
     public DayOfWeek getFirstDayOfWeek() {
-        return this.FirstDayOfWeek; 
+        return this.firstDayOfWeek; 
     }
 
     /**
-    * Sets the First Day Of Week.
+    * Sets the first Day Of Week.
     *
     * @param value the DayOfWeek
     */
     public void setFirstDayOfWeek(DayOfWeek value) { 
-        this.FirstDayOfWeek = value;
-        valueChanged("FirstDayOfWeek", value);
+        this.firstDayOfWeek = value;
+        valueChanged("firstDayOfWeek", value);
 
     }
 
-    private WeekIndex Index;
+    private WeekIndex index;
 
     /**
-    * Gets the Index.
+    * Gets the index.
     *
     * @return the WeekIndex
     */
     public WeekIndex getIndex() {
-        return this.Index; 
+        return this.index; 
     }
 
     /**
-    * Sets the Index.
+    * Sets the index.
     *
     * @param value the WeekIndex
     */
     public void setIndex(WeekIndex value) { 
-        this.Index = value;
-        valueChanged("Index", value);
+        this.index = value;
+        valueChanged("index", value);
 
     }
 }

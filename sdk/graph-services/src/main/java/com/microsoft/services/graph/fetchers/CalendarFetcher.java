@@ -67,7 +67,7 @@ public class CalendarFetcher extends OrcEntityFetcher<Calendar,CalendarOperation
      * @return the events
      */
     public OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations> getEvents() {
-        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("Events", this, Event.class, EventCollectionOperations.class);
+        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("events", this, Event.class, EventCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class CalendarFetcher extends OrcEntityFetcher<Calendar,CalendarOperation
      * @return the event
      */
     public EventFetcher getEvent(String id){
-         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("Events", this, Event.class, EventCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("events", this, Event.class, EventCollectionOperations.class).getById(id);
     }
 
      /**
@@ -85,7 +85,7 @@ public class CalendarFetcher extends OrcEntityFetcher<Calendar,CalendarOperation
      * @return the calendar view
      */
     public OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations> getCalendarView() {
-        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("CalendarView", this, Event.class, EventCollectionOperations.class);
+        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("calendarView", this, Event.class, EventCollectionOperations.class);
     }
 
     /**
@@ -94,7 +94,7 @@ public class CalendarFetcher extends OrcEntityFetcher<Calendar,CalendarOperation
      * @return the calendar view
      */
     public EventFetcher getCalendarView(String id){
-         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("CalendarView", this, Event.class, EventCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("calendarView", this, Event.class, EventCollectionOperations.class).getById(id);
     }
 
 }

@@ -66,7 +66,7 @@ public class PostFetcher extends OrcEntityFetcher<Post,PostOperations>
      * @return the in reply to
      */
     public PostFetcher getInReplyTo() {
-        return new PostFetcher("InReplyTo", this);
+        return new PostFetcher("inReplyTo", this);
     }
 
      /**
@@ -75,7 +75,7 @@ public class PostFetcher extends OrcEntityFetcher<Post,PostOperations>
      * @return the attachments
      */
     public OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations> getAttachments() {
-        return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("Attachments", this, Attachment.class, AttachmentCollectionOperations.class);
+        return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("attachments", this, Attachment.class, AttachmentCollectionOperations.class);
     }
 
     /**
@@ -84,7 +84,7 @@ public class PostFetcher extends OrcEntityFetcher<Post,PostOperations>
      * @return the attachment
      */
     public AttachmentFetcher getAttachment(String id){
-         return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("Attachments", this, Attachment.class, AttachmentCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Attachment, AttachmentFetcher, AttachmentCollectionOperations>("attachments", this, Attachment.class, AttachmentCollectionOperations.class).getById(id);
     }
 
 }

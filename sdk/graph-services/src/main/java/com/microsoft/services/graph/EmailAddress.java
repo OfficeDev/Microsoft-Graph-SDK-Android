@@ -27,47 +27,47 @@ public class EmailAddress extends ODataBaseEntity {
         setODataType("#microsoft.graph.emailAddress");
     }
 
-    private String Name;
+    private String name;
 
     /**
-    * Gets the Name.
+    * Gets the name.
     *
     * @return the String
     */
     public String getName() {
-        return this.Name; 
+        return this.name; 
     }
 
     /**
-    * Sets the Name.
+    * Sets the name.
     *
     * @param value the String
     */
     public void setName(String value) { 
-        this.Name = value;
-        valueChanged("Name", value);
+        this.name = value;
+        valueChanged("name", value);
 
     }
 
-    private String Address;
+    private String address;
 
     /**
-    * Gets the Address.
+    * Gets the address.
     *
     * @return the String
     */
     public String getAddress() {
-        return this.Address; 
+        return this.address; 
     }
 
     /**
-    * Sets the Address.
+    * Sets the address.
     *
     * @param value the String
     */
     public void setAddress(String value) { 
-        this.Address = value;
-        valueChanged("Address", value);
+        this.address = value;
+        valueChanged("address", value);
 
     }
 }

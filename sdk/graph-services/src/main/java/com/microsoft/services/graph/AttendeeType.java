@@ -19,15 +19,15 @@ package com.microsoft.services.graph;
 public enum AttendeeType	
 {
     /**
-    * Required
+    * required
     */
-    Required,
+    required,
     /**
-    * Optional
+    * optional
     */
-    Optional,
+    optional,
     /**
-    * Resource
+    * resource
     */
-    Resource,
+    resource,
 }

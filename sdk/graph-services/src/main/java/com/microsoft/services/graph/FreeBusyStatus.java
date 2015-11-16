@@ -19,27 +19,27 @@ package com.microsoft.services.graph;
 public enum FreeBusyStatus	
 {
     /**
-    * Free
+    * free
     */
-    Free,
+    free,
     /**
-    * Tentative
+    * tentative
     */
-    Tentative,
+    tentative,
     /**
-    * Busy
+    * busy
     */
-    Busy,
+    busy,
     /**
-    * Oof
+    * oof
     */
-    Oof,
+    oof,
     /**
-    * Working Elsewhere
+    * working Elsewhere
     */
-    WorkingElsewhere,
+    workingElsewhere,
     /**
-    * Unknown
+    * unknown
     */
-    Unknown,
+    unknown,
 }

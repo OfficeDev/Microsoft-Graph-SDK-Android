@@ -19,15 +19,15 @@ package com.microsoft.services.graph;
 public enum RecurrenceRangeType	
 {
     /**
-    * End Date
+    * end Date
     */
-    EndDate,
+    endDate,
     /**
-    * No End
+    * no End
     */
-    NoEnd,
+    noEnd,
     /**
-    * Numbered
+    * numbered
     */
-    Numbered,
+    numbered,
 }

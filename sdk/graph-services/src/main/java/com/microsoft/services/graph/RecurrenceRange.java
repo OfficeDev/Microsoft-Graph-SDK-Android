@@ -27,113 +27,113 @@ public class RecurrenceRange extends ODataBaseEntity {
         setODataType("#microsoft.graph.recurrenceRange");
     }
 
-    private RecurrenceRangeType Type;
+    private RecurrenceRangeType type;
 
     /**
-    * Gets the Type.
+    * Gets the type.
     *
     * @return the RecurrenceRangeType
     */
     public RecurrenceRangeType getType() {
-        return this.Type; 
+        return this.type; 
     }
 
     /**
-    * Sets the Type.
+    * Sets the type.
     *
     * @param value the RecurrenceRangeType
     */
     public void setType(RecurrenceRangeType value) { 
-        this.Type = value;
-        valueChanged("Type", value);
+        this.type = value;
+        valueChanged("type", value);
 
     }
 
-    private java.util.Date StartDate;
+    private java.util.Date startDate;
 
     /**
-    * Gets the Start Date.
+    * Gets the start Date.
     *
     * @return the java.util.Date
     */
     public java.util.Date getStartDate() {
-        return this.StartDate; 
+        return this.startDate; 
     }
 
     /**
-    * Sets the Start Date.
+    * Sets the start Date.
     *
     * @param value the java.util.Date
     */
     public void setStartDate(java.util.Date value) { 
-        this.StartDate = value;
-        valueChanged("StartDate", value);
+        this.startDate = value;
+        valueChanged("startDate", value);
 
     }
 
-    private java.util.Date EndDate;
+    private java.util.Date endDate;
 
     /**
-    * Gets the End Date.
+    * Gets the end Date.
     *
     * @return the java.util.Date
     */
     public java.util.Date getEndDate() {
-        return this.EndDate; 
+        return this.endDate; 
     }
 
     /**
-    * Sets the End Date.
+    * Sets the end Date.
     *
     * @param value the java.util.Date
     */
     public void setEndDate(java.util.Date value) { 
-        this.EndDate = value;
-        valueChanged("EndDate", value);
+        this.endDate = value;
+        valueChanged("endDate", value);
 
     }
 
-    private String RecurrenceTimeZone;
+    private String recurrenceTimeZone;
 
     /**
-    * Gets the Recurrence Time Zone.
+    * Gets the recurrence Time Zone.
     *
     * @return the String
     */
     public String getRecurrenceTimeZone() {
-        return this.RecurrenceTimeZone; 
+        return this.recurrenceTimeZone; 
     }
 
     /**
-    * Sets the Recurrence Time Zone.
+    * Sets the recurrence Time Zone.
     *
     * @param value the String
     */
     public void setRecurrenceTimeZone(String value) { 
-        this.RecurrenceTimeZone = value;
-        valueChanged("RecurrenceTimeZone", value);
+        this.recurrenceTimeZone = value;
+        valueChanged("recurrenceTimeZone", value);
 
     }
 
-    private Integer NumberOfOccurrences;
+    private Integer numberOfOccurrences;
 
     /**
-    * Gets the Number Of Occurrences.
+    * Gets the number Of Occurrences.
     *
     * @return the Integer
     */
     public Integer getNumberOfOccurrences() {
-        return this.NumberOfOccurrences; 
+        return this.numberOfOccurrences; 
     }
 
     /**
-    * Sets the Number Of Occurrences.
+    * Sets the number Of Occurrences.
     *
     * @param value the Integer
     */
     public void setNumberOfOccurrences(Integer value) { 
-        this.NumberOfOccurrences = value;
-        valueChanged("NumberOfOccurrences", value);
+        this.numberOfOccurrences = value;
+        valueChanged("numberOfOccurrences", value);
 
     }
 }

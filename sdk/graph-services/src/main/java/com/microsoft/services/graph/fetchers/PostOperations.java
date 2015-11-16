@@ -62,7 +62,7 @@ public class PostOperations extends OutlookItemOperations {
     
     
     /**
-     * Forward listenable future.
+     * forward listenable future.
      * @param comment the comment @param toRecipients the toRecipients 
      * @return the listenable future
      */         
@@ -81,7 +81,7 @@ public class PostOperations extends OutlookItemOperations {
     }
 
      /**
-     * ForwardRaw listenable future.
+     * forwardRaw listenable future.
      * @param comment the comment @param toRecipients the toRecipients 
      * @return the listenable future
      */ 
@@ -98,7 +98,7 @@ public class PostOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Forward");
+        request.getUrl().appendPathComponent("microsoft.graph.forward");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -108,7 +108,7 @@ public class PostOperations extends OutlookItemOperations {
     
     
     /**
-     * Reply listenable future.
+     * reply listenable future.
      * @param post the post 
      * @return the listenable future
      */         
@@ -126,7 +126,7 @@ public class PostOperations extends OutlookItemOperations {
     }
 
      /**
-     * ReplyRaw listenable future.
+     * replyRaw listenable future.
      * @param post the post 
      * @return the listenable future
      */ 
@@ -142,7 +142,7 @@ public class PostOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Reply");
+        request.getUrl().appendPathComponent("microsoft.graph.reply");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

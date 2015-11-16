@@ -26,502 +26,502 @@ public class Message extends OutlookItem {
         setODataType("#microsoft.graph.message");
     }
             
-    private java.util.Calendar ReceivedDateTime;
+    private java.util.Calendar receivedDateTime;
      
     /**
-    * Gets the Received Date Time.
+    * Gets the received Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getReceivedDateTime() {
-        return this.ReceivedDateTime; 
+        return this.receivedDateTime; 
     }
 
     /**
-    * Sets the Received Date Time.
+    * Sets the received Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setReceivedDateTime(java.util.Calendar value) { 
-        this.ReceivedDateTime = value; 
-        valueChanged("ReceivedDateTime", value);
+        this.receivedDateTime = value; 
+        valueChanged("receivedDateTime", value);
 
     }
             
-    private java.util.Calendar SentDateTime;
+    private java.util.Calendar sentDateTime;
      
     /**
-    * Gets the Sent Date Time.
+    * Gets the sent Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getSentDateTime() {
-        return this.SentDateTime; 
+        return this.sentDateTime; 
     }
 
     /**
-    * Sets the Sent Date Time.
+    * Sets the sent Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setSentDateTime(java.util.Calendar value) { 
-        this.SentDateTime = value; 
-        valueChanged("SentDateTime", value);
+        this.sentDateTime = value; 
+        valueChanged("sentDateTime", value);
 
     }
             
-    private Boolean HasAttachments;
+    private Boolean hasAttachments;
      
     /**
-    * Gets the Has Attachments.
+    * Gets the has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.hasAttachments; 
     }
 
     /**
-    * Sets the Has Attachments.
+    * Sets the has Attachments.
     *
     * @param value the Boolean
     */
     public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
-        valueChanged("HasAttachments", value);
+        this.hasAttachments = value; 
+        valueChanged("hasAttachments", value);
 
     }
             
-    private String Subject;
+    private String subject;
      
     /**
-    * Gets the Subject.
+    * Gets the subject.
     *
     * @return the String
     */
     public String getSubject() {
-        return this.Subject; 
+        return this.subject; 
     }
 
     /**
-    * Sets the Subject.
+    * Sets the subject.
     *
     * @param value the String
     */
     public void setSubject(String value) { 
-        this.Subject = value; 
-        valueChanged("Subject", value);
+        this.subject = value; 
+        valueChanged("subject", value);
 
     }
             
-    private ItemBody Body;
+    private ItemBody body;
      
     /**
-    * Gets the Body.
+    * Gets the body.
     *
     * @return the ItemBody
     */
     public ItemBody getBody() {
-        return this.Body; 
+        return this.body; 
     }
 
     /**
-    * Sets the Body.
+    * Sets the body.
     *
     * @param value the ItemBody
     */
     public void setBody(ItemBody value) { 
-        this.Body = value; 
-        valueChanged("Body", value);
+        this.body = value; 
+        valueChanged("body", value);
 
     }
             
-    private String BodyPreview;
+    private String bodyPreview;
      
     /**
-    * Gets the Body Preview.
+    * Gets the body Preview.
     *
     * @return the String
     */
     public String getBodyPreview() {
-        return this.BodyPreview; 
+        return this.bodyPreview; 
     }
 
     /**
-    * Sets the Body Preview.
+    * Sets the body Preview.
     *
     * @param value the String
     */
     public void setBodyPreview(String value) { 
-        this.BodyPreview = value; 
-        valueChanged("BodyPreview", value);
+        this.bodyPreview = value; 
+        valueChanged("bodyPreview", value);
 
     }
             
-    private Importance Importance;
+    private Importance importance;
      
     /**
-    * Gets the Importance.
+    * Gets the importance.
     *
     * @return the Importance
     */
     public Importance getImportance() {
-        return this.Importance; 
+        return this.importance; 
     }
 
     /**
-    * Sets the Importance.
+    * Sets the importance.
     *
     * @param value the Importance
     */
     public void setImportance(Importance value) { 
-        this.Importance = value; 
-        valueChanged("Importance", value);
+        this.importance = value; 
+        valueChanged("importance", value);
 
     }
             
-    private String ParentFolderId;
+    private String parentFolderId;
      
     /**
-    * Gets the Parent Folder Id.
+    * Gets the parent Folder Id.
     *
     * @return the String
     */
     public String getParentFolderId() {
-        return this.ParentFolderId; 
+        return this.parentFolderId; 
     }
 
     /**
-    * Sets the Parent Folder Id.
+    * Sets the parent Folder Id.
     *
     * @param value the String
     */
     public void setParentFolderId(String value) { 
-        this.ParentFolderId = value; 
-        valueChanged("ParentFolderId", value);
+        this.parentFolderId = value; 
+        valueChanged("parentFolderId", value);
 
     }
             
-    private Recipient Sender;
+    private Recipient sender;
      
     /**
-    * Gets the Sender.
+    * Gets the sender.
     *
     * @return the Recipient
     */
     public Recipient getSender() {
-        return this.Sender; 
+        return this.sender; 
     }
 
     /**
-    * Sets the Sender.
+    * Sets the sender.
     *
     * @param value the Recipient
     */
     public void setSender(Recipient value) { 
-        this.Sender = value; 
-        valueChanged("Sender", value);
+        this.sender = value; 
+        valueChanged("sender", value);
 
     }
             
-    private Recipient From;
+    private Recipient from;
      
     /**
-    * Gets the From.
+    * Gets the from.
     *
     * @return the Recipient
     */
     public Recipient getFrom() {
-        return this.From; 
+        return this.from; 
     }
 
     /**
-    * Sets the From.
+    * Sets the from.
     *
     * @param value the Recipient
     */
     public void setFrom(Recipient value) { 
-        this.From = value; 
-        valueChanged("From", value);
+        this.from = value; 
+        valueChanged("from", value);
 
     }
     
         
-    private java.util.List<Recipient> ToRecipients = null;
+    private java.util.List<Recipient> toRecipients = null;
     
     
      
     /**
-    * Gets the To Recipients.
+    * Gets the to Recipients.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getToRecipients() {
-        return this.ToRecipients; 
+        return this.toRecipients; 
     }
 
     /**
-    * Sets the To Recipients.
+    * Sets the to Recipients.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setToRecipients(java.util.List<Recipient> value) { 
-        this.ToRecipients = value; 
-        valueChanged("ToRecipients", value);
+        this.toRecipients = value; 
+        valueChanged("toRecipients", value);
 
     }
     
         
-    private java.util.List<Recipient> CcRecipients = null;
+    private java.util.List<Recipient> ccRecipients = null;
     
     
      
     /**
-    * Gets the Cc Recipients.
+    * Gets the cc Recipients.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getCcRecipients() {
-        return this.CcRecipients; 
+        return this.ccRecipients; 
     }
 
     /**
-    * Sets the Cc Recipients.
+    * Sets the cc Recipients.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setCcRecipients(java.util.List<Recipient> value) { 
-        this.CcRecipients = value; 
-        valueChanged("CcRecipients", value);
+        this.ccRecipients = value; 
+        valueChanged("ccRecipients", value);
 
     }
     
         
-    private java.util.List<Recipient> BccRecipients = null;
+    private java.util.List<Recipient> bccRecipients = null;
     
     
      
     /**
-    * Gets the Bcc Recipients.
+    * Gets the bcc Recipients.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getBccRecipients() {
-        return this.BccRecipients; 
+        return this.bccRecipients; 
     }
 
     /**
-    * Sets the Bcc Recipients.
+    * Sets the bcc Recipients.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setBccRecipients(java.util.List<Recipient> value) { 
-        this.BccRecipients = value; 
-        valueChanged("BccRecipients", value);
+        this.bccRecipients = value; 
+        valueChanged("bccRecipients", value);
 
     }
     
         
-    private java.util.List<Recipient> ReplyTo = null;
+    private java.util.List<Recipient> replyTo = null;
     
     
      
     /**
-    * Gets the Reply To.
+    * Gets the reply To.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getReplyTo() {
-        return this.ReplyTo; 
+        return this.replyTo; 
     }
 
     /**
-    * Sets the Reply To.
+    * Sets the reply To.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setReplyTo(java.util.List<Recipient> value) { 
-        this.ReplyTo = value; 
-        valueChanged("ReplyTo", value);
+        this.replyTo = value; 
+        valueChanged("replyTo", value);
 
     }
             
-    private String ConversationId;
+    private String conversationId;
      
     /**
-    * Gets the Conversation Id.
+    * Gets the conversation Id.
     *
     * @return the String
     */
     public String getConversationId() {
-        return this.ConversationId; 
+        return this.conversationId; 
     }
 
     /**
-    * Sets the Conversation Id.
+    * Sets the conversation Id.
     *
     * @param value the String
     */
     public void setConversationId(String value) { 
-        this.ConversationId = value; 
-        valueChanged("ConversationId", value);
+        this.conversationId = value; 
+        valueChanged("conversationId", value);
 
     }
             
-    private ItemBody UniqueBody;
+    private ItemBody uniqueBody;
      
     /**
-    * Gets the Unique Body.
+    * Gets the unique Body.
     *
     * @return the ItemBody
     */
     public ItemBody getUniqueBody() {
-        return this.UniqueBody; 
+        return this.uniqueBody; 
     }
 
     /**
-    * Sets the Unique Body.
+    * Sets the unique Body.
     *
     * @param value the ItemBody
     */
     public void setUniqueBody(ItemBody value) { 
-        this.UniqueBody = value; 
-        valueChanged("UniqueBody", value);
+        this.uniqueBody = value; 
+        valueChanged("uniqueBody", value);
 
     }
             
-    private Boolean IsDeliveryReceiptRequested;
+    private Boolean isDeliveryReceiptRequested;
      
     /**
-    * Gets the Is Delivery Receipt Requested.
+    * Gets the is Delivery Receipt Requested.
     *
     * @return the Boolean
     */
     public Boolean getIsDeliveryReceiptRequested() {
-        return this.IsDeliveryReceiptRequested; 
+        return this.isDeliveryReceiptRequested; 
     }
 
     /**
-    * Sets the Is Delivery Receipt Requested.
+    * Sets the is Delivery Receipt Requested.
     *
     * @param value the Boolean
     */
     public void setIsDeliveryReceiptRequested(Boolean value) { 
-        this.IsDeliveryReceiptRequested = value; 
-        valueChanged("IsDeliveryReceiptRequested", value);
+        this.isDeliveryReceiptRequested = value; 
+        valueChanged("isDeliveryReceiptRequested", value);
 
     }
             
-    private Boolean IsReadReceiptRequested;
+    private Boolean isReadReceiptRequested;
      
     /**
-    * Gets the Is Read Receipt Requested.
+    * Gets the is Read Receipt Requested.
     *
     * @return the Boolean
     */
     public Boolean getIsReadReceiptRequested() {
-        return this.IsReadReceiptRequested; 
+        return this.isReadReceiptRequested; 
     }
 
     /**
-    * Sets the Is Read Receipt Requested.
+    * Sets the is Read Receipt Requested.
     *
     * @param value the Boolean
     */
     public void setIsReadReceiptRequested(Boolean value) { 
-        this.IsReadReceiptRequested = value; 
-        valueChanged("IsReadReceiptRequested", value);
+        this.isReadReceiptRequested = value; 
+        valueChanged("isReadReceiptRequested", value);
 
     }
             
-    private Boolean IsRead;
+    private Boolean isRead;
      
     /**
-    * Gets the Is Read.
+    * Gets the is Read.
     *
     * @return the Boolean
     */
     public Boolean getIsRead() {
-        return this.IsRead; 
+        return this.isRead; 
     }
 
     /**
-    * Sets the Is Read.
+    * Sets the is Read.
     *
     * @param value the Boolean
     */
     public void setIsRead(Boolean value) { 
-        this.IsRead = value; 
-        valueChanged("IsRead", value);
+        this.isRead = value; 
+        valueChanged("isRead", value);
 
     }
             
-    private Boolean IsDraft;
+    private Boolean isDraft;
      
     /**
-    * Gets the Is Draft.
+    * Gets the is Draft.
     *
     * @return the Boolean
     */
     public Boolean getIsDraft() {
-        return this.IsDraft; 
+        return this.isDraft; 
     }
 
     /**
-    * Sets the Is Draft.
+    * Sets the is Draft.
     *
     * @param value the Boolean
     */
     public void setIsDraft(Boolean value) { 
-        this.IsDraft = value; 
-        valueChanged("IsDraft", value);
+        this.isDraft = value; 
+        valueChanged("isDraft", value);
 
     }
             
-    private String WebLink;
+    private String webLink;
      
     /**
-    * Gets the Web Link.
+    * Gets the web Link.
     *
     * @return the String
     */
     public String getWebLink() {
-        return this.WebLink; 
+        return this.webLink; 
     }
 
     /**
-    * Sets the Web Link.
+    * Sets the web Link.
     *
     * @param value the String
     */
     public void setWebLink(String value) { 
-        this.WebLink = value; 
-        valueChanged("WebLink", value);
+        this.webLink = value; 
+        valueChanged("webLink", value);
 
     }
     
         
-    private java.util.List<Attachment> Attachments = null;
+    private java.util.List<Attachment> attachments = null;
     
     
      
     /**
-    * Gets the Attachments.
+    * Gets the attachments.
     *
     * @return the java.util.List<Attachment>
     */
     public java.util.List<Attachment> getAttachments() {
-        return this.Attachments; 
+        return this.attachments; 
     }
 
     /**
-    * Sets the Attachments.
+    * Sets the attachments.
     *
     * @param value the java.util.List<Attachment>
     */
     public void setAttachments(java.util.List<Attachment> value) { 
-        this.Attachments = value; 
-        valueChanged("Attachments", value);
+        this.attachments = value; 
+        valueChanged("attachments", value);
 
     }
 }

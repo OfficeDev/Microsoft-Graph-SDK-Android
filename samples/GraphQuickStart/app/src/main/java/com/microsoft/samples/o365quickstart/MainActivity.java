@@ -75,7 +75,7 @@ public class MainActivity extends ActionBarActivity {
         final SettableFuture<Boolean> result = SettableFuture.create();
 
         try {
-            _authContext = new AuthenticationContext(this, "https://login.windows.net/common", true);
+            _authContext = new AuthenticationContext(this,getResources().getString(R.string.AADAuthority), true);
         } catch (Exception e) {
             Log.e(TAG, "Failed to initialize Authentication Context with error: " + e.getMessage());
             _authContext = null;

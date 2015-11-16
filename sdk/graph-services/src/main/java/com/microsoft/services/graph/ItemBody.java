@@ -27,47 +27,47 @@ public class ItemBody extends ODataBaseEntity {
         setODataType("#microsoft.graph.itemBody");
     }
 
-    private BodyType ContentType;
+    private BodyType contentType;
 
     /**
-    * Gets the Content Type.
+    * Gets the content Type.
     *
     * @return the BodyType
     */
     public BodyType getContentType() {
-        return this.ContentType; 
+        return this.contentType; 
     }
 
     /**
-    * Sets the Content Type.
+    * Sets the content Type.
     *
     * @param value the BodyType
     */
     public void setContentType(BodyType value) { 
-        this.ContentType = value;
-        valueChanged("ContentType", value);
+        this.contentType = value;
+        valueChanged("contentType", value);
 
     }
 
-    private String Content;
+    private String content;
 
     /**
-    * Gets the Content.
+    * Gets the content.
     *
     * @return the String
     */
     public String getContent() {
-        return this.Content; 
+        return this.content; 
     }
 
     /**
-    * Sets the Content.
+    * Sets the content.
     *
     * @param value the String
     */
     public void setContent(String value) { 
-        this.Content = value;
-        valueChanged("Content", value);
+        this.content = value;
+        valueChanged("content", value);
 
     }
 }

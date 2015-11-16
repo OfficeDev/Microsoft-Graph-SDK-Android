@@ -19,31 +19,31 @@ package com.microsoft.services.graph;
 public enum DayOfWeek	
 {
     /**
-    * Sunday
+    * sunday
     */
-    Sunday,
+    sunday,
     /**
-    * Monday
+    * monday
     */
-    Monday,
+    monday,
     /**
-    * Tuesday
+    * tuesday
     */
-    Tuesday,
+    tuesday,
     /**
-    * Wednesday
+    * wednesday
     */
-    Wednesday,
+    wednesday,
     /**
-    * Thursday
+    * thursday
     */
-    Thursday,
+    thursday,
     /**
-    * Friday
+    * friday
     */
-    Friday,
+    friday,
     /**
-    * Saturday
+    * saturday
     */
-    Saturday,
+    saturday,
 }

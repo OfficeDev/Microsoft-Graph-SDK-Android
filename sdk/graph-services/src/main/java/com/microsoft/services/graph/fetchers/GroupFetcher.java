@@ -129,7 +129,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the threads
      */
     public OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations> getThreads() {
-        return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("Threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class);
+        return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class);
     }
 
     /**
@@ -138,7 +138,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the thread
      */
     public ConversationThreadFetcher getThread(String id){
-         return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("Threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class).getById(id);
     }
      /**
      * Gets calendar.
@@ -146,7 +146,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the calendar
      */
     public CalendarFetcher getCalendar() {
-        return new CalendarFetcher("Calendar", this);
+        return new CalendarFetcher("calendar", this);
     }
 
      /**
@@ -155,7 +155,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the calendar view
      */
     public OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations> getCalendarView() {
-        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("CalendarView", this, Event.class, EventCollectionOperations.class);
+        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("calendarView", this, Event.class, EventCollectionOperations.class);
     }
 
     /**
@@ -164,7 +164,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the calendar view
      */
     public EventFetcher getCalendarView(String id){
-         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("CalendarView", this, Event.class, EventCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("calendarView", this, Event.class, EventCollectionOperations.class).getById(id);
     }
 
      /**
@@ -173,7 +173,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the events
      */
     public OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations> getEvents() {
-        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("Events", this, Event.class, EventCollectionOperations.class);
+        return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("events", this, Event.class, EventCollectionOperations.class);
     }
 
     /**
@@ -182,7 +182,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the event
      */
     public EventFetcher getEvent(String id){
-         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("Events", this, Event.class, EventCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Event, EventFetcher, EventCollectionOperations>("events", this, Event.class, EventCollectionOperations.class).getById(id);
     }
 
      /**
@@ -191,7 +191,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the conversations
      */
     public OrcCollectionFetcher<Conversation, ConversationFetcher, ConversationCollectionOperations> getConversations() {
-        return new OrcCollectionFetcher<Conversation, ConversationFetcher, ConversationCollectionOperations>("Conversations", this, Conversation.class, ConversationCollectionOperations.class);
+        return new OrcCollectionFetcher<Conversation, ConversationFetcher, ConversationCollectionOperations>("conversations", this, Conversation.class, ConversationCollectionOperations.class);
     }
 
     /**
@@ -200,7 +200,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the conversation
      */
     public ConversationFetcher getConversation(String id){
-         return new OrcCollectionFetcher<Conversation, ConversationFetcher, ConversationCollectionOperations>("Conversations", this, Conversation.class, ConversationCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Conversation, ConversationFetcher, ConversationCollectionOperations>("conversations", this, Conversation.class, ConversationCollectionOperations.class).getById(id);
     }
      /**
      * Gets photo.
@@ -208,7 +208,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the photo
      */
     public ProfilePhotoFetcher getPhoto() {
-        return new ProfilePhotoFetcher("Photo", this);
+        return new ProfilePhotoFetcher("photo", this);
     }
 
      /**
@@ -217,7 +217,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the accepted senders
      */
     public OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations> getAcceptedSenders() {
-        return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("AcceptedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class);
+        return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("acceptedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class);
     }
 
     /**
@@ -226,7 +226,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the accepted sender
      */
     public DirectoryObjectFetcher getAcceptedSender(String id){
-         return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("AcceptedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("acceptedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class).getById(id);
     }
 
      /**
@@ -235,7 +235,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the rejected senders
      */
     public OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations> getRejectedSenders() {
-        return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("RejectedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class);
+        return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("rejectedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class);
     }
 
     /**
@@ -244,7 +244,7 @@ public class GroupFetcher extends OrcEntityFetcher<Group,GroupOperations>
      * @return the rejected sender
      */
     public DirectoryObjectFetcher getRejectedSender(String id){
-         return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("RejectedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<DirectoryObject, DirectoryObjectFetcher, DirectoryObjectCollectionOperations>("rejectedSenders", this, DirectoryObject.class, DirectoryObjectCollectionOperations.class).getById(id);
     }
      /**
      * Gets drive.

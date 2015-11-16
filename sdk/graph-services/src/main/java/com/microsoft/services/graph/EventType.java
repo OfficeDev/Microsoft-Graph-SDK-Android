@@ -19,19 +19,19 @@ package com.microsoft.services.graph;
 public enum EventType	
 {
     /**
-    * Single Instance
+    * single Instance
     */
-    SingleInstance,
+    singleInstance,
     /**
-    * Occurrence
+    * occurrence
     */
-    Occurrence,
+    occurrence,
     /**
-    * Exception
+    * exception
     */
-    Exception,
+    exception,
     /**
-    * Series Master
+    * series Master
     */
-    SeriesMaster,
+    seriesMaster,
 }

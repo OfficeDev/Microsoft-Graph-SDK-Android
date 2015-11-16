@@ -296,135 +296,91 @@ public class Group extends DirectoryObject {
 
     }
             
-    private GroupAccessType AccessType;
+    private Boolean allowExternalSenders;
      
     /**
-    * Gets the Access Type.
-    *
-    * @return the GroupAccessType
-    */
-    public GroupAccessType getAccessType() {
-        return this.AccessType; 
-    }
-
-    /**
-    * Sets the Access Type.
-    *
-    * @param value the GroupAccessType
-    */
-    public void setAccessType(GroupAccessType value) { 
-        this.AccessType = value; 
-        valueChanged("AccessType", value);
-
-    }
-            
-    private Boolean AllowExternalSenders;
-     
-    /**
-    * Gets the Allow External Senders.
+    * Gets the allow External Senders.
     *
     * @return the Boolean
     */
     public Boolean getAllowExternalSenders() {
-        return this.AllowExternalSenders; 
+        return this.allowExternalSenders; 
     }
 
     /**
-    * Sets the Allow External Senders.
+    * Sets the allow External Senders.
     *
     * @param value the Boolean
     */
     public void setAllowExternalSenders(Boolean value) { 
-        this.AllowExternalSenders = value; 
-        valueChanged("AllowExternalSenders", value);
+        this.allowExternalSenders = value; 
+        valueChanged("allowExternalSenders", value);
 
     }
             
-    private Boolean AutoSubscribeNewMembers;
+    private Boolean autoSubscribeNewMembers;
      
     /**
-    * Gets the Auto Subscribe New Members.
+    * Gets the auto Subscribe New Members.
     *
     * @return the Boolean
     */
     public Boolean getAutoSubscribeNewMembers() {
-        return this.AutoSubscribeNewMembers; 
+        return this.autoSubscribeNewMembers; 
     }
 
     /**
-    * Sets the Auto Subscribe New Members.
+    * Sets the auto Subscribe New Members.
     *
     * @param value the Boolean
     */
     public void setAutoSubscribeNewMembers(Boolean value) { 
-        this.AutoSubscribeNewMembers = value; 
-        valueChanged("AutoSubscribeNewMembers", value);
+        this.autoSubscribeNewMembers = value; 
+        valueChanged("autoSubscribeNewMembers", value);
 
     }
             
-    private Boolean IsFavorite;
+    private Boolean isSubscribedByMail;
      
     /**
-    * Gets the Is Favorite.
-    *
-    * @return the Boolean
-    */
-    public Boolean getIsFavorite() {
-        return this.IsFavorite; 
-    }
-
-    /**
-    * Sets the Is Favorite.
-    *
-    * @param value the Boolean
-    */
-    public void setIsFavorite(Boolean value) { 
-        this.IsFavorite = value; 
-        valueChanged("IsFavorite", value);
-
-    }
-            
-    private Boolean IsSubscribedByMail;
-     
-    /**
-    * Gets the Is Subscribed By Mail.
+    * Gets the is Subscribed By Mail.
     *
     * @return the Boolean
     */
     public Boolean getIsSubscribedByMail() {
-        return this.IsSubscribedByMail; 
+        return this.isSubscribedByMail; 
     }
 
     /**
-    * Sets the Is Subscribed By Mail.
+    * Sets the is Subscribed By Mail.
     *
     * @param value the Boolean
     */
     public void setIsSubscribedByMail(Boolean value) { 
-        this.IsSubscribedByMail = value; 
-        valueChanged("IsSubscribedByMail", value);
+        this.isSubscribedByMail = value; 
+        valueChanged("isSubscribedByMail", value);
 
     }
             
-    private Integer UnseenCount;
+    private Integer unseenCount;
      
     /**
-    * Gets the Unseen Count.
+    * Gets the unseen Count.
     *
     * @return the Integer
     */
     public Integer getUnseenCount() {
-        return this.UnseenCount; 
+        return this.unseenCount; 
     }
 
     /**
-    * Sets the Unseen Count.
+    * Sets the unseen Count.
     *
     * @param value the Integer
     */
     public void setUnseenCount(Integer value) { 
-        this.UnseenCount = value; 
-        valueChanged("UnseenCount", value);
+        this.unseenCount = value; 
+        valueChanged("unseenCount", value);
 
     }
     
@@ -526,196 +482,196 @@ public class Group extends DirectoryObject {
     }
     
         
-    private java.util.List<ConversationThread> Threads = null;
+    private java.util.List<ConversationThread> threads = null;
     
     
      
     /**
-    * Gets the Threads.
+    * Gets the threads.
     *
     * @return the java.util.List<ConversationThread>
     */
     public java.util.List<ConversationThread> getThreads() {
-        return this.Threads; 
+        return this.threads; 
     }
 
     /**
-    * Sets the Threads.
+    * Sets the threads.
     *
     * @param value the java.util.List<ConversationThread>
     */
     public void setThreads(java.util.List<ConversationThread> value) { 
-        this.Threads = value; 
-        valueChanged("Threads", value);
+        this.threads = value; 
+        valueChanged("threads", value);
 
     }
             
-    private Calendar Calendar;
+    private Calendar calendar;
      
     /**
-    * Gets the Calendar.
+    * Gets the calendar.
     *
     * @return the Calendar
     */
     public Calendar getCalendar() {
-        return this.Calendar; 
+        return this.calendar; 
     }
 
     /**
-    * Sets the Calendar.
+    * Sets the calendar.
     *
     * @param value the Calendar
     */
     public void setCalendar(Calendar value) { 
-        this.Calendar = value; 
-        valueChanged("Calendar", value);
+        this.calendar = value; 
+        valueChanged("calendar", value);
 
     }
     
         
-    private java.util.List<Event> CalendarView = null;
+    private java.util.List<Event> calendarView = null;
     
     
      
     /**
-    * Gets the Calendar View.
+    * Gets the calendar View.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getCalendarView() {
-        return this.CalendarView; 
+        return this.calendarView; 
     }
 
     /**
-    * Sets the Calendar View.
+    * Sets the calendar View.
     *
     * @param value the java.util.List<Event>
     */
     public void setCalendarView(java.util.List<Event> value) { 
-        this.CalendarView = value; 
-        valueChanged("CalendarView", value);
+        this.calendarView = value; 
+        valueChanged("calendarView", value);
 
     }
     
         
-    private java.util.List<Event> Events = null;
+    private java.util.List<Event> events = null;
     
     
      
     /**
-    * Gets the Events.
+    * Gets the events.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getEvents() {
-        return this.Events; 
+        return this.events; 
     }
 
     /**
-    * Sets the Events.
+    * Sets the events.
     *
     * @param value the java.util.List<Event>
     */
     public void setEvents(java.util.List<Event> value) { 
-        this.Events = value; 
-        valueChanged("Events", value);
+        this.events = value; 
+        valueChanged("events", value);
 
     }
     
         
-    private java.util.List<Conversation> Conversations = null;
+    private java.util.List<Conversation> conversations = null;
     
     
      
     /**
-    * Gets the Conversations.
+    * Gets the conversations.
     *
     * @return the java.util.List<Conversation>
     */
     public java.util.List<Conversation> getConversations() {
-        return this.Conversations; 
+        return this.conversations; 
     }
 
     /**
-    * Sets the Conversations.
+    * Sets the conversations.
     *
     * @param value the java.util.List<Conversation>
     */
     public void setConversations(java.util.List<Conversation> value) { 
-        this.Conversations = value; 
-        valueChanged("Conversations", value);
+        this.conversations = value; 
+        valueChanged("conversations", value);
 
     }
             
-    private ProfilePhoto Photo;
+    private ProfilePhoto photo;
      
     /**
-    * Gets the Photo.
+    * Gets the photo.
     *
     * @return the ProfilePhoto
     */
     public ProfilePhoto getPhoto() {
-        return this.Photo; 
+        return this.photo; 
     }
 
     /**
-    * Sets the Photo.
+    * Sets the photo.
     *
     * @param value the ProfilePhoto
     */
     public void setPhoto(ProfilePhoto value) { 
-        this.Photo = value; 
-        valueChanged("Photo", value);
+        this.photo = value; 
+        valueChanged("photo", value);
 
     }
     
         
-    private java.util.List<DirectoryObject> AcceptedSenders = null;
+    private java.util.List<DirectoryObject> acceptedSenders = null;
     
     
      
     /**
-    * Gets the Accepted Senders.
+    * Gets the accepted Senders.
     *
     * @return the java.util.List<DirectoryObject>
     */
     public java.util.List<DirectoryObject> getAcceptedSenders() {
-        return this.AcceptedSenders; 
+        return this.acceptedSenders; 
     }
 
     /**
-    * Sets the Accepted Senders.
+    * Sets the accepted Senders.
     *
     * @param value the java.util.List<DirectoryObject>
     */
     public void setAcceptedSenders(java.util.List<DirectoryObject> value) { 
-        this.AcceptedSenders = value; 
-        valueChanged("AcceptedSenders", value);
+        this.acceptedSenders = value; 
+        valueChanged("acceptedSenders", value);
 
     }
     
         
-    private java.util.List<DirectoryObject> RejectedSenders = null;
+    private java.util.List<DirectoryObject> rejectedSenders = null;
     
     
      
     /**
-    * Gets the Rejected Senders.
+    * Gets the rejected Senders.
     *
     * @return the java.util.List<DirectoryObject>
     */
     public java.util.List<DirectoryObject> getRejectedSenders() {
-        return this.RejectedSenders; 
+        return this.rejectedSenders; 
     }
 
     /**
-    * Sets the Rejected Senders.
+    * Sets the rejected Senders.
     *
     * @param value the java.util.List<DirectoryObject>
     */
     public void setRejectedSenders(java.util.List<DirectoryObject> value) { 
-        this.RejectedSenders = value; 
-        valueChanged("RejectedSenders", value);
+        this.rejectedSenders = value; 
+        valueChanged("rejectedSenders", value);
 
     }
             

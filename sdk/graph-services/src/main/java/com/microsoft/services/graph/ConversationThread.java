@@ -27,212 +27,212 @@ public class ConversationThread extends Entity {
     }
     
         
-    private java.util.List<Recipient> ToRecipients = null;
+    private java.util.List<Recipient> toRecipients = null;
     
     
      
     /**
-    * Gets the To Recipients.
+    * Gets the to Recipients.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getToRecipients() {
-        return this.ToRecipients; 
+        return this.toRecipients; 
     }
 
     /**
-    * Sets the To Recipients.
+    * Sets the to Recipients.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setToRecipients(java.util.List<Recipient> value) { 
-        this.ToRecipients = value; 
-        valueChanged("ToRecipients", value);
+        this.toRecipients = value; 
+        valueChanged("toRecipients", value);
 
     }
             
-    private String Topic;
+    private String topic;
      
     /**
-    * Gets the Topic.
+    * Gets the topic.
     *
     * @return the String
     */
     public String getTopic() {
-        return this.Topic; 
+        return this.topic; 
     }
 
     /**
-    * Sets the Topic.
+    * Sets the topic.
     *
     * @param value the String
     */
     public void setTopic(String value) { 
-        this.Topic = value; 
-        valueChanged("Topic", value);
+        this.topic = value; 
+        valueChanged("topic", value);
 
     }
             
-    private Boolean HasAttachments;
+    private Boolean hasAttachments;
      
     /**
-    * Gets the Has Attachments.
+    * Gets the has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.hasAttachments; 
     }
 
     /**
-    * Sets the Has Attachments.
+    * Sets the has Attachments.
     *
     * @param value the Boolean
     */
     public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
-        valueChanged("HasAttachments", value);
+        this.hasAttachments = value; 
+        valueChanged("hasAttachments", value);
 
     }
             
-    private java.util.Calendar LastDeliveredDateTime;
+    private java.util.Calendar lastDeliveredDateTime;
      
     /**
-    * Gets the Last Delivered Date Time.
+    * Gets the last Delivered Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getLastDeliveredDateTime() {
-        return this.LastDeliveredDateTime; 
+        return this.lastDeliveredDateTime; 
     }
 
     /**
-    * Sets the Last Delivered Date Time.
+    * Sets the last Delivered Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setLastDeliveredDateTime(java.util.Calendar value) { 
-        this.LastDeliveredDateTime = value; 
-        valueChanged("LastDeliveredDateTime", value);
+        this.lastDeliveredDateTime = value; 
+        valueChanged("lastDeliveredDateTime", value);
 
     }
     
         
-    private java.util.List<String> UniqueSenders = null;
+    private java.util.List<String> uniqueSenders = null;
     
     
      
     /**
-    * Gets the Unique Senders.
+    * Gets the unique Senders.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getUniqueSenders() {
-        return this.UniqueSenders; 
+        return this.uniqueSenders; 
     }
 
     /**
-    * Sets the Unique Senders.
+    * Sets the unique Senders.
     *
     * @param value the java.util.List<String>
     */
     public void setUniqueSenders(java.util.List<String> value) { 
-        this.UniqueSenders = value; 
-        valueChanged("UniqueSenders", value);
+        this.uniqueSenders = value; 
+        valueChanged("uniqueSenders", value);
 
     }
     
         
-    private java.util.List<Recipient> CcRecipients = null;
+    private java.util.List<Recipient> ccRecipients = null;
     
     
      
     /**
-    * Gets the Cc Recipients.
+    * Gets the cc Recipients.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getCcRecipients() {
-        return this.CcRecipients; 
+        return this.ccRecipients; 
     }
 
     /**
-    * Sets the Cc Recipients.
+    * Sets the cc Recipients.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setCcRecipients(java.util.List<Recipient> value) { 
-        this.CcRecipients = value; 
-        valueChanged("CcRecipients", value);
+        this.ccRecipients = value; 
+        valueChanged("ccRecipients", value);
 
     }
             
-    private String Preview;
+    private String preview;
      
     /**
-    * Gets the Preview.
+    * Gets the preview.
     *
     * @return the String
     */
     public String getPreview() {
-        return this.Preview; 
+        return this.preview; 
     }
 
     /**
-    * Sets the Preview.
+    * Sets the preview.
     *
     * @param value the String
     */
     public void setPreview(String value) { 
-        this.Preview = value; 
-        valueChanged("Preview", value);
+        this.preview = value; 
+        valueChanged("preview", value);
 
     }
             
-    private Boolean IsLocked;
+    private Boolean isLocked;
      
     /**
-    * Gets the Is Locked.
+    * Gets the is Locked.
     *
     * @return the Boolean
     */
     public Boolean getIsLocked() {
-        return this.IsLocked; 
+        return this.isLocked; 
     }
 
     /**
-    * Sets the Is Locked.
+    * Sets the is Locked.
     *
     * @param value the Boolean
     */
     public void setIsLocked(Boolean value) { 
-        this.IsLocked = value; 
-        valueChanged("IsLocked", value);
+        this.isLocked = value; 
+        valueChanged("isLocked", value);
 
     }
     
         
-    private java.util.List<Post> Posts = null;
+    private java.util.List<Post> posts = null;
     
     
      
     /**
-    * Gets the Posts.
+    * Gets the posts.
     *
     * @return the java.util.List<Post>
     */
     public java.util.List<Post> getPosts() {
-        return this.Posts; 
+        return this.posts; 
     }
 
     /**
-    * Sets the Posts.
+    * Sets the posts.
     *
     * @param value the java.util.List<Post>
     */
     public void setPosts(java.util.List<Post> value) { 
-        this.Posts = value; 
-        valueChanged("Posts", value);
+        this.posts = value; 
+        valueChanged("posts", value);
 
     }
 }

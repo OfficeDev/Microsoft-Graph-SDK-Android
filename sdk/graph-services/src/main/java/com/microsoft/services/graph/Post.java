@@ -26,229 +26,229 @@ public class Post extends OutlookItem {
         setODataType("#microsoft.graph.post");
     }
             
-    private ItemBody Body;
+    private ItemBody body;
      
     /**
-    * Gets the Body.
+    * Gets the body.
     *
     * @return the ItemBody
     */
     public ItemBody getBody() {
-        return this.Body; 
+        return this.body; 
     }
 
     /**
-    * Sets the Body.
+    * Sets the body.
     *
     * @param value the ItemBody
     */
     public void setBody(ItemBody value) { 
-        this.Body = value; 
-        valueChanged("Body", value);
+        this.body = value; 
+        valueChanged("body", value);
 
     }
             
-    private java.util.Calendar ReceivedDateTime;
+    private java.util.Calendar receivedDateTime;
      
     /**
-    * Gets the Received Date Time.
+    * Gets the received Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getReceivedDateTime() {
-        return this.ReceivedDateTime; 
+        return this.receivedDateTime; 
     }
 
     /**
-    * Sets the Received Date Time.
+    * Sets the received Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setReceivedDateTime(java.util.Calendar value) { 
-        this.ReceivedDateTime = value; 
-        valueChanged("ReceivedDateTime", value);
+        this.receivedDateTime = value; 
+        valueChanged("receivedDateTime", value);
 
     }
             
-    private Boolean HasAttachments;
+    private Boolean hasAttachments;
      
     /**
-    * Gets the Has Attachments.
+    * Gets the has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.hasAttachments; 
     }
 
     /**
-    * Sets the Has Attachments.
+    * Sets the has Attachments.
     *
     * @param value the Boolean
     */
     public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
-        valueChanged("HasAttachments", value);
+        this.hasAttachments = value; 
+        valueChanged("hasAttachments", value);
 
     }
             
-    private Recipient From;
+    private Recipient from;
      
     /**
-    * Gets the From.
+    * Gets the from.
     *
     * @return the Recipient
     */
     public Recipient getFrom() {
-        return this.From; 
+        return this.from; 
     }
 
     /**
-    * Sets the From.
+    * Sets the from.
     *
     * @param value the Recipient
     */
     public void setFrom(Recipient value) { 
-        this.From = value; 
-        valueChanged("From", value);
+        this.from = value; 
+        valueChanged("from", value);
 
     }
             
-    private Recipient Sender;
+    private Recipient sender;
      
     /**
-    * Gets the Sender.
+    * Gets the sender.
     *
     * @return the Recipient
     */
     public Recipient getSender() {
-        return this.Sender; 
+        return this.sender; 
     }
 
     /**
-    * Sets the Sender.
+    * Sets the sender.
     *
     * @param value the Recipient
     */
     public void setSender(Recipient value) { 
-        this.Sender = value; 
-        valueChanged("Sender", value);
+        this.sender = value; 
+        valueChanged("sender", value);
 
     }
             
-    private String ConversationThreadId;
+    private String conversationThreadId;
      
     /**
-    * Gets the Conversation Thread Id.
+    * Gets the conversation Thread Id.
     *
     * @return the String
     */
     public String getConversationThreadId() {
-        return this.ConversationThreadId; 
+        return this.conversationThreadId; 
     }
 
     /**
-    * Sets the Conversation Thread Id.
+    * Sets the conversation Thread Id.
     *
     * @param value the String
     */
     public void setConversationThreadId(String value) { 
-        this.ConversationThreadId = value; 
-        valueChanged("ConversationThreadId", value);
+        this.conversationThreadId = value; 
+        valueChanged("conversationThreadId", value);
 
     }
     
         
-    private java.util.List<Recipient> NewParticipants = null;
+    private java.util.List<Recipient> newParticipants = null;
     
     
      
     /**
-    * Gets the New Participants.
+    * Gets the new Participants.
     *
     * @return the java.util.List<Recipient>
     */
     public java.util.List<Recipient> getNewParticipants() {
-        return this.NewParticipants; 
+        return this.newParticipants; 
     }
 
     /**
-    * Sets the New Participants.
+    * Sets the new Participants.
     *
     * @param value the java.util.List<Recipient>
     */
     public void setNewParticipants(java.util.List<Recipient> value) { 
-        this.NewParticipants = value; 
-        valueChanged("NewParticipants", value);
+        this.newParticipants = value; 
+        valueChanged("newParticipants", value);
 
     }
             
-    private String ConversationId;
+    private String conversationId;
      
     /**
-    * Gets the Conversation Id.
+    * Gets the conversation Id.
     *
     * @return the String
     */
     public String getConversationId() {
-        return this.ConversationId; 
+        return this.conversationId; 
     }
 
     /**
-    * Sets the Conversation Id.
+    * Sets the conversation Id.
     *
     * @param value the String
     */
     public void setConversationId(String value) { 
-        this.ConversationId = value; 
-        valueChanged("ConversationId", value);
+        this.conversationId = value; 
+        valueChanged("conversationId", value);
 
     }
             
-    private Post InReplyTo;
+    private Post inReplyTo;
      
     /**
-    * Gets the In Reply To.
+    * Gets the in Reply To.
     *
     * @return the Post
     */
     public Post getInReplyTo() {
-        return this.InReplyTo; 
+        return this.inReplyTo; 
     }
 
     /**
-    * Sets the In Reply To.
+    * Sets the in Reply To.
     *
     * @param value the Post
     */
     public void setInReplyTo(Post value) { 
-        this.InReplyTo = value; 
-        valueChanged("InReplyTo", value);
+        this.inReplyTo = value; 
+        valueChanged("inReplyTo", value);
 
     }
     
         
-    private java.util.List<Attachment> Attachments = null;
+    private java.util.List<Attachment> attachments = null;
     
     
      
     /**
-    * Gets the Attachments.
+    * Gets the attachments.
     *
     * @return the java.util.List<Attachment>
     */
     public java.util.List<Attachment> getAttachments() {
-        return this.Attachments; 
+        return this.attachments; 
     }
 
     /**
-    * Sets the Attachments.
+    * Sets the attachments.
     *
     * @param value the java.util.List<Attachment>
     */
     public void setAttachments(java.util.List<Attachment> value) { 
-        this.Attachments = value; 
-        valueChanged("Attachments", value);
+        this.attachments = value; 
+        valueChanged("attachments", value);
 
     }
 }

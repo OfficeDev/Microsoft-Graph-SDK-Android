@@ -62,7 +62,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     
     
     /**
-     * SubscribeByMail listenable future.
+     * subscribeByMail listenable future.
      * 
      * @return the listenable future
      */         
@@ -78,7 +78,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * SubscribeByMailRaw listenable future.
+     * subscribeByMailRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -88,7 +88,7 @@ public class GroupOperations extends DirectoryObjectOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.SubscribeByMail");
+        request.getUrl().appendPathComponent("microsoft.graph.subscribeByMail");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -98,7 +98,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     
     
     /**
-     * UnsubscribeByMail listenable future.
+     * unsubscribeByMail listenable future.
      * 
      * @return the listenable future
      */         
@@ -114,7 +114,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * UnsubscribeByMailRaw listenable future.
+     * unsubscribeByMailRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -124,7 +124,7 @@ public class GroupOperations extends DirectoryObjectOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.UnsubscribeByMail");
+        request.getUrl().appendPathComponent("microsoft.graph.unsubscribeByMail");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -134,7 +134,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     
     
     /**
-     * AddFavorite listenable future.
+     * addFavorite listenable future.
      * 
      * @return the listenable future
      */         
@@ -150,7 +150,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * AddFavoriteRaw listenable future.
+     * addFavoriteRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -160,7 +160,7 @@ public class GroupOperations extends DirectoryObjectOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.AddFavorite");
+        request.getUrl().appendPathComponent("microsoft.graph.addFavorite");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -170,7 +170,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     
     
     /**
-     * RemoveFavorite listenable future.
+     * removeFavorite listenable future.
      * 
      * @return the listenable future
      */         
@@ -186,7 +186,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * RemoveFavoriteRaw listenable future.
+     * removeFavoriteRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -196,7 +196,7 @@ public class GroupOperations extends DirectoryObjectOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.RemoveFavorite");
+        request.getUrl().appendPathComponent("microsoft.graph.removeFavorite");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -206,7 +206,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     
     
     /**
-     * ResetUnseenCount listenable future.
+     * resetUnseenCount listenable future.
      * 
      * @return the listenable future
      */         
@@ -222,7 +222,7 @@ public class GroupOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * ResetUnseenCountRaw listenable future.
+     * resetUnseenCountRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -232,7 +232,7 @@ public class GroupOperations extends DirectoryObjectOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.ResetUnseenCount");
+        request.getUrl().appendPathComponent("microsoft.graph.resetUnseenCount");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

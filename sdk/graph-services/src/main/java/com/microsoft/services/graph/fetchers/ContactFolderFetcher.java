@@ -67,7 +67,7 @@ public class ContactFolderFetcher extends OrcEntityFetcher<ContactFolder,Contact
      * @return the contacts
      */
     public OrcCollectionFetcher<Contact, ContactFetcher, ContactCollectionOperations> getContacts() {
-        return new OrcCollectionFetcher<Contact, ContactFetcher, ContactCollectionOperations>("Contacts", this, Contact.class, ContactCollectionOperations.class);
+        return new OrcCollectionFetcher<Contact, ContactFetcher, ContactCollectionOperations>("contacts", this, Contact.class, ContactCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class ContactFolderFetcher extends OrcEntityFetcher<ContactFolder,Contact
      * @return the contact
      */
     public ContactFetcher getContact(String id){
-         return new OrcCollectionFetcher<Contact, ContactFetcher, ContactCollectionOperations>("Contacts", this, Contact.class, ContactCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Contact, ContactFetcher, ContactCollectionOperations>("contacts", this, Contact.class, ContactCollectionOperations.class).getById(id);
     }
 
      /**
@@ -85,7 +85,7 @@ public class ContactFolderFetcher extends OrcEntityFetcher<ContactFolder,Contact
      * @return the child folders
      */
     public OrcCollectionFetcher<ContactFolder, ContactFolderFetcher, ContactFolderCollectionOperations> getChildFolders() {
-        return new OrcCollectionFetcher<ContactFolder, ContactFolderFetcher, ContactFolderCollectionOperations>("ChildFolders", this, ContactFolder.class, ContactFolderCollectionOperations.class);
+        return new OrcCollectionFetcher<ContactFolder, ContactFolderFetcher, ContactFolderCollectionOperations>("childFolders", this, ContactFolder.class, ContactFolderCollectionOperations.class);
     }
 
     /**
@@ -94,7 +94,7 @@ public class ContactFolderFetcher extends OrcEntityFetcher<ContactFolder,Contact
      * @return the child folder
      */
     public ContactFolderFetcher getChildFolder(String id){
-         return new OrcCollectionFetcher<ContactFolder, ContactFolderFetcher, ContactFolderCollectionOperations>("ChildFolders", this, ContactFolder.class, ContactFolderCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<ContactFolder, ContactFolderFetcher, ContactFolderCollectionOperations>("childFolders", this, ContactFolder.class, ContactFolderCollectionOperations.class).getById(id);
     }
 
 }
