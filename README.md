@@ -125,10 +125,10 @@ With your project prepared, the next step is to initialize the dependency manage
                                 mResolver = new DependencyResolver.Builder(
                                                 new OkHttpTransport(), new GsonSerializer(),
                                                 new AuthenticationCredentials() {
-                                            @Override
-                                            public Credentials getCredentials() {
-                                                return new OAuthCredentials(token);
-                                            }
+                                                @Override
+                                                public Credentials getCredentials() {
+                                                    return new OAuthCredentials(token);
+                                                }
                                             }).build();
                                 result.set(true);
                             }
