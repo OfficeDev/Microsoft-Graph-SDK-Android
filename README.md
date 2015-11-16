@@ -124,7 +124,12 @@ With your project prepared, the next step is to initialize the dependency manage
                                     && authenticationResult.getStatus() == AuthenticationStatus.Succeeded) {
                                 mResolver = new DependencyResolver.Builder(
                                                 new OkHttpTransport(), new GsonSerializer(),
-                                                new MSAAuthentication(theAuthClient)).build();
+                                                new AuthenticationCredentials() {
+                                            @Override
+                                            public Credentials getCredentials() {
+                                                return new OAuthCredentials(token);
+                                            }
+                                            }).build();
                                 result.set(true);
                             }
                         }
@@ -232,4 +237,4 @@ If successful, the number of messages in your inbox will be displayed in the Tex
 You will need to sign a [Contributor License Agreement](https://cla.microsoft.com/) before submitting your pull request. To complete the Contributor License Agreement (CLA), you will need to submit a request via the form and then electronically sign the Contributor License Agreement when you receive the email containing the link to the document. This needs to only be done once for any Microsoft Open Technologies OSS project.
 
 ## License
-Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License, Version 2.0.
+Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License.
