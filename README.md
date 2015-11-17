@@ -71,7 +71,7 @@ With your project prepared, the next step is to initialize the dependency manage
     <string name="AADRedirectUrl">Paste your Redirect URI HERE</string>
     ```
 
-3. Add an id to the "Hello World" TextView. Open app/src/main/res/layout/activity_main.xml and add the following tag.
+3. Add an id to the "Hello World" TextView. Open app/src/main/res/layout/activity_main.xml. Use the following tag.
 
     ```xml
 	android:id="@+id/messages"
