@@ -40,7 +40,7 @@ To use these libraries in your project, follow these general steps, as described
 4. In the `dependencies` closure, add the following dependencies to the `compile` configuration:
 
     ```groovy
-    compile 'com.microsoft.services:graph-services:0.8'
+    compile 'com.microsoft.services:graph-services:1.0.0-preview'
     ```
 
     You may want to click the "Sync Project with Gradle Files" button in the toolbar. This will download the dependencies so Android Studio can assist in coding with them.
@@ -237,4 +237,4 @@ If successful, the number of messages in your inbox will be displayed in the Tex
 You will need to sign a [Contributor License Agreement](https://cla.microsoft.com/) before submitting your pull request. To complete the Contributor License Agreement (CLA), you will need to submit a request via the form and then electronically sign the Contributor License Agreement when you receive the email containing the link to the document. This needs to only be done once for any Microsoft Open Technologies OSS project.
 
 ## License
-Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License.
+Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the Apache License 2.0.
