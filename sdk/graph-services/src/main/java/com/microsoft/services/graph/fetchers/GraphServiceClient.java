@@ -131,14 +131,6 @@ public class GraphServiceClient extends BaseOrcContainer {
         return new OrcCollectionFetcher<Drive, DriveFetcher, DriveCollectionOperations>("drives", this, Drive.class,DriveCollectionOperations.class);
     }
      /**
-     * Gets Share.
-     *
-     * @return the Share
-     */
-    public OrcCollectionFetcher<Share, ShareFetcher, ShareCollectionOperations> getShares() {
-        return new OrcCollectionFetcher<Share, ShareFetcher, ShareCollectionOperations>("shares", this, Share.class,ShareCollectionOperations.class);
-    }
-     /**
      * Gets me.
      *
      * @return the me

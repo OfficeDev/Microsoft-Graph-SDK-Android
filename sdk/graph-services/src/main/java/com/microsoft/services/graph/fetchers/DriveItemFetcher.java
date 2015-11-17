@@ -107,24 +107,6 @@ public class DriveItemFetcher extends OrcEntityFetcher<DriveItem,DriveItemOperat
     }
 
      /**
-     * Gets versions.
-     *
-     * @return the versions
-     */
-    public OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations> getVersions() {
-        return new OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations>("versions", this, DriveItem.class, DriveItemCollectionOperations.class);
-    }
-
-    /**
-     * Gets version.
-     *
-     * @return the version
-     */
-    public DriveItemFetcher getVersion(String id){
-         return new OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations>("versions", this, DriveItem.class, DriveItemCollectionOperations.class).getById(id);
-    }
-
-     /**
      * Gets children.
      *
      * @return the children

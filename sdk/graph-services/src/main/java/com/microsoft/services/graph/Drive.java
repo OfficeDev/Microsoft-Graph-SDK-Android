@@ -118,31 +118,6 @@ public class Drive extends Entity {
     }
     
         
-    private java.util.List<DriveItem> shared = null;
-    
-    
-     
-    /**
-    * Gets the shared.
-    *
-    * @return the java.util.List<DriveItem>
-    */
-    public java.util.List<DriveItem> getShared() {
-        return this.shared; 
-    }
-
-    /**
-    * Sets the shared.
-    *
-    * @param value the java.util.List<DriveItem>
-    */
-    public void setShared(java.util.List<DriveItem> value) { 
-        this.shared = value; 
-        valueChanged("shared", value);
-
-    }
-    
-        
     private java.util.List<DriveItem> special = null;
     
     

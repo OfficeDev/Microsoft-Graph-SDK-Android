@@ -62,131 +62,35 @@ public class DriveItemOperations extends EntityOperations {
     
     
     /**
-     * invite listenable future.
-     * @param recipients the recipients @param message the message @param requireSignIn the requireSignIn @param sendInvitation the sendInvitation @param roles the roles 
-     * @return the listenable future
-     */         
-    public ListenableFuture<Permission> invite(java.util.List<Recipients> recipients, String message, Boolean requireSignIn, Boolean sendInvitation, java.util.List<String> roles) { 
-        
-		JsonSerializer serializer = getResolver().getJsonSerializer();      
-        
-		String serializedrecipients = serializer.serialize(recipients);
-		String serializedmessage = serializer.serialize(message);
-		String serializedrequireSignIn = serializer.serialize(requireSignIn);
-		String serializedsendInvitation = serializer.serialize(sendInvitation);
-		String serializedroles = serializer.serialize(roles);
-		  
-        
-		
-		ListenableFuture<String> future = inviteRaw(serializedrecipients, serializedmessage, serializedrequireSignIn, serializedsendInvitation, serializedroles);
-		return transformToEntityListenableFuture(future, Permission.class, getResolver());
-        
-    }
-
-     /**
-     * inviteRaw listenable future.
-     * @param recipients the recipients @param message the message @param requireSignIn the requireSignIn @param sendInvitation the sendInvitation @param roles the roles 
-     * @return the listenable future
-     */ 
-    public ListenableFuture<String> inviteRaw(String recipients, String message, String requireSignIn, String sendInvitation, String roles){
-        
-        java.util.Map<String, String> map = new java.util.HashMap<String, String>();
-        
-        map.put("recipients", recipients);
-		map.put("message", message);
-		map.put("requireSignIn", requireSignIn);
-		map.put("sendInvitation", sendInvitation);
-		map.put("roles", roles);
-		
-        Request request = getResolver().createRequest();
-        request.setVerb(HttpVerb.POST);
-        
-        request.setContent(getResolver().getJsonSerializer()
-               .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
-                        
-        request.getUrl().appendPathComponent("microsoft.graph.invite");
-        
-        ListenableFuture<OrcResponse> future = oDataExecute(request);
-        return transformToStringListenableFuture(future);
-    }
-
-
-    
-    
-    /**
-     * copy listenable future.
-     * @param parentReference the parentReference @param name the name 
-     * @return the listenable future
-     */         
-    public ListenableFuture<DriveItem> copy(ItemReference parentReference, String name) { 
-        
-		JsonSerializer serializer = getResolver().getJsonSerializer();      
-        
-		String serializedparentReference = serializer.serialize(parentReference);
-		String serializedname = serializer.serialize(name);
-		  
-        
-		
-		ListenableFuture<String> future = copyRaw(serializedparentReference, serializedname);
-		return transformToEntityListenableFuture(future, DriveItem.class, getResolver());
-        
-    }
-
-     /**
-     * copyRaw listenable future.
-     * @param parentReference the parentReference @param name the name 
-     * @return the listenable future
-     */ 
-    public ListenableFuture<String> copyRaw(String parentReference, String name){
-        
-        java.util.Map<String, String> map = new java.util.HashMap<String, String>();
-        
-        map.put("parentReference", parentReference);
-		map.put("name", name);
-		
-        Request request = getResolver().createRequest();
-        request.setVerb(HttpVerb.POST);
-        
-        request.setContent(getResolver().getJsonSerializer()
-               .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
-                        
-        request.getUrl().appendPathComponent("microsoft.graph.copy");
-        
-        ListenableFuture<OrcResponse> future = oDataExecute(request);
-        return transformToStringListenableFuture(future);
-    }
-
-
-    
-    
-    /**
      * createLink listenable future.
-     * @param type the type 
+     * @param type the type @param scope the scope 
      * @return the listenable future
      */         
-    public ListenableFuture<Permission> createLink(String type) { 
+    public ListenableFuture<Permission> createLink(String type, String scope) { 
         
 		JsonSerializer serializer = getResolver().getJsonSerializer();      
         
 		String serializedtype = serializer.serialize(type);
+		String serializedscope = serializer.serialize(scope);
 		  
         
 		
-		ListenableFuture<String> future = createLinkRaw(serializedtype);
+		ListenableFuture<String> future = createLinkRaw(serializedtype, serializedscope);
 		return transformToEntityListenableFuture(future, Permission.class, getResolver());
         
     }
 
      /**
      * createLinkRaw listenable future.
-     * @param type the type 
+     * @param type the type @param scope the scope 
      * @return the listenable future
      */ 
-    public ListenableFuture<String> createLinkRaw(String type){
+    public ListenableFuture<String> createLinkRaw(String type, String scope){
         
         java.util.Map<String, String> map = new java.util.HashMap<String, String>();
         
         map.put("type", type);
+		map.put("scope", scope);
 		
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
@@ -201,78 +105,6 @@ public class DriveItemOperations extends EntityOperations {
     }
 
 
-    
-    
-    /**
-     * createSession listenable future.
-     * @param item the item 
-     * @return the listenable future
-     */         
-    public ListenableFuture<UploadSession> createSession(ChunkedUploadSessionDescriptor item) { 
-        
-		JsonSerializer serializer = getResolver().getJsonSerializer();      
-        
-		String serializeditem = serializer.serialize(item);
-		  
-        
-		
-		ListenableFuture<String> future = createSessionRaw(serializeditem);
-		return transformToEntityListenableFuture(future, UploadSession.class, getResolver());
-        
-    }
-
-     /**
-     * createSessionRaw listenable future.
-     * @param item the item 
-     * @return the listenable future
-     */ 
-    public ListenableFuture<String> createSessionRaw(String item){
-        
-        java.util.Map<String, String> map = new java.util.HashMap<String, String>();
-        
-        map.put("item", item);
-		
-        Request request = getResolver().createRequest();
-        request.setVerb(HttpVerb.POST);
-        
-        request.setContent(getResolver().getJsonSerializer()
-               .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
-                        
-        request.getUrl().appendPathComponent("microsoft.graph.createSession");
-        
-        ListenableFuture<OrcResponse> future = oDataExecute(request);
-        return transformToStringListenableFuture(future);
-    }
-
-
-    
-    
-     /**
-     * allPhotos listenable future.
-     * 
-     * @return the listenable future
-     */         
-    public ListenableFuture<DriveItem> allPhotos() { 
-		
-		java.util.Map<String, Object> map = new java.util.HashMap<String, Object>();
-        
-
-		Request request = getResolver().createRequest();
-		request.setVerb(HttpVerb.GET);
-		String parameters = getFunctionParameters(map);
-        
-		        
-		request.getUrl().appendPathComponent("microsoft.graph.allPhotos(" + parameters + ")");   
-        
-		
-		ListenableFuture<OrcResponse> future = oDataExecute(request);
-		   
-        
-		return transformToEntityListenableFuture(transformToStringListenableFuture(future), DriveItem.class, getResolver());
-        
-        
-   }
-    
     
     
      /**
