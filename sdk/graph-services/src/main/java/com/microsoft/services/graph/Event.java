@@ -26,69 +26,69 @@ public class Event extends OutlookItem {
         setODataType("#microsoft.graph.event");
     }
             
-    private String OriginalStartTimeZone;
+    private String originalStartTimeZone;
      
     /**
-    * Gets the Original Start Time Zone.
+    * Gets the original Start Time Zone.
     *
     * @return the String
     */
     public String getOriginalStartTimeZone() {
-        return this.OriginalStartTimeZone; 
+        return this.originalStartTimeZone; 
     }
 
     /**
-    * Sets the Original Start Time Zone.
+    * Sets the original Start Time Zone.
     *
     * @param value the String
     */
     public void setOriginalStartTimeZone(String value) { 
-        this.OriginalStartTimeZone = value; 
-        valueChanged("OriginalStartTimeZone", value);
+        this.originalStartTimeZone = value; 
+        valueChanged("originalStartTimeZone", value);
 
     }
             
-    private String OriginalEndTimeZone;
+    private String originalEndTimeZone;
      
     /**
-    * Gets the Original End Time Zone.
+    * Gets the original End Time Zone.
     *
     * @return the String
     */
     public String getOriginalEndTimeZone() {
-        return this.OriginalEndTimeZone; 
+        return this.originalEndTimeZone; 
     }
 
     /**
-    * Sets the Original End Time Zone.
+    * Sets the original End Time Zone.
     *
     * @param value the String
     */
     public void setOriginalEndTimeZone(String value) { 
-        this.OriginalEndTimeZone = value; 
-        valueChanged("OriginalEndTimeZone", value);
+        this.originalEndTimeZone = value; 
+        valueChanged("originalEndTimeZone", value);
 
     }
             
-    private ResponseStatus ResponseStatus;
+    private ResponseStatus responseStatus;
      
     /**
-    * Gets the Response Status.
+    * Gets the response Status.
     *
     * @return the ResponseStatus
     */
     public ResponseStatus getResponseStatus() {
-        return this.ResponseStatus; 
+        return this.responseStatus; 
     }
 
     /**
-    * Sets the Response Status.
+    * Sets the response Status.
     *
     * @param value the ResponseStatus
     */
     public void setResponseStatus(ResponseStatus value) { 
-        this.ResponseStatus = value; 
-        valueChanged("ResponseStatus", value);
+        this.responseStatus = value; 
+        valueChanged("responseStatus", value);
 
     }
             
@@ -114,584 +114,584 @@ public class Event extends OutlookItem {
 
     }
             
-    private Integer ReminderMinutesBeforeStart;
+    private Integer reminderMinutesBeforeStart;
      
     /**
-    * Gets the Reminder Minutes Before Start.
+    * Gets the reminder Minutes Before Start.
     *
     * @return the Integer
     */
     public Integer getReminderMinutesBeforeStart() {
-        return this.ReminderMinutesBeforeStart; 
+        return this.reminderMinutesBeforeStart; 
     }
 
     /**
-    * Sets the Reminder Minutes Before Start.
+    * Sets the reminder Minutes Before Start.
     *
     * @param value the Integer
     */
     public void setReminderMinutesBeforeStart(Integer value) { 
-        this.ReminderMinutesBeforeStart = value; 
-        valueChanged("ReminderMinutesBeforeStart", value);
+        this.reminderMinutesBeforeStart = value; 
+        valueChanged("reminderMinutesBeforeStart", value);
 
     }
             
-    private Boolean IsReminderOn;
+    private Boolean isReminderOn;
      
     /**
-    * Gets the Is Reminder On.
+    * Gets the is Reminder On.
     *
     * @return the Boolean
     */
     public Boolean getIsReminderOn() {
-        return this.IsReminderOn; 
+        return this.isReminderOn; 
     }
 
     /**
-    * Sets the Is Reminder On.
+    * Sets the is Reminder On.
     *
     * @param value the Boolean
     */
     public void setIsReminderOn(Boolean value) { 
-        this.IsReminderOn = value; 
-        valueChanged("IsReminderOn", value);
+        this.isReminderOn = value; 
+        valueChanged("isReminderOn", value);
 
     }
             
-    private Boolean HasAttachments;
+    private Boolean hasAttachments;
      
     /**
-    * Gets the Has Attachments.
+    * Gets the has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.hasAttachments; 
     }
 
     /**
-    * Sets the Has Attachments.
+    * Sets the has Attachments.
     *
     * @param value the Boolean
     */
     public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
-        valueChanged("HasAttachments", value);
+        this.hasAttachments = value; 
+        valueChanged("hasAttachments", value);
 
     }
             
-    private String Subject;
+    private String subject;
      
     /**
-    * Gets the Subject.
+    * Gets the subject.
     *
     * @return the String
     */
     public String getSubject() {
-        return this.Subject; 
+        return this.subject; 
     }
 
     /**
-    * Sets the Subject.
+    * Sets the subject.
     *
     * @param value the String
     */
     public void setSubject(String value) { 
-        this.Subject = value; 
-        valueChanged("Subject", value);
+        this.subject = value; 
+        valueChanged("subject", value);
 
     }
             
-    private ItemBody Body;
+    private ItemBody body;
      
     /**
-    * Gets the Body.
+    * Gets the body.
     *
     * @return the ItemBody
     */
     public ItemBody getBody() {
-        return this.Body; 
+        return this.body; 
     }
 
     /**
-    * Sets the Body.
+    * Sets the body.
     *
     * @param value the ItemBody
     */
     public void setBody(ItemBody value) { 
-        this.Body = value; 
-        valueChanged("Body", value);
+        this.body = value; 
+        valueChanged("body", value);
 
     }
             
-    private String BodyPreview;
+    private String bodyPreview;
      
     /**
-    * Gets the Body Preview.
+    * Gets the body Preview.
     *
     * @return the String
     */
     public String getBodyPreview() {
-        return this.BodyPreview; 
+        return this.bodyPreview; 
     }
 
     /**
-    * Sets the Body Preview.
+    * Sets the body Preview.
     *
     * @param value the String
     */
     public void setBodyPreview(String value) { 
-        this.BodyPreview = value; 
-        valueChanged("BodyPreview", value);
+        this.bodyPreview = value; 
+        valueChanged("bodyPreview", value);
 
     }
             
-    private Importance Importance;
+    private Importance importance;
      
     /**
-    * Gets the Importance.
+    * Gets the importance.
     *
     * @return the Importance
     */
     public Importance getImportance() {
-        return this.Importance; 
+        return this.importance; 
     }
 
     /**
-    * Sets the Importance.
+    * Sets the importance.
     *
     * @param value the Importance
     */
     public void setImportance(Importance value) { 
-        this.Importance = value; 
-        valueChanged("Importance", value);
+        this.importance = value; 
+        valueChanged("importance", value);
 
     }
             
-    private Sensitivity Sensitivity;
+    private Sensitivity sensitivity;
      
     /**
-    * Gets the Sensitivity.
+    * Gets the sensitivity.
     *
     * @return the Sensitivity
     */
     public Sensitivity getSensitivity() {
-        return this.Sensitivity; 
+        return this.sensitivity; 
     }
 
     /**
-    * Sets the Sensitivity.
+    * Sets the sensitivity.
     *
     * @param value the Sensitivity
     */
     public void setSensitivity(Sensitivity value) { 
-        this.Sensitivity = value; 
-        valueChanged("Sensitivity", value);
+        this.sensitivity = value; 
+        valueChanged("sensitivity", value);
 
     }
             
-    private DateTimeTimeZone Start;
+    private DateTimeTimeZone start;
      
     /**
-    * Gets the Start.
+    * Gets the start.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getStart() {
-        return this.Start; 
+        return this.start; 
     }
 
     /**
-    * Sets the Start.
+    * Sets the start.
     *
     * @param value the DateTimeTimeZone
     */
     public void setStart(DateTimeTimeZone value) { 
-        this.Start = value; 
-        valueChanged("Start", value);
+        this.start = value; 
+        valueChanged("start", value);
 
     }
             
-    private java.util.Calendar OriginalStart;
+    private java.util.Calendar originalStart;
      
     /**
-    * Gets the Original Start.
+    * Gets the original Start.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getOriginalStart() {
-        return this.OriginalStart; 
+        return this.originalStart; 
     }
 
     /**
-    * Sets the Original Start.
+    * Sets the original Start.
     *
     * @param value the java.util.Calendar
     */
     public void setOriginalStart(java.util.Calendar value) { 
-        this.OriginalStart = value; 
-        valueChanged("OriginalStart", value);
+        this.originalStart = value; 
+        valueChanged("originalStart", value);
 
     }
             
-    private DateTimeTimeZone End;
+    private DateTimeTimeZone end;
      
     /**
-    * Gets the End.
+    * Gets the end.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getEnd() {
-        return this.End; 
+        return this.end; 
     }
 
     /**
-    * Sets the End.
+    * Sets the end.
     *
     * @param value the DateTimeTimeZone
     */
     public void setEnd(DateTimeTimeZone value) { 
-        this.End = value; 
-        valueChanged("End", value);
+        this.end = value; 
+        valueChanged("end", value);
 
     }
             
-    private Location Location;
+    private Location location;
      
     /**
-    * Gets the Location.
+    * Gets the location.
     *
     * @return the Location
     */
     public Location getLocation() {
-        return this.Location; 
+        return this.location; 
     }
 
     /**
-    * Sets the Location.
+    * Sets the location.
     *
     * @param value the Location
     */
     public void setLocation(Location value) { 
-        this.Location = value; 
-        valueChanged("Location", value);
+        this.location = value; 
+        valueChanged("location", value);
 
     }
             
-    private Boolean IsAllDay;
+    private Boolean isAllDay;
      
     /**
-    * Gets the Is All Day.
+    * Gets the is All Day.
     *
     * @return the Boolean
     */
     public Boolean getIsAllDay() {
-        return this.IsAllDay; 
+        return this.isAllDay; 
     }
 
     /**
-    * Sets the Is All Day.
+    * Sets the is All Day.
     *
     * @param value the Boolean
     */
     public void setIsAllDay(Boolean value) { 
-        this.IsAllDay = value; 
-        valueChanged("IsAllDay", value);
+        this.isAllDay = value; 
+        valueChanged("isAllDay", value);
 
     }
             
-    private Boolean IsCancelled;
+    private Boolean isCancelled;
      
     /**
-    * Gets the Is Cancelled.
+    * Gets the is Cancelled.
     *
     * @return the Boolean
     */
     public Boolean getIsCancelled() {
-        return this.IsCancelled; 
+        return this.isCancelled; 
     }
 
     /**
-    * Sets the Is Cancelled.
+    * Sets the is Cancelled.
     *
     * @param value the Boolean
     */
     public void setIsCancelled(Boolean value) { 
-        this.IsCancelled = value; 
-        valueChanged("IsCancelled", value);
+        this.isCancelled = value; 
+        valueChanged("isCancelled", value);
 
     }
             
-    private Boolean IsOrganizer;
+    private Boolean isOrganizer;
      
     /**
-    * Gets the Is Organizer.
+    * Gets the is Organizer.
     *
     * @return the Boolean
     */
     public Boolean getIsOrganizer() {
-        return this.IsOrganizer; 
+        return this.isOrganizer; 
     }
 
     /**
-    * Sets the Is Organizer.
+    * Sets the is Organizer.
     *
     * @param value the Boolean
     */
     public void setIsOrganizer(Boolean value) { 
-        this.IsOrganizer = value; 
-        valueChanged("IsOrganizer", value);
+        this.isOrganizer = value; 
+        valueChanged("isOrganizer", value);
 
     }
             
-    private PatternedRecurrence Recurrence;
+    private PatternedRecurrence recurrence;
      
     /**
-    * Gets the Recurrence.
+    * Gets the recurrence.
     *
     * @return the PatternedRecurrence
     */
     public PatternedRecurrence getRecurrence() {
-        return this.Recurrence; 
+        return this.recurrence; 
     }
 
     /**
-    * Sets the Recurrence.
+    * Sets the recurrence.
     *
     * @param value the PatternedRecurrence
     */
     public void setRecurrence(PatternedRecurrence value) { 
-        this.Recurrence = value; 
-        valueChanged("Recurrence", value);
+        this.recurrence = value; 
+        valueChanged("recurrence", value);
 
     }
             
-    private Boolean ResponseRequested;
+    private Boolean responseRequested;
      
     /**
-    * Gets the Response Requested.
+    * Gets the response Requested.
     *
     * @return the Boolean
     */
     public Boolean getResponseRequested() {
-        return this.ResponseRequested; 
+        return this.responseRequested; 
     }
 
     /**
-    * Sets the Response Requested.
+    * Sets the response Requested.
     *
     * @param value the Boolean
     */
     public void setResponseRequested(Boolean value) { 
-        this.ResponseRequested = value; 
-        valueChanged("ResponseRequested", value);
+        this.responseRequested = value; 
+        valueChanged("responseRequested", value);
 
     }
             
-    private String SeriesMasterId;
+    private String seriesMasterId;
      
     /**
-    * Gets the Series Master Id.
+    * Gets the series Master Id.
     *
     * @return the String
     */
     public String getSeriesMasterId() {
-        return this.SeriesMasterId; 
+        return this.seriesMasterId; 
     }
 
     /**
-    * Sets the Series Master Id.
+    * Sets the series Master Id.
     *
     * @param value the String
     */
     public void setSeriesMasterId(String value) { 
-        this.SeriesMasterId = value; 
-        valueChanged("SeriesMasterId", value);
+        this.seriesMasterId = value; 
+        valueChanged("seriesMasterId", value);
 
     }
             
-    private FreeBusyStatus ShowAs;
+    private FreeBusyStatus showAs;
      
     /**
-    * Gets the Show As.
+    * Gets the show As.
     *
     * @return the FreeBusyStatus
     */
     public FreeBusyStatus getShowAs() {
-        return this.ShowAs; 
+        return this.showAs; 
     }
 
     /**
-    * Sets the Show As.
+    * Sets the show As.
     *
     * @param value the FreeBusyStatus
     */
     public void setShowAs(FreeBusyStatus value) { 
-        this.ShowAs = value; 
-        valueChanged("ShowAs", value);
+        this.showAs = value; 
+        valueChanged("showAs", value);
 
     }
             
-    private EventType Type;
+    private EventType type;
      
     /**
-    * Gets the Type.
+    * Gets the type.
     *
     * @return the EventType
     */
     public EventType getType() {
-        return this.Type; 
+        return this.type; 
     }
 
     /**
-    * Sets the Type.
+    * Sets the type.
     *
     * @param value the EventType
     */
     public void setType(EventType value) { 
-        this.Type = value; 
-        valueChanged("Type", value);
+        this.type = value; 
+        valueChanged("type", value);
 
     }
     
         
-    private java.util.List<Attendee> Attendees = null;
+    private java.util.List<Attendee> attendees = null;
     
     
      
     /**
-    * Gets the Attendees.
+    * Gets the attendees.
     *
     * @return the java.util.List<Attendee>
     */
     public java.util.List<Attendee> getAttendees() {
-        return this.Attendees; 
+        return this.attendees; 
     }
 
     /**
-    * Sets the Attendees.
+    * Sets the attendees.
     *
     * @param value the java.util.List<Attendee>
     */
     public void setAttendees(java.util.List<Attendee> value) { 
-        this.Attendees = value; 
-        valueChanged("Attendees", value);
+        this.attendees = value; 
+        valueChanged("attendees", value);
 
     }
             
-    private Recipient Organizer;
+    private Recipient organizer;
      
     /**
-    * Gets the Organizer.
+    * Gets the organizer.
     *
     * @return the Recipient
     */
     public Recipient getOrganizer() {
-        return this.Organizer; 
+        return this.organizer; 
     }
 
     /**
-    * Sets the Organizer.
+    * Sets the organizer.
     *
     * @param value the Recipient
     */
     public void setOrganizer(Recipient value) { 
-        this.Organizer = value; 
-        valueChanged("Organizer", value);
+        this.organizer = value; 
+        valueChanged("organizer", value);
 
     }
             
-    private String WebLink;
+    private String webLink;
      
     /**
-    * Gets the Web Link.
+    * Gets the web Link.
     *
     * @return the String
     */
     public String getWebLink() {
-        return this.WebLink; 
+        return this.webLink; 
     }
 
     /**
-    * Sets the Web Link.
+    * Sets the web Link.
     *
     * @param value the String
     */
     public void setWebLink(String value) { 
-        this.WebLink = value; 
-        valueChanged("WebLink", value);
+        this.webLink = value; 
+        valueChanged("webLink", value);
 
     }
             
-    private Calendar Calendar;
+    private Calendar calendar;
      
     /**
-    * Gets the Calendar.
+    * Gets the calendar.
     *
     * @return the Calendar
     */
     public Calendar getCalendar() {
-        return this.Calendar; 
+        return this.calendar; 
     }
 
     /**
-    * Sets the Calendar.
+    * Sets the calendar.
     *
     * @param value the Calendar
     */
     public void setCalendar(Calendar value) { 
-        this.Calendar = value; 
-        valueChanged("Calendar", value);
+        this.calendar = value; 
+        valueChanged("calendar", value);
 
     }
     
         
-    private java.util.List<Event> Instances = null;
+    private java.util.List<Event> instances = null;
     
     
      
     /**
-    * Gets the Instances.
+    * Gets the instances.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getInstances() {
-        return this.Instances; 
+        return this.instances; 
     }
 
     /**
-    * Sets the Instances.
+    * Sets the instances.
     *
     * @param value the java.util.List<Event>
     */
     public void setInstances(java.util.List<Event> value) { 
-        this.Instances = value; 
-        valueChanged("Instances", value);
+        this.instances = value; 
+        valueChanged("instances", value);
 
     }
     
         
-    private java.util.List<Attachment> Attachments = null;
+    private java.util.List<Attachment> attachments = null;
     
     
      
     /**
-    * Gets the Attachments.
+    * Gets the attachments.
     *
     * @return the java.util.List<Attachment>
     */
     public java.util.List<Attachment> getAttachments() {
-        return this.Attachments; 
+        return this.attachments; 
     }
 
     /**
-    * Sets the Attachments.
+    * Sets the attachments.
     *
     * @param value the java.util.List<Attachment>
     */
     public void setAttachments(java.util.List<Attachment> value) { 
-        this.Attachments = value; 
-        valueChanged("Attachments", value);
+        this.attachments = value; 
+        valueChanged("attachments", value);
 
     }
 }

@@ -26,141 +26,141 @@ public class Conversation extends Entity {
         setODataType("#microsoft.graph.conversation");
     }
             
-    private String Topic;
+    private String topic;
      
     /**
-    * Gets the Topic.
+    * Gets the topic.
     *
     * @return the String
     */
     public String getTopic() {
-        return this.Topic; 
+        return this.topic; 
     }
 
     /**
-    * Sets the Topic.
+    * Sets the topic.
     *
     * @param value the String
     */
     public void setTopic(String value) { 
-        this.Topic = value; 
-        valueChanged("Topic", value);
+        this.topic = value; 
+        valueChanged("topic", value);
 
     }
             
-    private Boolean HasAttachments;
+    private Boolean hasAttachments;
      
     /**
-    * Gets the Has Attachments.
+    * Gets the has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.hasAttachments; 
     }
 
     /**
-    * Sets the Has Attachments.
+    * Sets the has Attachments.
     *
     * @param value the Boolean
     */
     public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
-        valueChanged("HasAttachments", value);
+        this.hasAttachments = value; 
+        valueChanged("hasAttachments", value);
 
     }
             
-    private java.util.Calendar LastDeliveredDateTime;
+    private java.util.Calendar lastDeliveredDateTime;
      
     /**
-    * Gets the Last Delivered Date Time.
+    * Gets the last Delivered Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getLastDeliveredDateTime() {
-        return this.LastDeliveredDateTime; 
+        return this.lastDeliveredDateTime; 
     }
 
     /**
-    * Sets the Last Delivered Date Time.
+    * Sets the last Delivered Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setLastDeliveredDateTime(java.util.Calendar value) { 
-        this.LastDeliveredDateTime = value; 
-        valueChanged("LastDeliveredDateTime", value);
+        this.lastDeliveredDateTime = value; 
+        valueChanged("lastDeliveredDateTime", value);
 
     }
     
         
-    private java.util.List<String> UniqueSenders = null;
+    private java.util.List<String> uniqueSenders = null;
     
     
      
     /**
-    * Gets the Unique Senders.
+    * Gets the unique Senders.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getUniqueSenders() {
-        return this.UniqueSenders; 
+        return this.uniqueSenders; 
     }
 
     /**
-    * Sets the Unique Senders.
+    * Sets the unique Senders.
     *
     * @param value the java.util.List<String>
     */
     public void setUniqueSenders(java.util.List<String> value) { 
-        this.UniqueSenders = value; 
-        valueChanged("UniqueSenders", value);
+        this.uniqueSenders = value; 
+        valueChanged("uniqueSenders", value);
 
     }
             
-    private String Preview;
+    private String preview;
      
     /**
-    * Gets the Preview.
+    * Gets the preview.
     *
     * @return the String
     */
     public String getPreview() {
-        return this.Preview; 
+        return this.preview; 
     }
 
     /**
-    * Sets the Preview.
+    * Sets the preview.
     *
     * @param value the String
     */
     public void setPreview(String value) { 
-        this.Preview = value; 
-        valueChanged("Preview", value);
+        this.preview = value; 
+        valueChanged("preview", value);
 
     }
     
         
-    private java.util.List<ConversationThread> Threads = null;
+    private java.util.List<ConversationThread> threads = null;
     
     
      
     /**
-    * Gets the Threads.
+    * Gets the threads.
     *
     * @return the java.util.List<ConversationThread>
     */
     public java.util.List<ConversationThread> getThreads() {
-        return this.Threads; 
+        return this.threads; 
     }
 
     /**
-    * Sets the Threads.
+    * Sets the threads.
     *
     * @param value the java.util.List<ConversationThread>
     */
     public void setThreads(java.util.List<ConversationThread> value) { 
-        this.Threads = value; 
-        valueChanged("Threads", value);
+        this.threads = value; 
+        valueChanged("threads", value);
 
     }
 }

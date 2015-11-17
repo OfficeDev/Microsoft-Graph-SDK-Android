@@ -26,766 +26,744 @@ public class Contact extends OutlookItem {
         setODataType("#microsoft.graph.contact");
     }
             
-    private String ParentFolderId;
+    private String parentFolderId;
      
     /**
-    * Gets the Parent Folder Id.
+    * Gets the parent Folder Id.
     *
     * @return the String
     */
     public String getParentFolderId() {
-        return this.ParentFolderId; 
+        return this.parentFolderId; 
     }
 
     /**
-    * Sets the Parent Folder Id.
+    * Sets the parent Folder Id.
     *
     * @param value the String
     */
     public void setParentFolderId(String value) { 
-        this.ParentFolderId = value; 
-        valueChanged("ParentFolderId", value);
+        this.parentFolderId = value; 
+        valueChanged("parentFolderId", value);
 
     }
             
-    private java.util.Calendar Birthday;
+    private java.util.Calendar birthday;
      
     /**
-    * Gets the Birthday.
+    * Gets the birthday.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getBirthday() {
-        return this.Birthday; 
+        return this.birthday; 
     }
 
     /**
-    * Sets the Birthday.
+    * Sets the birthday.
     *
     * @param value the java.util.Calendar
     */
     public void setBirthday(java.util.Calendar value) { 
-        this.Birthday = value; 
-        valueChanged("Birthday", value);
+        this.birthday = value; 
+        valueChanged("birthday", value);
 
     }
             
-    private String FileAs;
+    private String fileAs;
      
     /**
-    * Gets the File As.
+    * Gets the file As.
     *
     * @return the String
     */
     public String getFileAs() {
-        return this.FileAs; 
+        return this.fileAs; 
     }
 
     /**
-    * Sets the File As.
+    * Sets the file As.
     *
     * @param value the String
     */
     public void setFileAs(String value) { 
-        this.FileAs = value; 
-        valueChanged("FileAs", value);
+        this.fileAs = value; 
+        valueChanged("fileAs", value);
 
     }
             
-    private String DisplayName;
+    private String displayName;
      
     /**
-    * Gets the Display Name.
+    * Gets the display Name.
     *
     * @return the String
     */
     public String getDisplayName() {
-        return this.DisplayName; 
+        return this.displayName; 
     }
 
     /**
-    * Sets the Display Name.
+    * Sets the display Name.
     *
     * @param value the String
     */
     public void setDisplayName(String value) { 
-        this.DisplayName = value; 
-        valueChanged("DisplayName", value);
+        this.displayName = value; 
+        valueChanged("displayName", value);
 
     }
             
-    private String GivenName;
+    private String givenName;
      
     /**
-    * Gets the Given Name.
+    * Gets the given Name.
     *
     * @return the String
     */
     public String getGivenName() {
-        return this.GivenName; 
+        return this.givenName; 
     }
 
     /**
-    * Sets the Given Name.
+    * Sets the given Name.
     *
     * @param value the String
     */
     public void setGivenName(String value) { 
-        this.GivenName = value; 
-        valueChanged("GivenName", value);
+        this.givenName = value; 
+        valueChanged("givenName", value);
 
     }
             
-    private String Initials;
+    private String initials;
      
     /**
-    * Gets the Initials.
+    * Gets the initials.
     *
     * @return the String
     */
     public String getInitials() {
-        return this.Initials; 
+        return this.initials; 
     }
 
     /**
-    * Sets the Initials.
+    * Sets the initials.
     *
     * @param value the String
     */
     public void setInitials(String value) { 
-        this.Initials = value; 
-        valueChanged("Initials", value);
+        this.initials = value; 
+        valueChanged("initials", value);
 
     }
             
-    private String MiddleName;
+    private String middleName;
      
     /**
-    * Gets the Middle Name.
+    * Gets the middle Name.
     *
     * @return the String
     */
     public String getMiddleName() {
-        return this.MiddleName; 
+        return this.middleName; 
     }
 
     /**
-    * Sets the Middle Name.
+    * Sets the middle Name.
     *
     * @param value the String
     */
     public void setMiddleName(String value) { 
-        this.MiddleName = value; 
-        valueChanged("MiddleName", value);
+        this.middleName = value; 
+        valueChanged("middleName", value);
 
     }
             
-    private String NickName;
+    private String nickName;
      
     /**
-    * Gets the Nick Name.
+    * Gets the nick Name.
     *
     * @return the String
     */
     public String getNickName() {
-        return this.NickName; 
+        return this.nickName; 
     }
 
     /**
-    * Sets the Nick Name.
+    * Sets the nick Name.
     *
     * @param value the String
     */
     public void setNickName(String value) { 
-        this.NickName = value; 
-        valueChanged("NickName", value);
+        this.nickName = value; 
+        valueChanged("nickName", value);
 
     }
             
-    private String Surname;
+    private String surname;
      
     /**
-    * Gets the Surname.
+    * Gets the surname.
     *
     * @return the String
     */
     public String getSurname() {
-        return this.Surname; 
+        return this.surname; 
     }
 
     /**
-    * Sets the Surname.
+    * Sets the surname.
     *
     * @param value the String
     */
     public void setSurname(String value) { 
-        this.Surname = value; 
-        valueChanged("Surname", value);
+        this.surname = value; 
+        valueChanged("surname", value);
 
     }
             
-    private String Title;
+    private String title;
      
     /**
-    * Gets the Title.
+    * Gets the title.
     *
     * @return the String
     */
     public String getTitle() {
-        return this.Title; 
+        return this.title; 
     }
 
     /**
-    * Sets the Title.
+    * Sets the title.
     *
     * @param value the String
     */
     public void setTitle(String value) { 
-        this.Title = value; 
-        valueChanged("Title", value);
+        this.title = value; 
+        valueChanged("title", value);
 
     }
             
-    private String YomiGivenName;
+    private String yomiGivenName;
      
     /**
-    * Gets the Yomi Given Name.
+    * Gets the yomi Given Name.
     *
     * @return the String
     */
     public String getYomiGivenName() {
-        return this.YomiGivenName; 
+        return this.yomiGivenName; 
     }
 
     /**
-    * Sets the Yomi Given Name.
+    * Sets the yomi Given Name.
     *
     * @param value the String
     */
     public void setYomiGivenName(String value) { 
-        this.YomiGivenName = value; 
-        valueChanged("YomiGivenName", value);
+        this.yomiGivenName = value; 
+        valueChanged("yomiGivenName", value);
 
     }
             
-    private String YomiSurname;
+    private String yomiSurname;
      
     /**
-    * Gets the Yomi Surname.
+    * Gets the yomi Surname.
     *
     * @return the String
     */
     public String getYomiSurname() {
-        return this.YomiSurname; 
+        return this.yomiSurname; 
     }
 
     /**
-    * Sets the Yomi Surname.
+    * Sets the yomi Surname.
     *
     * @param value the String
     */
     public void setYomiSurname(String value) { 
-        this.YomiSurname = value; 
-        valueChanged("YomiSurname", value);
+        this.yomiSurname = value; 
+        valueChanged("yomiSurname", value);
 
     }
             
-    private String YomiCompanyName;
+    private String yomiCompanyName;
      
     /**
-    * Gets the Yomi Company Name.
+    * Gets the yomi Company Name.
     *
     * @return the String
     */
     public String getYomiCompanyName() {
-        return this.YomiCompanyName; 
+        return this.yomiCompanyName; 
     }
 
     /**
-    * Sets the Yomi Company Name.
+    * Sets the yomi Company Name.
     *
     * @param value the String
     */
     public void setYomiCompanyName(String value) { 
-        this.YomiCompanyName = value; 
-        valueChanged("YomiCompanyName", value);
+        this.yomiCompanyName = value; 
+        valueChanged("yomiCompanyName", value);
 
     }
             
-    private String Generation;
+    private String generation;
      
     /**
-    * Gets the Generation.
+    * Gets the generation.
     *
     * @return the String
     */
     public String getGeneration() {
-        return this.Generation; 
+        return this.generation; 
     }
 
     /**
-    * Sets the Generation.
+    * Sets the generation.
     *
     * @param value the String
     */
     public void setGeneration(String value) { 
-        this.Generation = value; 
-        valueChanged("Generation", value);
+        this.generation = value; 
+        valueChanged("generation", value);
 
     }
     
         
-    private java.util.List<EmailAddress> EmailAddresses = null;
+    private java.util.List<EmailAddress> emailAddresses = null;
     
     
      
     /**
-    * Gets the Email Addresses.
+    * Gets the email Addresses.
     *
     * @return the java.util.List<EmailAddress>
     */
     public java.util.List<EmailAddress> getEmailAddresses() {
-        return this.EmailAddresses; 
+        return this.emailAddresses; 
     }
 
     /**
-    * Sets the Email Addresses.
+    * Sets the email Addresses.
     *
     * @param value the java.util.List<EmailAddress>
     */
     public void setEmailAddresses(java.util.List<EmailAddress> value) { 
-        this.EmailAddresses = value; 
-        valueChanged("EmailAddresses", value);
+        this.emailAddresses = value; 
+        valueChanged("emailAddresses", value);
 
     }
     
         
-    private java.util.List<String> ImAddresses = null;
+    private java.util.List<String> imAddresses = null;
     
     
      
     /**
-    * Gets the Im Addresses.
+    * Gets the im Addresses.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getImAddresses() {
-        return this.ImAddresses; 
+        return this.imAddresses; 
     }
 
     /**
-    * Sets the Im Addresses.
+    * Sets the im Addresses.
     *
     * @param value the java.util.List<String>
     */
     public void setImAddresses(java.util.List<String> value) { 
-        this.ImAddresses = value; 
-        valueChanged("ImAddresses", value);
+        this.imAddresses = value; 
+        valueChanged("imAddresses", value);
 
     }
             
-    private String JobTitle;
+    private String jobTitle;
      
     /**
-    * Gets the Job Title.
+    * Gets the job Title.
     *
     * @return the String
     */
     public String getJobTitle() {
-        return this.JobTitle; 
+        return this.jobTitle; 
     }
 
     /**
-    * Sets the Job Title.
+    * Sets the job Title.
     *
     * @param value the String
     */
     public void setJobTitle(String value) { 
-        this.JobTitle = value; 
-        valueChanged("JobTitle", value);
+        this.jobTitle = value; 
+        valueChanged("jobTitle", value);
 
     }
             
-    private String CompanyName;
+    private String companyName;
      
     /**
-    * Gets the Company Name.
+    * Gets the company Name.
     *
     * @return the String
     */
     public String getCompanyName() {
-        return this.CompanyName; 
+        return this.companyName; 
     }
 
     /**
-    * Sets the Company Name.
+    * Sets the company Name.
     *
     * @param value the String
     */
     public void setCompanyName(String value) { 
-        this.CompanyName = value; 
-        valueChanged("CompanyName", value);
+        this.companyName = value; 
+        valueChanged("companyName", value);
 
     }
             
-    private String Department;
+    private String department;
      
     /**
-    * Gets the Department.
+    * Gets the department.
     *
     * @return the String
     */
     public String getDepartment() {
-        return this.Department; 
+        return this.department; 
     }
 
     /**
-    * Sets the Department.
+    * Sets the department.
     *
     * @param value the String
     */
     public void setDepartment(String value) { 
-        this.Department = value; 
-        valueChanged("Department", value);
+        this.department = value; 
+        valueChanged("department", value);
 
     }
             
-    private String OfficeLocation;
+    private String officeLocation;
      
     /**
-    * Gets the Office Location.
+    * Gets the office Location.
     *
     * @return the String
     */
     public String getOfficeLocation() {
-        return this.OfficeLocation; 
+        return this.officeLocation; 
     }
 
     /**
-    * Sets the Office Location.
+    * Sets the office Location.
     *
     * @param value the String
     */
     public void setOfficeLocation(String value) { 
-        this.OfficeLocation = value; 
-        valueChanged("OfficeLocation", value);
+        this.officeLocation = value; 
+        valueChanged("officeLocation", value);
 
     }
             
-    private String Profession;
+    private String profession;
      
     /**
-    * Gets the Profession.
+    * Gets the profession.
     *
     * @return the String
     */
     public String getProfession() {
-        return this.Profession; 
+        return this.profession; 
     }
 
     /**
-    * Sets the Profession.
+    * Sets the profession.
     *
     * @param value the String
     */
     public void setProfession(String value) { 
-        this.Profession = value; 
-        valueChanged("Profession", value);
+        this.profession = value; 
+        valueChanged("profession", value);
 
     }
             
-    private String BusinessHomePage;
+    private String businessHomePage;
      
     /**
-    * Gets the Business Home Page.
+    * Gets the business Home Page.
     *
     * @return the String
     */
     public String getBusinessHomePage() {
-        return this.BusinessHomePage; 
+        return this.businessHomePage; 
     }
 
     /**
-    * Sets the Business Home Page.
+    * Sets the business Home Page.
     *
     * @param value the String
     */
     public void setBusinessHomePage(String value) { 
-        this.BusinessHomePage = value; 
-        valueChanged("BusinessHomePage", value);
+        this.businessHomePage = value; 
+        valueChanged("businessHomePage", value);
 
     }
             
-    private String AssistantName;
+    private String assistantName;
      
     /**
-    * Gets the Assistant Name.
+    * Gets the assistant Name.
     *
     * @return the String
     */
     public String getAssistantName() {
-        return this.AssistantName; 
+        return this.assistantName; 
     }
 
     /**
-    * Sets the Assistant Name.
+    * Sets the assistant Name.
     *
     * @param value the String
     */
     public void setAssistantName(String value) { 
-        this.AssistantName = value; 
-        valueChanged("AssistantName", value);
+        this.assistantName = value; 
+        valueChanged("assistantName", value);
 
     }
             
-    private String Manager;
+    private String manager;
      
     /**
-    * Gets the Manager.
+    * Gets the manager.
     *
     * @return the String
     */
     public String getManager() {
-        return this.Manager; 
+        return this.manager; 
     }
 
     /**
-    * Sets the Manager.
+    * Sets the manager.
     *
     * @param value the String
     */
     public void setManager(String value) { 
-        this.Manager = value; 
-        valueChanged("Manager", value);
+        this.manager = value; 
+        valueChanged("manager", value);
 
     }
     
         
-    private java.util.List<String> HomePhones = null;
+    private java.util.List<String> homePhones = null;
     
     
      
     /**
-    * Gets the Home Phones.
+    * Gets the home Phones.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getHomePhones() {
-        return this.HomePhones; 
+        return this.homePhones; 
     }
 
     /**
-    * Sets the Home Phones.
+    * Sets the home Phones.
     *
     * @param value the java.util.List<String>
     */
     public void setHomePhones(java.util.List<String> value) { 
-        this.HomePhones = value; 
-        valueChanged("HomePhones", value);
-
-    }
-            
-    private String MobilePhone1;
-     
-    /**
-    * Gets the Mobile Phone1.
-    *
-    * @return the String
-    */
-    public String getMobilePhone1() {
-        return this.MobilePhone1; 
-    }
-
-    /**
-    * Sets the Mobile Phone1.
-    *
-    * @param value the String
-    */
-    public void setMobilePhone1(String value) { 
-        this.MobilePhone1 = value; 
-        valueChanged("MobilePhone1", value);
+        this.homePhones = value; 
+        valueChanged("homePhones", value);
 
     }
     
         
-    private java.util.List<String> BusinessPhones = null;
+    private java.util.List<String> businessPhones = null;
     
     
      
     /**
-    * Gets the Business Phones.
+    * Gets the business Phones.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getBusinessPhones() {
-        return this.BusinessPhones; 
+        return this.businessPhones; 
     }
 
     /**
-    * Sets the Business Phones.
+    * Sets the business Phones.
     *
     * @param value the java.util.List<String>
     */
     public void setBusinessPhones(java.util.List<String> value) { 
-        this.BusinessPhones = value; 
-        valueChanged("BusinessPhones", value);
+        this.businessPhones = value; 
+        valueChanged("businessPhones", value);
 
     }
             
-    private PhysicalAddress HomeAddress;
+    private PhysicalAddress homeAddress;
      
     /**
-    * Gets the Home Address.
+    * Gets the home Address.
     *
     * @return the PhysicalAddress
     */
     public PhysicalAddress getHomeAddress() {
-        return this.HomeAddress; 
+        return this.homeAddress; 
     }
 
     /**
-    * Sets the Home Address.
+    * Sets the home Address.
     *
     * @param value the PhysicalAddress
     */
     public void setHomeAddress(PhysicalAddress value) { 
-        this.HomeAddress = value; 
-        valueChanged("HomeAddress", value);
+        this.homeAddress = value; 
+        valueChanged("homeAddress", value);
 
     }
             
-    private PhysicalAddress BusinessAddress;
+    private PhysicalAddress businessAddress;
      
     /**
-    * Gets the Business Address.
+    * Gets the business Address.
     *
     * @return the PhysicalAddress
     */
     public PhysicalAddress getBusinessAddress() {
-        return this.BusinessAddress; 
+        return this.businessAddress; 
     }
 
     /**
-    * Sets the Business Address.
+    * Sets the business Address.
     *
     * @param value the PhysicalAddress
     */
     public void setBusinessAddress(PhysicalAddress value) { 
-        this.BusinessAddress = value; 
-        valueChanged("BusinessAddress", value);
+        this.businessAddress = value; 
+        valueChanged("businessAddress", value);
 
     }
             
-    private PhysicalAddress OtherAddress;
+    private PhysicalAddress otherAddress;
      
     /**
-    * Gets the Other Address.
+    * Gets the other Address.
     *
     * @return the PhysicalAddress
     */
     public PhysicalAddress getOtherAddress() {
-        return this.OtherAddress; 
+        return this.otherAddress; 
     }
 
     /**
-    * Sets the Other Address.
+    * Sets the other Address.
     *
     * @param value the PhysicalAddress
     */
     public void setOtherAddress(PhysicalAddress value) { 
-        this.OtherAddress = value; 
-        valueChanged("OtherAddress", value);
+        this.otherAddress = value; 
+        valueChanged("otherAddress", value);
 
     }
             
-    private String SpouseName;
+    private String spouseName;
      
     /**
-    * Gets the Spouse Name.
+    * Gets the spouse Name.
     *
     * @return the String
     */
     public String getSpouseName() {
-        return this.SpouseName; 
+        return this.spouseName; 
     }
 
     /**
-    * Sets the Spouse Name.
+    * Sets the spouse Name.
     *
     * @param value the String
     */
     public void setSpouseName(String value) { 
-        this.SpouseName = value; 
-        valueChanged("SpouseName", value);
+        this.spouseName = value; 
+        valueChanged("spouseName", value);
 
     }
             
-    private String PersonalNotes;
+    private String personalNotes;
      
     /**
-    * Gets the Personal Notes.
+    * Gets the personal Notes.
     *
     * @return the String
     */
     public String getPersonalNotes() {
-        return this.PersonalNotes; 
+        return this.personalNotes; 
     }
 
     /**
-    * Sets the Personal Notes.
+    * Sets the personal Notes.
     *
     * @param value the String
     */
     public void setPersonalNotes(String value) { 
-        this.PersonalNotes = value; 
-        valueChanged("PersonalNotes", value);
+        this.personalNotes = value; 
+        valueChanged("personalNotes", value);
 
     }
     
         
-    private java.util.List<String> Children = null;
+    private java.util.List<String> children = null;
     
     
      
     /**
-    * Gets the Children.
+    * Gets the children.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getChildren() {
-        return this.Children; 
+        return this.children; 
     }
 
     /**
-    * Sets the Children.
+    * Sets the children.
     *
     * @param value the java.util.List<String>
     */
     public void setChildren(java.util.List<String> value) { 
-        this.Children = value; 
-        valueChanged("Children", value);
+        this.children = value; 
+        valueChanged("children", value);
 
     }
             
-    private ProfilePhoto Photo;
+    private ProfilePhoto photo;
      
     /**
-    * Gets the Photo.
+    * Gets the photo.
     *
     * @return the ProfilePhoto
     */
     public ProfilePhoto getPhoto() {
-        return this.Photo; 
+        return this.photo; 
     }
 
     /**
-    * Sets the Photo.
+    * Sets the photo.
     *
     * @param value the ProfilePhoto
     */
     public void setPhoto(ProfilePhoto value) { 
-        this.Photo = value; 
-        valueChanged("Photo", value);
+        this.photo = value; 
+        valueChanged("photo", value);
 
     }
 }

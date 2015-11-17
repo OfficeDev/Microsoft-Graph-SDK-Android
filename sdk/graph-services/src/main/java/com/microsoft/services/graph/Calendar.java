@@ -26,119 +26,119 @@ public class Calendar extends Entity {
         setODataType("#microsoft.graph.calendar");
     }
             
-    private String Name;
+    private String name;
      
     /**
-    * Gets the Name.
+    * Gets the name.
     *
     * @return the String
     */
     public String getName() {
-        return this.Name; 
+        return this.name; 
     }
 
     /**
-    * Sets the Name.
+    * Sets the name.
     *
     * @param value the String
     */
     public void setName(String value) { 
-        this.Name = value; 
-        valueChanged("Name", value);
+        this.name = value; 
+        valueChanged("name", value);
 
     }
             
-    private CalendarColor Color;
+    private CalendarColor color;
      
     /**
-    * Gets the Color.
+    * Gets the color.
     *
     * @return the CalendarColor
     */
     public CalendarColor getColor() {
-        return this.Color; 
+        return this.color; 
     }
 
     /**
-    * Sets the Color.
+    * Sets the color.
     *
     * @param value the CalendarColor
     */
     public void setColor(CalendarColor value) { 
-        this.Color = value; 
-        valueChanged("Color", value);
+        this.color = value; 
+        valueChanged("color", value);
 
     }
             
-    private String ChangeKey;
+    private String changeKey;
      
     /**
-    * Gets the Change Key.
+    * Gets the change Key.
     *
     * @return the String
     */
     public String getChangeKey() {
-        return this.ChangeKey; 
+        return this.changeKey; 
     }
 
     /**
-    * Sets the Change Key.
+    * Sets the change Key.
     *
     * @param value the String
     */
     public void setChangeKey(String value) { 
-        this.ChangeKey = value; 
-        valueChanged("ChangeKey", value);
+        this.changeKey = value; 
+        valueChanged("changeKey", value);
 
     }
     
         
-    private java.util.List<Event> Events = null;
+    private java.util.List<Event> events = null;
     
     
      
     /**
-    * Gets the Events.
+    * Gets the events.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getEvents() {
-        return this.Events; 
+        return this.events; 
     }
 
     /**
-    * Sets the Events.
+    * Sets the events.
     *
     * @param value the java.util.List<Event>
     */
     public void setEvents(java.util.List<Event> value) { 
-        this.Events = value; 
-        valueChanged("Events", value);
+        this.events = value; 
+        valueChanged("events", value);
 
     }
     
         
-    private java.util.List<Event> CalendarView = null;
+    private java.util.List<Event> calendarView = null;
     
     
      
     /**
-    * Gets the Calendar View.
+    * Gets the calendar View.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getCalendarView() {
-        return this.CalendarView; 
+        return this.calendarView; 
     }
 
     /**
-    * Sets the Calendar View.
+    * Sets the calendar View.
     *
     * @param value the java.util.List<Event>
     */
     public void setCalendarView(java.util.List<Event> value) { 
-        this.CalendarView = value; 
-        valueChanged("CalendarView", value);
+        this.calendarView = value; 
+        valueChanged("calendarView", value);
 
     }
 }

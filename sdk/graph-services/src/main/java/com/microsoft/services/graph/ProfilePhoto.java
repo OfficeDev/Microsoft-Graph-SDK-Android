@@ -26,47 +26,47 @@ public class ProfilePhoto extends Entity {
         setODataType("#microsoft.graph.profilePhoto");
     }
             
-    private Integer Height;
+    private Integer height;
      
     /**
-    * Gets the Height.
+    * Gets the height.
     *
     * @return the Integer
     */
     public Integer getHeight() {
-        return this.Height; 
+        return this.height; 
     }
 
     /**
-    * Sets the Height.
+    * Sets the height.
     *
     * @param value the Integer
     */
     public void setHeight(Integer value) { 
-        this.Height = value; 
-        valueChanged("Height", value);
+        this.height = value; 
+        valueChanged("height", value);
 
     }
             
-    private Integer Width;
+    private Integer width;
      
     /**
-    * Gets the Width.
+    * Gets the width.
     *
     * @return the Integer
     */
     public Integer getWidth() {
-        return this.Width; 
+        return this.width; 
     }
 
     /**
-    * Sets the Width.
+    * Sets the width.
     *
     * @param value the Integer
     */
     public void setWidth(Integer value) { 
-        this.Width = value; 
-        valueChanged("Width", value);
+        this.width = value; 
+        valueChanged("width", value);
 
     }
 }

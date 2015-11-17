@@ -19,27 +19,27 @@ package com.microsoft.services.graph;
 public enum ResponseType	
 {
     /**
-    * None
+    * none
     */
-    None,
+    none,
     /**
-    * Organizer
+    * organizer
     */
-    Organizer,
+    organizer,
     /**
-    * Tentatively Accepted
+    * tentatively Accepted
     */
-    TentativelyAccepted,
+    tentativelyAccepted,
     /**
-    * Accepted
+    * accepted
     */
-    Accepted,
+    accepted,
     /**
-    * Declined
+    * declined
     */
-    Declined,
+    declined,
     /**
-    * Not Responded
+    * not Responded
     */
-    NotResponded,
+    notResponded,
 }

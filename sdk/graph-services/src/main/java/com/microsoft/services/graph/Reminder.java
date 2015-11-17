@@ -27,179 +27,179 @@ public class Reminder extends ODataBaseEntity {
         setODataType("#microsoft.graph.reminder");
     }
 
-    private String EventId;
+    private String eventId;
 
     /**
-    * Gets the Event Id.
+    * Gets the event Id.
     *
     * @return the String
     */
     public String getEventId() {
-        return this.EventId; 
+        return this.eventId; 
     }
 
     /**
-    * Sets the Event Id.
+    * Sets the event Id.
     *
     * @param value the String
     */
     public void setEventId(String value) { 
-        this.EventId = value;
-        valueChanged("EventId", value);
+        this.eventId = value;
+        valueChanged("eventId", value);
 
     }
 
-    private DateTimeTimeZone EventStartTime;
+    private DateTimeTimeZone eventStartTime;
 
     /**
-    * Gets the Event Start Time.
+    * Gets the event Start Time.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getEventStartTime() {
-        return this.EventStartTime; 
+        return this.eventStartTime; 
     }
 
     /**
-    * Sets the Event Start Time.
+    * Sets the event Start Time.
     *
     * @param value the DateTimeTimeZone
     */
     public void setEventStartTime(DateTimeTimeZone value) { 
-        this.EventStartTime = value;
-        valueChanged("EventStartTime", value);
+        this.eventStartTime = value;
+        valueChanged("eventStartTime", value);
 
     }
 
-    private DateTimeTimeZone EventEndTime;
+    private DateTimeTimeZone eventEndTime;
 
     /**
-    * Gets the Event End Time.
+    * Gets the event End Time.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getEventEndTime() {
-        return this.EventEndTime; 
+        return this.eventEndTime; 
     }
 
     /**
-    * Sets the Event End Time.
+    * Sets the event End Time.
     *
     * @param value the DateTimeTimeZone
     */
     public void setEventEndTime(DateTimeTimeZone value) { 
-        this.EventEndTime = value;
-        valueChanged("EventEndTime", value);
+        this.eventEndTime = value;
+        valueChanged("eventEndTime", value);
 
     }
 
-    private String ChangeKey;
+    private String changeKey;
 
     /**
-    * Gets the Change Key.
+    * Gets the change Key.
     *
     * @return the String
     */
     public String getChangeKey() {
-        return this.ChangeKey; 
+        return this.changeKey; 
     }
 
     /**
-    * Sets the Change Key.
+    * Sets the change Key.
     *
     * @param value the String
     */
     public void setChangeKey(String value) { 
-        this.ChangeKey = value;
-        valueChanged("ChangeKey", value);
+        this.changeKey = value;
+        valueChanged("changeKey", value);
 
     }
 
-    private String EventSubject;
+    private String eventSubject;
 
     /**
-    * Gets the Event Subject.
+    * Gets the event Subject.
     *
     * @return the String
     */
     public String getEventSubject() {
-        return this.EventSubject; 
+        return this.eventSubject; 
     }
 
     /**
-    * Sets the Event Subject.
+    * Sets the event Subject.
     *
     * @param value the String
     */
     public void setEventSubject(String value) { 
-        this.EventSubject = value;
-        valueChanged("EventSubject", value);
+        this.eventSubject = value;
+        valueChanged("eventSubject", value);
 
     }
 
-    private Location EventLocation;
+    private Location eventLocation;
 
     /**
-    * Gets the Event Location.
+    * Gets the event Location.
     *
     * @return the Location
     */
     public Location getEventLocation() {
-        return this.EventLocation; 
+        return this.eventLocation; 
     }
 
     /**
-    * Sets the Event Location.
+    * Sets the event Location.
     *
     * @param value the Location
     */
     public void setEventLocation(Location value) { 
-        this.EventLocation = value;
-        valueChanged("EventLocation", value);
+        this.eventLocation = value;
+        valueChanged("eventLocation", value);
 
     }
 
-    private String EventWebLink;
+    private String eventWebLink;
 
     /**
-    * Gets the Event Web Link.
+    * Gets the event Web Link.
     *
     * @return the String
     */
     public String getEventWebLink() {
-        return this.EventWebLink; 
+        return this.eventWebLink; 
     }
 
     /**
-    * Sets the Event Web Link.
+    * Sets the event Web Link.
     *
     * @param value the String
     */
     public void setEventWebLink(String value) { 
-        this.EventWebLink = value;
-        valueChanged("EventWebLink", value);
+        this.eventWebLink = value;
+        valueChanged("eventWebLink", value);
 
     }
 
-    private DateTimeTimeZone ReminderFireTime;
+    private DateTimeTimeZone reminderFireTime;
 
     /**
-    * Gets the Reminder Fire Time.
+    * Gets the reminder Fire Time.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getReminderFireTime() {
-        return this.ReminderFireTime; 
+        return this.reminderFireTime; 
     }
 
     /**
-    * Sets the Reminder Fire Time.
+    * Sets the reminder Fire Time.
     *
     * @param value the DateTimeTimeZone
     */
     public void setReminderFireTime(DateTimeTimeZone value) { 
-        this.ReminderFireTime = value;
-        valueChanged("ReminderFireTime", value);
+        this.reminderFireTime = value;
+        valueChanged("reminderFireTime", value);
 
     }
 }

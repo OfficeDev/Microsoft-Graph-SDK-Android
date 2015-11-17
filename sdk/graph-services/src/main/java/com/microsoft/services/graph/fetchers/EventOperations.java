@@ -62,7 +62,7 @@ public class EventOperations extends OutlookItemOperations {
     
     
     /**
-     * Accept listenable future.
+     * accept listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */         
@@ -81,7 +81,7 @@ public class EventOperations extends OutlookItemOperations {
     }
 
      /**
-     * AcceptRaw listenable future.
+     * acceptRaw listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */ 
@@ -98,7 +98,7 @@ public class EventOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Accept");
+        request.getUrl().appendPathComponent("microsoft.graph.accept");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -108,7 +108,7 @@ public class EventOperations extends OutlookItemOperations {
     
     
     /**
-     * Decline listenable future.
+     * decline listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */         
@@ -127,7 +127,7 @@ public class EventOperations extends OutlookItemOperations {
     }
 
      /**
-     * DeclineRaw listenable future.
+     * declineRaw listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */ 
@@ -144,7 +144,7 @@ public class EventOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Decline");
+        request.getUrl().appendPathComponent("microsoft.graph.decline");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -154,7 +154,7 @@ public class EventOperations extends OutlookItemOperations {
     
     
     /**
-     * TentativelyAccept listenable future.
+     * tentativelyAccept listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */         
@@ -173,7 +173,7 @@ public class EventOperations extends OutlookItemOperations {
     }
 
      /**
-     * TentativelyAcceptRaw listenable future.
+     * tentativelyAcceptRaw listenable future.
      * @param comment the comment @param sendResponse the sendResponse 
      * @return the listenable future
      */ 
@@ -190,7 +190,7 @@ public class EventOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.TentativelyAccept");
+        request.getUrl().appendPathComponent("microsoft.graph.tentativelyAccept");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -200,7 +200,7 @@ public class EventOperations extends OutlookItemOperations {
     
     
     /**
-     * SnoozeReminder listenable future.
+     * snoozeReminder listenable future.
      * @param newReminderTime the newReminderTime 
      * @return the listenable future
      */         
@@ -218,7 +218,7 @@ public class EventOperations extends OutlookItemOperations {
     }
 
      /**
-     * SnoozeReminderRaw listenable future.
+     * snoozeReminderRaw listenable future.
      * @param newReminderTime the newReminderTime 
      * @return the listenable future
      */ 
@@ -234,7 +234,7 @@ public class EventOperations extends OutlookItemOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.SnoozeReminder");
+        request.getUrl().appendPathComponent("microsoft.graph.snoozeReminder");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -244,7 +244,7 @@ public class EventOperations extends OutlookItemOperations {
     
     
     /**
-     * DismissReminder listenable future.
+     * dismissReminder listenable future.
      * 
      * @return the listenable future
      */         
@@ -260,7 +260,7 @@ public class EventOperations extends OutlookItemOperations {
     }
 
      /**
-     * DismissReminderRaw listenable future.
+     * dismissReminderRaw listenable future.
      * 
      * @return the listenable future
      */ 
@@ -270,7 +270,7 @@ public class EventOperations extends OutlookItemOperations {
         Request request = getResolver().createRequest();
         request.setVerb(HttpVerb.POST);
                         
-        request.getUrl().appendPathComponent("microsoft.graph.DismissReminder");
+        request.getUrl().appendPathComponent("microsoft.graph.dismissReminder");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

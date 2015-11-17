@@ -26,25 +26,25 @@ public class ItemAttachment extends Attachment {
         setODataType("#microsoft.graph.itemAttachment");
     }
             
-    private OutlookItem Item;
+    private OutlookItem item;
      
     /**
-    * Gets the Item.
+    * Gets the item.
     *
     * @return the OutlookItem
     */
     public OutlookItem getItem() {
-        return this.Item; 
+        return this.item; 
     }
 
     /**
-    * Sets the Item.
+    * Sets the item.
     *
     * @param value the OutlookItem
     */
     public void setItem(OutlookItem value) { 
-        this.Item = value; 
-        valueChanged("Item", value);
+        this.item = value; 
+        valueChanged("item", value);
 
     }
 }

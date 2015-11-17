@@ -1131,271 +1131,246 @@ public class User extends DirectoryObject {
     }
     
         
-    private java.util.List<Message> Messages = null;
+    private java.util.List<Message> messages = null;
     
     
      
     /**
-    * Gets the Messages.
+    * Gets the messages.
     *
     * @return the java.util.List<Message>
     */
     public java.util.List<Message> getMessages() {
-        return this.Messages; 
+        return this.messages; 
     }
 
     /**
-    * Sets the Messages.
+    * Sets the messages.
     *
     * @param value the java.util.List<Message>
     */
     public void setMessages(java.util.List<Message> value) { 
-        this.Messages = value; 
-        valueChanged("Messages", value);
+        this.messages = value; 
+        valueChanged("messages", value);
 
     }
     
         
-    private java.util.List<Group> JoinedGroups = null;
+    private java.util.List<MailFolder> mailFolders = null;
     
     
      
     /**
-    * Gets the Joined Groups.
-    *
-    * @return the java.util.List<Group>
-    */
-    public java.util.List<Group> getJoinedGroups() {
-        return this.JoinedGroups; 
-    }
-
-    /**
-    * Sets the Joined Groups.
-    *
-    * @param value the java.util.List<Group>
-    */
-    public void setJoinedGroups(java.util.List<Group> value) { 
-        this.JoinedGroups = value; 
-        valueChanged("JoinedGroups", value);
-
-    }
-    
-        
-    private java.util.List<MailFolder> MailFolders = null;
-    
-    
-     
-    /**
-    * Gets the Mail Folders.
+    * Gets the mail Folders.
     *
     * @return the java.util.List<MailFolder>
     */
     public java.util.List<MailFolder> getMailFolders() {
-        return this.MailFolders; 
+        return this.mailFolders; 
     }
 
     /**
-    * Sets the Mail Folders.
+    * Sets the mail Folders.
     *
     * @param value the java.util.List<MailFolder>
     */
     public void setMailFolders(java.util.List<MailFolder> value) { 
-        this.MailFolders = value; 
-        valueChanged("MailFolders", value);
+        this.mailFolders = value; 
+        valueChanged("mailFolders", value);
 
     }
             
-    private Calendar Calendar;
+    private Calendar calendar;
      
     /**
-    * Gets the Calendar.
+    * Gets the calendar.
     *
     * @return the Calendar
     */
     public Calendar getCalendar() {
-        return this.Calendar; 
+        return this.calendar; 
     }
 
     /**
-    * Sets the Calendar.
+    * Sets the calendar.
     *
     * @param value the Calendar
     */
     public void setCalendar(Calendar value) { 
-        this.Calendar = value; 
-        valueChanged("Calendar", value);
+        this.calendar = value; 
+        valueChanged("calendar", value);
 
     }
     
         
-    private java.util.List<Calendar> Calendars = null;
+    private java.util.List<Calendar> calendars = null;
     
     
      
     /**
-    * Gets the Calendars.
+    * Gets the calendars.
     *
     * @return the java.util.List<Calendar>
     */
     public java.util.List<Calendar> getCalendars() {
-        return this.Calendars; 
+        return this.calendars; 
     }
 
     /**
-    * Sets the Calendars.
+    * Sets the calendars.
     *
     * @param value the java.util.List<Calendar>
     */
     public void setCalendars(java.util.List<Calendar> value) { 
-        this.Calendars = value; 
-        valueChanged("Calendars", value);
+        this.calendars = value; 
+        valueChanged("calendars", value);
 
     }
     
         
-    private java.util.List<CalendarGroup> CalendarGroups = null;
+    private java.util.List<CalendarGroup> calendarGroups = null;
     
     
      
     /**
-    * Gets the Calendar Groups.
+    * Gets the calendar Groups.
     *
     * @return the java.util.List<CalendarGroup>
     */
     public java.util.List<CalendarGroup> getCalendarGroups() {
-        return this.CalendarGroups; 
+        return this.calendarGroups; 
     }
 
     /**
-    * Sets the Calendar Groups.
+    * Sets the calendar Groups.
     *
     * @param value the java.util.List<CalendarGroup>
     */
     public void setCalendarGroups(java.util.List<CalendarGroup> value) { 
-        this.CalendarGroups = value; 
-        valueChanged("CalendarGroups", value);
+        this.calendarGroups = value; 
+        valueChanged("calendarGroups", value);
 
     }
     
         
-    private java.util.List<Event> CalendarView = null;
+    private java.util.List<Event> calendarView = null;
     
     
      
     /**
-    * Gets the Calendar View.
+    * Gets the calendar View.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getCalendarView() {
-        return this.CalendarView; 
+        return this.calendarView; 
     }
 
     /**
-    * Sets the Calendar View.
+    * Sets the calendar View.
     *
     * @param value the java.util.List<Event>
     */
     public void setCalendarView(java.util.List<Event> value) { 
-        this.CalendarView = value; 
-        valueChanged("CalendarView", value);
+        this.calendarView = value; 
+        valueChanged("calendarView", value);
 
     }
     
         
-    private java.util.List<Event> Events = null;
+    private java.util.List<Event> events = null;
     
     
      
     /**
-    * Gets the Events.
+    * Gets the events.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getEvents() {
-        return this.Events; 
+        return this.events; 
     }
 
     /**
-    * Sets the Events.
+    * Sets the events.
     *
     * @param value the java.util.List<Event>
     */
     public void setEvents(java.util.List<Event> value) { 
-        this.Events = value; 
-        valueChanged("Events", value);
+        this.events = value; 
+        valueChanged("events", value);
 
     }
     
         
-    private java.util.List<Contact> Contacts = null;
+    private java.util.List<Contact> contacts = null;
     
     
      
     /**
-    * Gets the Contacts.
+    * Gets the contacts.
     *
     * @return the java.util.List<Contact>
     */
     public java.util.List<Contact> getContacts() {
-        return this.Contacts; 
+        return this.contacts; 
     }
 
     /**
-    * Sets the Contacts.
+    * Sets the contacts.
     *
     * @param value the java.util.List<Contact>
     */
     public void setContacts(java.util.List<Contact> value) { 
-        this.Contacts = value; 
-        valueChanged("Contacts", value);
+        this.contacts = value; 
+        valueChanged("contacts", value);
 
     }
     
         
-    private java.util.List<ContactFolder> ContactFolders = null;
+    private java.util.List<ContactFolder> contactFolders = null;
     
     
      
     /**
-    * Gets the Contact Folders.
+    * Gets the contact Folders.
     *
     * @return the java.util.List<ContactFolder>
     */
     public java.util.List<ContactFolder> getContactFolders() {
-        return this.ContactFolders; 
+        return this.contactFolders; 
     }
 
     /**
-    * Sets the Contact Folders.
+    * Sets the contact Folders.
     *
     * @param value the java.util.List<ContactFolder>
     */
     public void setContactFolders(java.util.List<ContactFolder> value) { 
-        this.ContactFolders = value; 
-        valueChanged("ContactFolders", value);
+        this.contactFolders = value; 
+        valueChanged("contactFolders", value);
 
     }
             
-    private ProfilePhoto Photo;
+    private ProfilePhoto photo;
      
     /**
-    * Gets the Photo.
+    * Gets the photo.
     *
     * @return the ProfilePhoto
     */
     public ProfilePhoto getPhoto() {
-        return this.Photo; 
+        return this.photo; 
     }
 
     /**
-    * Sets the Photo.
+    * Sets the photo.
     *
     * @param value the ProfilePhoto
     */
     public void setPhoto(ProfilePhoto value) { 
-        this.Photo = value; 
-        valueChanged("Photo", value);
+        this.photo = value; 
+        valueChanged("photo", value);
 
     }
             

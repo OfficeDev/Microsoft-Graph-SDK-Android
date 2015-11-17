@@ -26,94 +26,94 @@ public class OutlookItem extends Entity {
         setODataType("#microsoft.graph.outlookItem");
     }
             
-    private java.util.Calendar CreatedDateTime;
+    private java.util.Calendar createdDateTime;
      
     /**
-    * Gets the Created Date Time.
+    * Gets the created Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getCreatedDateTime() {
-        return this.CreatedDateTime; 
+        return this.createdDateTime; 
     }
 
     /**
-    * Sets the Created Date Time.
+    * Sets the created Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setCreatedDateTime(java.util.Calendar value) { 
-        this.CreatedDateTime = value; 
-        valueChanged("CreatedDateTime", value);
+        this.createdDateTime = value; 
+        valueChanged("createdDateTime", value);
 
     }
             
-    private java.util.Calendar LastModifiedDateTime;
+    private java.util.Calendar lastModifiedDateTime;
      
     /**
-    * Gets the Last Modified Date Time.
+    * Gets the last Modified Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getLastModifiedDateTime() {
-        return this.LastModifiedDateTime; 
+        return this.lastModifiedDateTime; 
     }
 
     /**
-    * Sets the Last Modified Date Time.
+    * Sets the last Modified Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setLastModifiedDateTime(java.util.Calendar value) { 
-        this.LastModifiedDateTime = value; 
-        valueChanged("LastModifiedDateTime", value);
+        this.lastModifiedDateTime = value; 
+        valueChanged("lastModifiedDateTime", value);
 
     }
             
-    private String ChangeKey;
+    private String changeKey;
      
     /**
-    * Gets the Change Key.
+    * Gets the change Key.
     *
     * @return the String
     */
     public String getChangeKey() {
-        return this.ChangeKey; 
+        return this.changeKey; 
     }
 
     /**
-    * Sets the Change Key.
+    * Sets the change Key.
     *
     * @param value the String
     */
     public void setChangeKey(String value) { 
-        this.ChangeKey = value; 
-        valueChanged("ChangeKey", value);
+        this.changeKey = value; 
+        valueChanged("changeKey", value);
 
     }
     
         
-    private java.util.List<String> Categories = null;
+    private java.util.List<String> categories = null;
     
     
      
     /**
-    * Gets the Categories.
+    * Gets the categories.
     *
     * @return the java.util.List<String>
     */
     public java.util.List<String> getCategories() {
-        return this.Categories; 
+        return this.categories; 
     }
 
     /**
-    * Sets the Categories.
+    * Sets the categories.
     *
     * @param value the java.util.List<String>
     */
     public void setCategories(java.util.List<String> value) { 
-        this.Categories = value; 
-        valueChanged("Categories", value);
+        this.categories = value; 
+        valueChanged("categories", value);
 
     }
 }

@@ -19,11 +19,11 @@ package com.microsoft.services.graph;
 public enum BodyType	
 {
     /**
-    * Text
+    * text
     */
-    Text,
+    text,
     /**
-    * HTML
+    * html
     */
-    HTML,
+    html,
 }

@@ -26,47 +26,47 @@ public class Attendee extends Recipient {
         setODataType("#microsoft.graph.attendee");
     }
 
-    private ResponseStatus Status;
+    private ResponseStatus status;
 
     /**
-    * Gets the Status.
+    * Gets the status.
     *
     * @return the ResponseStatus
     */
     public ResponseStatus getStatus() {
-        return this.Status; 
+        return this.status; 
     }
 
     /**
-    * Sets the Status.
+    * Sets the status.
     *
     * @param value the ResponseStatus
     */
     public void setStatus(ResponseStatus value) { 
-        this.Status = value;
-        valueChanged("Status", value);
+        this.status = value;
+        valueChanged("status", value);
 
     }
 
-    private AttendeeType Type;
+    private AttendeeType type;
 
     /**
-    * Gets the Type.
+    * Gets the type.
     *
     * @return the AttendeeType
     */
     public AttendeeType getType() {
-        return this.Type; 
+        return this.type; 
     }
 
     /**
-    * Sets the Type.
+    * Sets the type.
     *
     * @param value the AttendeeType
     */
     public void setType(AttendeeType value) { 
-        this.Type = value;
-        valueChanged("Type", value);
+        this.type = value;
+        valueChanged("type", value);
 
     }
 }

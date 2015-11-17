@@ -1,6 +1,6 @@
 # Microsoft Graph SDK for Android (Preview)
 
-Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (https://graph.microsoft.com). Using the Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations.
+Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (https://graph.microsoft.com). Using Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations.
 
 ---
 
@@ -31,7 +31,7 @@ To use these libraries in your project, follow these general steps, as described
 
 ### Setup
 
-1. From the Android Studio splash screen, click "Start a new Android Studio project". Name your application as you wish.
+1. From the Android Studio splash screen, click "Start a new Android Studio project" and set a name for your application.
 
 2. Select "Phone and Tablet" and set Minimum SDK as API 18, then click Next. Choose "Blank Activity", then click Next. The defaults are fine for the activity name, so click Finish.
 
@@ -40,7 +40,9 @@ To use these libraries in your project, follow these general steps, as described
 4. In the `dependencies` closure, add the following dependencies to the `compile` configuration:
 
     ```groovy
-    compile 'com.microsoft.services:graph-services:1.0.0-preview'
+    compile ('com.microsoft.services:graph-services:1.0.0-preview'){
+        transitive = true
+    }
     ```
 
     You may want to click the "Sync Project with Gradle Files" button in the toolbar. This will download the dependencies so Android Studio can assist in coding with them.
@@ -63,14 +65,13 @@ With your project prepared, the next step is to initialize the dependency manage
 2. Fill in the file with values from your app registration, as in the following example. **Be sure to paste in your app registration values for the Client ID and Redirect URL.**
 
     ```xml
-    <string name="AADAuthority">https://login.microsoftonline.com/common</string>
+    <string name="AADAuthority">https://login.windows.net/common</string>
     <string name="AADResourceId">https://graph.microsoft.com</string>
     <string name="AADClientId">Paste your Client ID HERE</string>
     <string name="AADRedirectUrl">Paste your Redirect URI HERE</string>
     ```
 
-3. Add an id to the "Hello World" TextView. Open app/src/main/res/layout/activity_main.xml.
-4. Add the following id tag to the TextView element for "Hello World".
+3. Add an id to the "Hello World" TextView. Open app/src/main/res/layout/activity_main.xml. Use the following tag.
 
     ```xml
 	android:id="@+id/messages"
@@ -174,9 +175,9 @@ With your project prepared, the next step is to initialize the dependency manage
         });
     ```
 
-4. Now fill in the onSuccess method of the FutureCallback to create an API client.
+4. Now, add the necessary code to create an API client.
 
-    Add a private static variable with the Outlook base URL:
+    Add a private static variable with the Graph base URL:
 
     ```java
     private static final String graphBaseUrl = "https://graph.microsoft.com/api/v1.0";
@@ -199,7 +200,7 @@ With your project prepared, the next step is to initialize the dependency manage
     ```
 
 
-5. Create a new method to use the client to get all messages from your inbox.
+5. Create a new method to get all messages from your inbox using the client.
 
 	```java
     protected void getMessages() {
@@ -208,6 +209,7 @@ With your project prepared, the next step is to initialize the dependency manage
                         .getMailFolders()
                         .getById("Inbox")
                         .getMessages()
+                        .top(20)
                         .read(),
                 new FutureCallback<List<Message>>() {
                     @Override
@@ -228,7 +230,7 @@ With your project prepared, the next step is to initialize the dependency manage
     }
 	```
 
-If successful, the number of messages in your inbox will be displayed in the TextView. :)
+If successful, the number of retrieved messages from your inbox will be displayed in the TextView. :)
 
 ## FAQ
 

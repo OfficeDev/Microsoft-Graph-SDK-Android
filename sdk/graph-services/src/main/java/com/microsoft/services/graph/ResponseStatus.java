@@ -27,47 +27,47 @@ public class ResponseStatus extends ODataBaseEntity {
         setODataType("#microsoft.graph.responseStatus");
     }
 
-    private ResponseType Response;
+    private ResponseType response;
 
     /**
-    * Gets the Response.
+    * Gets the response.
     *
     * @return the ResponseType
     */
     public ResponseType getResponse() {
-        return this.Response; 
+        return this.response; 
     }
 
     /**
-    * Sets the Response.
+    * Sets the response.
     *
     * @param value the ResponseType
     */
     public void setResponse(ResponseType value) { 
-        this.Response = value;
-        valueChanged("Response", value);
+        this.response = value;
+        valueChanged("response", value);
 
     }
 
-    private java.util.Calendar Time;
+    private java.util.Calendar time;
 
     /**
-    * Gets the Time.
+    * Gets the time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getTime() {
-        return this.Time; 
+        return this.time; 
     }
 
     /**
-    * Sets the Time.
+    * Sets the time.
     *
     * @param value the java.util.Calendar
     */
     public void setTime(java.util.Calendar value) { 
-        this.Time = value;
-        valueChanged("Time", value);
+        this.time = value;
+        valueChanged("time", value);
 
     }
 }

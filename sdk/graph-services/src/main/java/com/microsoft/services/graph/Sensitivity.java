@@ -19,19 +19,19 @@ package com.microsoft.services.graph;
 public enum Sensitivity	
 {
     /**
-    * Normal
+    * normal
     */
-    Normal,
+    normal,
     /**
-    * Personal
+    * personal
     */
-    Personal,
+    personal,
     /**
-    * Private
+    * private
     */
-    $$__$$Private,
+    $$__$$private,
     /**
-    * Confidential
+    * confidential
     */
-    Confidential,
+    confidential,
 }

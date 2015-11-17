@@ -27,113 +27,113 @@ public class PhysicalAddress extends ODataBaseEntity {
         setODataType("#microsoft.graph.physicalAddress");
     }
 
-    private String Street;
+    private String street;
 
     /**
-    * Gets the Street.
+    * Gets the street.
     *
     * @return the String
     */
     public String getStreet() {
-        return this.Street; 
+        return this.street; 
     }
 
     /**
-    * Sets the Street.
+    * Sets the street.
     *
     * @param value the String
     */
     public void setStreet(String value) { 
-        this.Street = value;
-        valueChanged("Street", value);
+        this.street = value;
+        valueChanged("street", value);
 
     }
 
-    private String City;
+    private String city;
 
     /**
-    * Gets the City.
+    * Gets the city.
     *
     * @return the String
     */
     public String getCity() {
-        return this.City; 
+        return this.city; 
     }
 
     /**
-    * Sets the City.
+    * Sets the city.
     *
     * @param value the String
     */
     public void setCity(String value) { 
-        this.City = value;
-        valueChanged("City", value);
+        this.city = value;
+        valueChanged("city", value);
 
     }
 
-    private String State;
+    private String state;
 
     /**
-    * Gets the State.
+    * Gets the state.
     *
     * @return the String
     */
     public String getState() {
-        return this.State; 
+        return this.state; 
     }
 
     /**
-    * Sets the State.
+    * Sets the state.
     *
     * @param value the String
     */
     public void setState(String value) { 
-        this.State = value;
-        valueChanged("State", value);
+        this.state = value;
+        valueChanged("state", value);
 
     }
 
-    private String CountryOrRegion;
+    private String countryOrRegion;
 
     /**
-    * Gets the Country Or Region.
+    * Gets the country Or Region.
     *
     * @return the String
     */
     public String getCountryOrRegion() {
-        return this.CountryOrRegion; 
+        return this.countryOrRegion; 
     }
 
     /**
-    * Sets the Country Or Region.
+    * Sets the country Or Region.
     *
     * @param value the String
     */
     public void setCountryOrRegion(String value) { 
-        this.CountryOrRegion = value;
-        valueChanged("CountryOrRegion", value);
+        this.countryOrRegion = value;
+        valueChanged("countryOrRegion", value);
 
     }
 
-    private String PostalCode;
+    private String postalCode;
 
     /**
-    * Gets the Postal Code.
+    * Gets the postal Code.
     *
     * @return the String
     */
     public String getPostalCode() {
-        return this.PostalCode; 
+        return this.postalCode; 
     }
 
     /**
-    * Sets the Postal Code.
+    * Sets the postal Code.
     *
     * @param value the String
     */
     public void setPostalCode(String value) { 
-        this.PostalCode = value;
-        valueChanged("PostalCode", value);
+        this.postalCode = value;
+        valueChanged("postalCode", value);
 
     }
 }

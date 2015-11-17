@@ -27,47 +27,47 @@ public class PatternedRecurrence extends ODataBaseEntity {
         setODataType("#microsoft.graph.patternedRecurrence");
     }
 
-    private RecurrencePattern Pattern;
+    private RecurrencePattern pattern;
 
     /**
-    * Gets the Pattern.
+    * Gets the pattern.
     *
     * @return the RecurrencePattern
     */
     public RecurrencePattern getPattern() {
-        return this.Pattern; 
+        return this.pattern; 
     }
 
     /**
-    * Sets the Pattern.
+    * Sets the pattern.
     *
     * @param value the RecurrencePattern
     */
     public void setPattern(RecurrencePattern value) { 
-        this.Pattern = value;
-        valueChanged("Pattern", value);
+        this.pattern = value;
+        valueChanged("pattern", value);
 
     }
 
-    private RecurrenceRange Range;
+    private RecurrenceRange range;
 
     /**
-    * Gets the Range.
+    * Gets the range.
     *
     * @return the RecurrenceRange
     */
     public RecurrenceRange getRange() {
-        return this.Range; 
+        return this.range; 
     }
 
     /**
-    * Sets the Range.
+    * Sets the range.
     *
     * @param value the RecurrenceRange
     */
     public void setRange(RecurrenceRange value) { 
-        this.Range = value;
-        valueChanged("Range", value);
+        this.range = value;
+        valueChanged("range", value);
 
     }
 }

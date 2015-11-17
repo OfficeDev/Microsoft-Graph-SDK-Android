@@ -67,7 +67,7 @@ public class MailFolderFetcher extends OrcEntityFetcher<MailFolder,MailFolderOpe
      * @return the messages
      */
     public OrcCollectionFetcher<Message, MessageFetcher, MessageCollectionOperations> getMessages() {
-        return new OrcCollectionFetcher<Message, MessageFetcher, MessageCollectionOperations>("Messages", this, Message.class, MessageCollectionOperations.class);
+        return new OrcCollectionFetcher<Message, MessageFetcher, MessageCollectionOperations>("messages", this, Message.class, MessageCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class MailFolderFetcher extends OrcEntityFetcher<MailFolder,MailFolderOpe
      * @return the message
      */
     public MessageFetcher getMessage(String id){
-         return new OrcCollectionFetcher<Message, MessageFetcher, MessageCollectionOperations>("Messages", this, Message.class, MessageCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<Message, MessageFetcher, MessageCollectionOperations>("messages", this, Message.class, MessageCollectionOperations.class).getById(id);
     }
 
      /**
@@ -85,7 +85,7 @@ public class MailFolderFetcher extends OrcEntityFetcher<MailFolder,MailFolderOpe
      * @return the child folders
      */
     public OrcCollectionFetcher<MailFolder, MailFolderFetcher, MailFolderCollectionOperations> getChildFolders() {
-        return new OrcCollectionFetcher<MailFolder, MailFolderFetcher, MailFolderCollectionOperations>("ChildFolders", this, MailFolder.class, MailFolderCollectionOperations.class);
+        return new OrcCollectionFetcher<MailFolder, MailFolderFetcher, MailFolderCollectionOperations>("childFolders", this, MailFolder.class, MailFolderCollectionOperations.class);
     }
 
     /**
@@ -94,7 +94,7 @@ public class MailFolderFetcher extends OrcEntityFetcher<MailFolder,MailFolderOpe
      * @return the child folder
      */
     public MailFolderFetcher getChildFolder(String id){
-         return new OrcCollectionFetcher<MailFolder, MailFolderFetcher, MailFolderCollectionOperations>("ChildFolders", this, MailFolder.class, MailFolderCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<MailFolder, MailFolderFetcher, MailFolderCollectionOperations>("childFolders", this, MailFolder.class, MailFolderCollectionOperations.class).getById(id);
     }
 
 }

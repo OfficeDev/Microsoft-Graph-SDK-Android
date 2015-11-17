@@ -67,7 +67,7 @@ public class ConversationFetcher extends OrcEntityFetcher<Conversation,Conversat
      * @return the threads
      */
     public OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations> getThreads() {
-        return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("Threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class);
+        return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class);
     }
 
     /**
@@ -76,7 +76,7 @@ public class ConversationFetcher extends OrcEntityFetcher<Conversation,Conversat
      * @return the thread
      */
     public ConversationThreadFetcher getThread(String id){
-         return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("Threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class).getById(id);
+         return new OrcCollectionFetcher<ConversationThread, ConversationThreadFetcher, ConversationThreadCollectionOperations>("threads", this, ConversationThread.class, ConversationThreadCollectionOperations.class).getById(id);
     }
 
 }

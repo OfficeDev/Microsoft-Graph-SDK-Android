@@ -26,113 +26,113 @@ public class Attachment extends Entity {
         setODataType("#microsoft.graph.attachment");
     }
             
-    private java.util.Calendar LastModifiedDateTime;
+    private java.util.Calendar lastModifiedDateTime;
      
     /**
-    * Gets the Last Modified Date Time.
+    * Gets the last Modified Date Time.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getLastModifiedDateTime() {
-        return this.LastModifiedDateTime; 
+        return this.lastModifiedDateTime; 
     }
 
     /**
-    * Sets the Last Modified Date Time.
+    * Sets the last Modified Date Time.
     *
     * @param value the java.util.Calendar
     */
     public void setLastModifiedDateTime(java.util.Calendar value) { 
-        this.LastModifiedDateTime = value; 
-        valueChanged("LastModifiedDateTime", value);
+        this.lastModifiedDateTime = value; 
+        valueChanged("lastModifiedDateTime", value);
 
     }
             
-    private String Name;
+    private String name;
      
     /**
-    * Gets the Name.
+    * Gets the name.
     *
     * @return the String
     */
     public String getName() {
-        return this.Name; 
+        return this.name; 
     }
 
     /**
-    * Sets the Name.
+    * Sets the name.
     *
     * @param value the String
     */
     public void setName(String value) { 
-        this.Name = value; 
-        valueChanged("Name", value);
+        this.name = value; 
+        valueChanged("name", value);
 
     }
             
-    private String ContentType;
+    private String contentType;
      
     /**
-    * Gets the Content Type.
+    * Gets the content Type.
     *
     * @return the String
     */
     public String getContentType() {
-        return this.ContentType; 
+        return this.contentType; 
     }
 
     /**
-    * Sets the Content Type.
+    * Sets the content Type.
     *
     * @param value the String
     */
     public void setContentType(String value) { 
-        this.ContentType = value; 
-        valueChanged("ContentType", value);
+        this.contentType = value; 
+        valueChanged("contentType", value);
 
     }
             
-    private Integer Size;
+    private Integer size;
      
     /**
-    * Gets the Size.
+    * Gets the size.
     *
     * @return the Integer
     */
     public Integer getSize() {
-        return this.Size; 
+        return this.size; 
     }
 
     /**
-    * Sets the Size.
+    * Sets the size.
     *
     * @param value the Integer
     */
     public void setSize(Integer value) { 
-        this.Size = value; 
-        valueChanged("Size", value);
+        this.size = value; 
+        valueChanged("size", value);
 
     }
             
-    private Boolean IsInline;
+    private Boolean isInline;
      
     /**
-    * Gets the Is Inline.
+    * Gets the is Inline.
     *
     * @return the Boolean
     */
     public Boolean getIsInline() {
-        return this.IsInline; 
+        return this.isInline; 
     }
 
     /**
-    * Sets the Is Inline.
+    * Sets the is Inline.
     *
     * @param value the Boolean
     */
     public void setIsInline(Boolean value) { 
-        this.IsInline = value; 
-        valueChanged("IsInline", value);
+        this.isInline = value; 
+        valueChanged("isInline", value);
 
     }
 }

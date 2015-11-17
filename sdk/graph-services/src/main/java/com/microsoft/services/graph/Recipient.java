@@ -27,25 +27,25 @@ public class Recipient extends ODataBaseEntity {
         setODataType("#microsoft.graph.recipient");
     }
 
-    private EmailAddress EmailAddress;
+    private EmailAddress emailAddress;
 
     /**
-    * Gets the Email Address.
+    * Gets the email Address.
     *
     * @return the EmailAddress
     */
     public EmailAddress getEmailAddress() {
-        return this.EmailAddress; 
+        return this.emailAddress; 
     }
 
     /**
-    * Sets the Email Address.
+    * Sets the email Address.
     *
     * @param value the EmailAddress
     */
     public void setEmailAddress(EmailAddress value) { 
-        this.EmailAddress = value;
-        valueChanged("EmailAddress", value);
+        this.emailAddress = value;
+        valueChanged("emailAddress", value);
 
     }
 }

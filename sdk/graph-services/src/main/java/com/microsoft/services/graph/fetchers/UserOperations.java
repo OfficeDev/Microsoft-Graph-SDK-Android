@@ -154,7 +154,7 @@ public class UserOperations extends DirectoryObjectOperations {
     
     
     /**
-     * SendMail listenable future.
+     * sendMail listenable future.
      * @param message the message @param saveToSentItems the saveToSentItems 
      * @return the listenable future
      */         
@@ -173,7 +173,7 @@ public class UserOperations extends DirectoryObjectOperations {
     }
 
      /**
-     * SendMailRaw listenable future.
+     * sendMailRaw listenable future.
      * @param message the message @param saveToSentItems the saveToSentItems 
      * @return the listenable future
      */ 
@@ -190,7 +190,7 @@ public class UserOperations extends DirectoryObjectOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.SendMail");
+        request.getUrl().appendPathComponent("microsoft.graph.sendMail");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);
@@ -200,7 +200,7 @@ public class UserOperations extends DirectoryObjectOperations {
     
     
      /**
-     * ReminderView listenable future.
+     * reminderView listenable future.
      * @param startDateTime the startDateTime @param endDateTime the endDateTime 
      * @return the listenable future
      */         
@@ -216,7 +216,7 @@ public class UserOperations extends DirectoryObjectOperations {
 		String parameters = getFunctionParameters(map);
         
 		        
-		request.getUrl().appendPathComponent("microsoft.graph.ReminderView(" + parameters + ")");   
+		request.getUrl().appendPathComponent("microsoft.graph.reminderView(" + parameters + ")");   
         
 		
 		ListenableFuture<OrcResponse> future = oDataExecute(request);

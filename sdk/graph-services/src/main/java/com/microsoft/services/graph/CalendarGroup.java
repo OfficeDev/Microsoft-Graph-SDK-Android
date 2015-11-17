@@ -26,94 +26,94 @@ public class CalendarGroup extends Entity {
         setODataType("#microsoft.graph.calendarGroup");
     }
             
-    private String Name;
+    private String name;
      
     /**
-    * Gets the Name.
+    * Gets the name.
     *
     * @return the String
     */
     public String getName() {
-        return this.Name; 
+        return this.name; 
     }
 
     /**
-    * Sets the Name.
+    * Sets the name.
     *
     * @param value the String
     */
     public void setName(String value) { 
-        this.Name = value; 
-        valueChanged("Name", value);
+        this.name = value; 
+        valueChanged("name", value);
 
     }
             
-    private java.util.UUID ClassId;
+    private java.util.UUID classId;
      
     /**
-    * Gets the Class Id.
+    * Gets the class Id.
     *
     * @return the java.util.UUID
     */
     public java.util.UUID getClassId() {
-        return this.ClassId; 
+        return this.classId; 
     }
 
     /**
-    * Sets the Class Id.
+    * Sets the class Id.
     *
     * @param value the java.util.UUID
     */
     public void setClassId(java.util.UUID value) { 
-        this.ClassId = value; 
-        valueChanged("ClassId", value);
+        this.classId = value; 
+        valueChanged("classId", value);
 
     }
             
-    private String ChangeKey;
+    private String changeKey;
      
     /**
-    * Gets the Change Key.
+    * Gets the change Key.
     *
     * @return the String
     */
     public String getChangeKey() {
-        return this.ChangeKey; 
+        return this.changeKey; 
     }
 
     /**
-    * Sets the Change Key.
+    * Sets the change Key.
     *
     * @param value the String
     */
     public void setChangeKey(String value) { 
-        this.ChangeKey = value; 
-        valueChanged("ChangeKey", value);
+        this.changeKey = value; 
+        valueChanged("changeKey", value);
 
     }
     
         
-    private java.util.List<Calendar> Calendars = null;
+    private java.util.List<Calendar> calendars = null;
     
     
      
     /**
-    * Gets the Calendars.
+    * Gets the calendars.
     *
     * @return the java.util.List<Calendar>
     */
     public java.util.List<Calendar> getCalendars() {
-        return this.Calendars; 
+        return this.calendars; 
     }
 
     /**
-    * Sets the Calendars.
+    * Sets the calendars.
     *
     * @param value the java.util.List<Calendar>
     */
     public void setCalendars(java.util.List<Calendar> value) { 
-        this.Calendars = value; 
-        valueChanged("Calendars", value);
+        this.calendars = value; 
+        valueChanged("calendars", value);
 
     }
 }

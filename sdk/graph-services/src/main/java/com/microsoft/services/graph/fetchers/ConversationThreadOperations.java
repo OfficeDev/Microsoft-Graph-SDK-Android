@@ -62,7 +62,7 @@ public class ConversationThreadOperations extends EntityOperations {
     
     
     /**
-     * Reply listenable future.
+     * reply listenable future.
      * @param post the post 
      * @return the listenable future
      */         
@@ -80,7 +80,7 @@ public class ConversationThreadOperations extends EntityOperations {
     }
 
      /**
-     * ReplyRaw listenable future.
+     * replyRaw listenable future.
      * @param post the post 
      * @return the listenable future
      */ 
@@ -96,7 +96,7 @@ public class ConversationThreadOperations extends EntityOperations {
         request.setContent(getResolver().getJsonSerializer()
                .jsonObjectFromJsonMap(map).getBytes(Constants.UTF8));
                         
-        request.getUrl().appendPathComponent("microsoft.graph.Reply");
+        request.getUrl().appendPathComponent("microsoft.graph.reply");
         
         ListenableFuture<OrcResponse> future = oDataExecute(request);
         return transformToStringListenableFuture(future);

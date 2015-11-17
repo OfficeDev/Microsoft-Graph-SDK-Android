@@ -19,27 +19,27 @@ package com.microsoft.services.graph;
 public enum RecurrencePatternType	
 {
     /**
-    * Daily
+    * daily
     */
-    Daily,
+    daily,
     /**
-    * Weekly
+    * weekly
     */
-    Weekly,
+    weekly,
     /**
-    * Absolute Monthly
+    * absolute Monthly
     */
-    AbsoluteMonthly,
+    absoluteMonthly,
     /**
-    * Relative Monthly
+    * relative Monthly
     */
-    RelativeMonthly,
+    relativeMonthly,
     /**
-    * Absolute Yearly
+    * absolute Yearly
     */
-    AbsoluteYearly,
+    absoluteYearly,
     /**
-    * Relative Yearly
+    * relative Yearly
     */
-    RelativeYearly,
+    relativeYearly,
 }

@@ -26,163 +26,163 @@ public class MailFolder extends Entity {
         setODataType("#microsoft.graph.mailFolder");
     }
             
-    private String DisplayName;
+    private String displayName;
      
     /**
-    * Gets the Display Name.
+    * Gets the display Name.
     *
     * @return the String
     */
     public String getDisplayName() {
-        return this.DisplayName; 
+        return this.displayName; 
     }
 
     /**
-    * Sets the Display Name.
+    * Sets the display Name.
     *
     * @param value the String
     */
     public void setDisplayName(String value) { 
-        this.DisplayName = value; 
-        valueChanged("DisplayName", value);
+        this.displayName = value; 
+        valueChanged("displayName", value);
 
     }
             
-    private String ParentFolderId;
+    private String parentFolderId;
      
     /**
-    * Gets the Parent Folder Id.
+    * Gets the parent Folder Id.
     *
     * @return the String
     */
     public String getParentFolderId() {
-        return this.ParentFolderId; 
+        return this.parentFolderId; 
     }
 
     /**
-    * Sets the Parent Folder Id.
+    * Sets the parent Folder Id.
     *
     * @param value the String
     */
     public void setParentFolderId(String value) { 
-        this.ParentFolderId = value; 
-        valueChanged("ParentFolderId", value);
+        this.parentFolderId = value; 
+        valueChanged("parentFolderId", value);
 
     }
             
-    private Integer ChildFolderCount;
+    private Integer childFolderCount;
      
     /**
-    * Gets the Child Folder Count.
+    * Gets the child Folder Count.
     *
     * @return the Integer
     */
     public Integer getChildFolderCount() {
-        return this.ChildFolderCount; 
+        return this.childFolderCount; 
     }
 
     /**
-    * Sets the Child Folder Count.
+    * Sets the child Folder Count.
     *
     * @param value the Integer
     */
     public void setChildFolderCount(Integer value) { 
-        this.ChildFolderCount = value; 
-        valueChanged("ChildFolderCount", value);
+        this.childFolderCount = value; 
+        valueChanged("childFolderCount", value);
 
     }
             
-    private Integer UnreadItemCount;
+    private Integer unreadItemCount;
      
     /**
-    * Gets the Unread Item Count.
+    * Gets the unread Item Count.
     *
     * @return the Integer
     */
     public Integer getUnreadItemCount() {
-        return this.UnreadItemCount; 
+        return this.unreadItemCount; 
     }
 
     /**
-    * Sets the Unread Item Count.
+    * Sets the unread Item Count.
     *
     * @param value the Integer
     */
     public void setUnreadItemCount(Integer value) { 
-        this.UnreadItemCount = value; 
-        valueChanged("UnreadItemCount", value);
+        this.unreadItemCount = value; 
+        valueChanged("unreadItemCount", value);
 
     }
             
-    private Integer TotalItemCount;
+    private Integer totalItemCount;
      
     /**
-    * Gets the Total Item Count.
+    * Gets the total Item Count.
     *
     * @return the Integer
     */
     public Integer getTotalItemCount() {
-        return this.TotalItemCount; 
+        return this.totalItemCount; 
     }
 
     /**
-    * Sets the Total Item Count.
+    * Sets the total Item Count.
     *
     * @param value the Integer
     */
     public void setTotalItemCount(Integer value) { 
-        this.TotalItemCount = value; 
-        valueChanged("TotalItemCount", value);
+        this.totalItemCount = value; 
+        valueChanged("totalItemCount", value);
 
     }
     
         
-    private java.util.List<Message> Messages = null;
+    private java.util.List<Message> messages = null;
     
     
      
     /**
-    * Gets the Messages.
+    * Gets the messages.
     *
     * @return the java.util.List<Message>
     */
     public java.util.List<Message> getMessages() {
-        return this.Messages; 
+        return this.messages; 
     }
 
     /**
-    * Sets the Messages.
+    * Sets the messages.
     *
     * @param value the java.util.List<Message>
     */
     public void setMessages(java.util.List<Message> value) { 
-        this.Messages = value; 
-        valueChanged("Messages", value);
+        this.messages = value; 
+        valueChanged("messages", value);
 
     }
     
         
-    private java.util.List<MailFolder> ChildFolders = null;
+    private java.util.List<MailFolder> childFolders = null;
     
     
      
     /**
-    * Gets the Child Folders.
+    * Gets the child Folders.
     *
     * @return the java.util.List<MailFolder>
     */
     public java.util.List<MailFolder> getChildFolders() {
-        return this.ChildFolders; 
+        return this.childFolders; 
     }
 
     /**
-    * Sets the Child Folders.
+    * Sets the child Folders.
     *
     * @param value the java.util.List<MailFolder>
     */
     public void setChildFolders(java.util.List<MailFolder> value) { 
-        this.ChildFolders = value; 
-        valueChanged("ChildFolders", value);
+        this.childFolders = value; 
+        valueChanged("childFolders", value);
 
     }
 }

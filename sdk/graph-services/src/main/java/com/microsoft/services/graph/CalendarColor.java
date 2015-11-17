@@ -19,47 +19,47 @@ package com.microsoft.services.graph;
 public enum CalendarColor	
 {
     /**
-    * Light Blue
+    * light Blue
     */
-    LightBlue,
+    lightBlue,
     /**
-    * Light Green
+    * light Green
     */
-    LightGreen,
+    lightGreen,
     /**
-    * Light Orange
+    * light Orange
     */
-    LightOrange,
+    lightOrange,
     /**
-    * Light Gray
+    * light Gray
     */
-    LightGray,
+    lightGray,
     /**
-    * Light Yellow
+    * light Yellow
     */
-    LightYellow,
+    lightYellow,
     /**
-    * Light Teal
+    * light Teal
     */
-    LightTeal,
+    lightTeal,
     /**
-    * Light Pink
+    * light Pink
     */
-    LightPink,
+    lightPink,
     /**
-    * Light Brown
+    * light Brown
     */
-    LightBrown,
+    lightBrown,
     /**
-    * Light Red
+    * light Red
     */
-    LightRed,
+    lightRed,
     /**
-    * Max Color
+    * max Color
     */
-    MaxColor,
+    maxColor,
     /**
-    * Auto
+    * auto
     */
-    Auto,
+    auto,
 }
