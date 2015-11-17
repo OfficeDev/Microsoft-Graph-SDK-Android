@@ -467,28 +467,6 @@ public class DriveItem extends Entity {
 
     }
             
-    private OpenWithSet openWith;
-     
-    /**
-    * Gets the open With.
-    *
-    * @return the OpenWithSet
-    */
-    public OpenWithSet getOpenWith() {
-        return this.openWith; 
-    }
-
-    /**
-    * Sets the open With.
-    *
-    * @param value the OpenWithSet
-    */
-    public void setOpenWith(OpenWithSet value) { 
-        this.openWith = value; 
-        valueChanged("openWith", value);
-
-    }
-            
     private Photo photo;
      
     /**
@@ -665,31 +643,6 @@ public class DriveItem extends Entity {
     public void setPermissions(java.util.List<Permission> value) { 
         this.permissions = value; 
         valueChanged("permissions", value);
-
-    }
-    
-        
-    private java.util.List<DriveItem> versions = null;
-    
-    
-     
-    /**
-    * Gets the versions.
-    *
-    * @return the java.util.List<DriveItem>
-    */
-    public java.util.List<DriveItem> getVersions() {
-        return this.versions; 
-    }
-
-    /**
-    * Sets the versions.
-    *
-    * @param value the java.util.List<DriveItem>
-    */
-    public void setVersions(java.util.List<DriveItem> value) { 
-        this.versions = value; 
-        valueChanged("versions", value);
 
     }
     

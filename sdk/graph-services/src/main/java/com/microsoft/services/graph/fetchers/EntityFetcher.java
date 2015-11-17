@@ -111,10 +111,6 @@ public class EntityFetcher extends OrcEntityFetcher<Entity,EntityOperations>
         return new DriveItemFetcher(this.urlComponent, this.parent);
     }   
 
-    public ShareFetcher asShare(){
-        return new ShareFetcher(this.urlComponent, this.parent);
-    }   
-
     public PermissionFetcher asPermission(){
         return new PermissionFetcher(this.urlComponent, this.parent);
     }   

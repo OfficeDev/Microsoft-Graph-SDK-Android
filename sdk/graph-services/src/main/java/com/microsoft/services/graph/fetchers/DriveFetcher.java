@@ -80,24 +80,6 @@ public class DriveFetcher extends OrcEntityFetcher<Drive,DriveOperations>
     }
 
      /**
-     * Gets shared.
-     *
-     * @return the shared
-     */
-    public OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations> getShared() {
-        return new OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations>("shared", this, DriveItem.class, DriveItemCollectionOperations.class);
-    }
-
-    /**
-     * Gets shared.
-     *
-     * @return the shared
-     */
-    public DriveItemFetcher getShared(String id){
-         return new OrcCollectionFetcher<DriveItem, DriveItemFetcher, DriveItemCollectionOperations>("shared", this, DriveItem.class, DriveItemCollectionOperations.class).getById(id);
-    }
-
-     /**
      * Gets special.
      *
      * @return the special

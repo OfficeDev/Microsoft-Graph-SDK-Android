@@ -59,32 +59,4 @@ public class DriveOperations extends EntityOperations {
         return this;
     }
 
-    
-    
-     /**
-     * allPhotos listenable future.
-     * 
-     * @return the listenable future
-     */         
-    public ListenableFuture<DriveItem> allPhotos() { 
-		
-		java.util.Map<String, Object> map = new java.util.HashMap<String, Object>();
-        
-
-		Request request = getResolver().createRequest();
-		request.setVerb(HttpVerb.GET);
-		String parameters = getFunctionParameters(map);
-        
-		        
-		request.getUrl().appendPathComponent("microsoft.graph.allPhotos(" + parameters + ")");   
-        
-		
-		ListenableFuture<OrcResponse> future = oDataExecute(request);
-		   
-        
-		return transformToEntityListenableFuture(transformToStringListenableFuture(future), DriveItem.class, getResolver());
-        
-        
-   }
-    
 }
