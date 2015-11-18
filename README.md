@@ -1,4 +1,4 @@
-# Microsoft Graph SDK for Android (Preview)
+# Microsoft Graph SDK for Android (preview)
 
 Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (Microsoft Graph API endpoint v1.0). Using Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations.
 
