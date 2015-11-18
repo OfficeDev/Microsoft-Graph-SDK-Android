@@ -21,7 +21,7 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:22.1.1'
-    compile ('com.microsoft.services:graph-services:1.0.0-preview-SNAPSHOT'){
+    compile ('com.microsoft.services:graph-services:0.8.0'){
         transitive = true
     }
 }
