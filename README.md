@@ -1,6 +1,6 @@
 # Microsoft Graph SDK for Android (Preview)
 
-Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (https://graph.microsoft.com). Using Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations.
+Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (Microsoft Graph API endpoint v1.0). Using Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations.
 
 ---
 
@@ -40,7 +40,7 @@ To use these libraries in your project, follow these general steps, as described
 4. In the `dependencies` closure, add the following dependencies to the `compile` configuration:
 
     ```groovy
-    compile ('com.microsoft.services:graph-services:1.0.0-preview'){
+    compile ('com.microsoft.services:graph-services:0.8.0'){
         transitive = true
     }
     ```
