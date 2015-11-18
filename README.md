@@ -82,6 +82,9 @@ With your project prepared, the next step is to initialize the dependency manage
     Open the MainActivity class and add the following imports:
 
     ```java
+    import android.content.Intent;
+    import android.util.Log;
+    import android.widget.TextView;
     import com.google.common.util.concurrent.FutureCallback;
     import com.google.common.util.concurrent.Futures;
     import com.google.common.util.concurrent.SettableFuture;
@@ -89,10 +92,18 @@ With your project prepared, the next step is to initialize the dependency manage
     import com.microsoft.aad.adal.AuthenticationContext;
     import com.microsoft.aad.adal.AuthenticationResult;
     import com.microsoft.aad.adal.PromptBehavior;
-    import com.microsoft.services.graph.*;
-    import com.microsoft.services.graph.fetchers.GraphServiceClient;    
+    import com.microsoft.services.graph.Message;
+    import com.microsoft.services.graph.fetchers.GraphServiceClient;
+    import com.microsoft.services.orc.auth.AuthenticationCredentials;
+    import com.microsoft.services.orc.core.DependencyResolver;
+    import com.microsoft.services.orc.http.Credentials;
+    import com.microsoft.services.orc.http.impl.OAuthCredentials;
+    import com.microsoft.services.orc.http.impl.OkHttpTransport;
+    import com.microsoft.services.orc.serialization.impl.GsonSerializer;
+    import java.security.NoSuchAlgorithmException;
+    import java.util.List;
+    import javax.crypto.NoSuchPaddingException;
     import static com.microsoft.aad.adal.AuthenticationResult.AuthenticationStatus;
-
     ```
 
     Then, add these instance fields to the `MainActivity` class:
