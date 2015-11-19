@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:name="testMail"
+        android:defaultValue="@string/prefTestMail"
+        android:key="prefTestMail"
+        android:summary="Enter the email for tests"
+        android:title="Test Email" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:name="graphResourceUrl"
+        android:defaultValue="@string/prefGraphResourceUrl"
+        android:key="prefGraphResourceUrl"
+        android:summary="Enter the Graph resource url"
+        android:title="Graph Resource URL" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:name="graphEndpointUrl"
+        android:defaultValue="@string/prefGraphEndpoint"
+        android:key="prefGraphEndpoint"
+        android:summary="Enter the Graph endpoint url"
+        android:title="Graph Endpoint URL" >
+    </EditTextPreference>
+    <ListPreference
+        android:defaultValue="AAD"
+        android:entries="@array/authOptions"
+        android:entryValues="@array/authValues"
+        android:key="prefAuthenticationMethod"
+        android:summary="Select an authentication method"
+        android:title="Authentication method" />
+
+    <PreferenceScreen
+        android:summary="Configure your AAD credentials"
+        android:title="AAD Settings" >
+        <intent android:action=".activities.AADSettingsActivity"/>
+    </PreferenceScreen>
+
+    <Preference
+        android:key="prefEraseSettings"
+        android:summary="Erase stored cookies"
+        android:title="Erase Cookies" />
+
+</PreferenceScreen>
