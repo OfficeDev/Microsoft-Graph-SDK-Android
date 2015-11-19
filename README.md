@@ -24,7 +24,7 @@ For information on release cadence and how to access built binaries before relea
 
 To use these libraries in your project, follow these general steps, as described further below:
 
-1. Configure dependencies in build.gradle.
+1. Configure dependencies in `build.gradle`.
 2. Set up authentication.
 3. Construct an API client.
 4. Call methods to make REST calls and receive results.
@@ -60,7 +60,7 @@ With your project prepared, the next step is to initialize the dependency manage
 
 [MSDN Add Common Consent]: https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually
 
-1. From the Project view in Android Studio, find app/src/main/res/values, right-click it, and choose *New* > *Values resource file*. Name your file adal_settings.
+1. From the Project view in Android Studio, find `app/src/main/res/values`, right-click it, and choose *New* > *Values resource file*. Name your file `adal_settings`.
 
 2. Fill in the file with values from your app registration, as in the following example. **Be sure to paste in your app registration values for the Client ID and Redirect URL.**
 
@@ -71,17 +71,20 @@ With your project prepared, the next step is to initialize the dependency manage
     <string name="AADRedirectUrl">Paste your Redirect URI HERE</string>
     ```
 
-3. Add an id to the "Hello World" TextView. Open app/src/main/res/layout/activity_main.xml. Use the following tag.
+3. Add an id to the "Hello World" `TextView`. Open `app/src/main/res/layout/activity_main.xml`. Use the following tag.
 
     ```xml
 	android:id="@+id/messages"
     ```
 
-4. Set up the DependencyResolver
+4. Set up the `DependencyResolver`
 
     Open the MainActivity class and add the following imports:
 
     ```java
+    import android.content.Intent;
+    import android.util.Log;
+    import android.widget.TextView;
     import com.google.common.util.concurrent.FutureCallback;
     import com.google.common.util.concurrent.Futures;
     import com.google.common.util.concurrent.SettableFuture;
@@ -89,13 +92,21 @@ With your project prepared, the next step is to initialize the dependency manage
     import com.microsoft.aad.adal.AuthenticationContext;
     import com.microsoft.aad.adal.AuthenticationResult;
     import com.microsoft.aad.adal.PromptBehavior;
-    import com.microsoft.services.graph.*;
-    import com.microsoft.services.graph.fetchers.GraphServiceClient;    
+    import com.microsoft.services.graph.Message;
+    import com.microsoft.services.graph.fetchers.GraphServiceClient;
+    import com.microsoft.services.orc.auth.AuthenticationCredentials;
+    import com.microsoft.services.orc.core.DependencyResolver;
+    import com.microsoft.services.orc.http.Credentials;
+    import com.microsoft.services.orc.http.impl.OAuthCredentials;
+    import com.microsoft.services.orc.http.impl.OkHttpTransport;
+    import com.microsoft.services.orc.serialization.impl.GsonSerializer;
+    import java.security.NoSuchAlgorithmException;
+    import java.util.List;
+    import javax.crypto.NoSuchPaddingException;
     import static com.microsoft.aad.adal.AuthenticationResult.AuthenticationStatus;
-
     ```
 
-    Then, add these instance fields to the MainActivity class:
+    Then, add these instance fields to the `MainActivity` class:
 
     ```java
     private AuthenticationContext mAuthContext;
@@ -103,7 +114,7 @@ With your project prepared, the next step is to initialize the dependency manage
     private TextView messagesTextView;
     ```
 
-    Add the following method to the MainActivity class. The logon() method constructs and initializes ADAL's AuthenticationContext, carries out interactive logon, and constructs the DependencyResolver using the ready-to-use AuthenticationContext.
+    Add the following method to the `MainActivity` class. The `logon()` method constructs and initializes ADAL's `AuthenticationContext`, carries out interactive logon, and constructs the `DependencyResolver` using the ready-to-use `AuthenticationContext`.
 
     ```java
     protected SettableFuture<Boolean> logon() {
@@ -128,7 +139,7 @@ With your project prepared, the next step is to initialize the dependency manage
                                                 new AuthenticationCredentials() {
                                                 @Override
                                                 public Credentials getCredentials() {
-                                                    return new OAuthCredentials(token);
+                                                    return new OAuthCredentials(authenticationResult.getAccessToken());
                                                 }
                                             }).build();
                                 result.set(true);
@@ -149,7 +160,7 @@ With your project prepared, the next step is to initialize the dependency manage
     }
     ```
 
-    You also must configure MainActivity to pass the result of authentication back to the AuthenticationContext by adding this method to its class:
+    You also must configure `MainActivity` to pass the `AuthenticationResult` back to the `AuthenticationContext` by adding this method to its class:
 
     ```java
     @Override
@@ -158,14 +169,15 @@ With your project prepared, the next step is to initialize the dependency manage
     }
     ```
 
-    From MainActivity.onCreate, cache the messages TextView, then call logon() and hook up to its completion using the following code:
+    From `MainActivity.onCreate()`, cache the messages `TextView`, then call `logon()` and hook up to its completion using the following code:
 
     ```java
        messagesTextView = (TextView) findViewById(R.id.messages);
        Futures.addCallback(logon(), new FutureCallback<Boolean>() {
             @Override
             public void onSuccess(Boolean result) {
-
+                // TODO Initialize your GraphServiceClient here
+                // TODO call methods with the client.
             }
 
             @Override
@@ -189,18 +201,20 @@ With your project prepared, the next step is to initialize the dependency manage
     private GraphServiceClient mClient;
     ```
 
-    And finally complete the onSuccess method by constructing a client and using it. We'll define the getMessages() method in the next step.
+    And finally complete the unimplemented `onSuccess()` callback by constructing a client and using it. We'll define the `getMessages()` method in the next step.
 
     ```java
     @Override
     public void onSuccess(Boolean result) {
+        // Initialize your GraphServiceClient here
         mClient = new GraphServiceClient(graphBaseUrl, mResolver);
-        //call methods with the client.
+        getMessages()
+        // TODO call methods with the client.
     }
     ```
 
 
-5. Create a new method to get all messages from your inbox using the client.
+5. Create a new method to get all messages from your inbox using the `GraphServiceClient`.
 
 	```java
     protected void getMessages() {
@@ -230,7 +244,7 @@ With your project prepared, the next step is to initialize the dependency manage
     }
 	```
 
-If successful, the number of retrieved messages from your inbox will be displayed in the TextView. :)
+If successful, the number of retrieved messages from your inbox will be displayed in the `TextView`. :)
 
 ## FAQ
 
