@@ -192,7 +192,7 @@ With your project prepared, the next step is to initialize the dependency manage
     Add a private static variable with the Graph base URL:
 
     ```java
-    private static final String graphBaseUrl = "https://graph.microsoft.com/api/v1.0";
+    private static final String graphBaseUrl = "https://graph.microsoft.com/v1.0";
     ```
 
     Add a private instance variable for the client:
