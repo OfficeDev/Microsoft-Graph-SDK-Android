@@ -20,8 +20,10 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  CalendarGroup
+ * @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
-public class CalendarGroupFetcher extends OrcEntityFetcher<CalendarGroup,CalendarGroupOperations> 
+@Deprecated
+public class CalendarGroupFetcher extends OrcEntityFetcher<CalendarGroup,CalendarGroupOperations>
                                      implements Readable<CalendarGroup> {
 
      /**

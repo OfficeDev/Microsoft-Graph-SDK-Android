@@ -15,8 +15,10 @@ package com.microsoft.services.graph;
 
 /**
  * The Enum Week Index.
-*/
-public enum WeekIndex	
+ * @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
+public enum WeekIndex
 {
     /**
     * first

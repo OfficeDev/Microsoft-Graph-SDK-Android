@@ -19,7 +19,9 @@ package com.microsoft.services.graph;
 
 /**
  * The type Permission.
-*/
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
 public class Permission extends Entity {
 
     public Permission(){

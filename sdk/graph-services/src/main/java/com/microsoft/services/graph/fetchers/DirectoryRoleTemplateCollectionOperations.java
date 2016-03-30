@@ -24,7 +24,9 @@ import static com.microsoft.services.orc.core.Helpers.*;
 
 /**
  * The type DirectoryRoleTemplateCollectionOperations
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class DirectoryRoleTemplateCollectionOperations extends DirectoryObjectCollectionOperations{
 
     /**

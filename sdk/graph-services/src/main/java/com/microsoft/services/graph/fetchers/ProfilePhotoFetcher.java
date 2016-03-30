@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  ProfilePhoto
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class ProfilePhotoFetcher extends OrcMediaEntityFetcher<ProfilePhoto,ProfilePhotoOperations> 
                                      implements Readable<ProfilePhoto> {
 

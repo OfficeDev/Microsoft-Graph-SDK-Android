@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.ODataBaseEntity;
 
 /**
  * The type File System Info.
-*/
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
 public class FileSystemInfo extends ODataBaseEntity {
 
     public FileSystemInfo(){

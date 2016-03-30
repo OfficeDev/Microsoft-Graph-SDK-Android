@@ -24,7 +24,9 @@ import static com.microsoft.services.orc.core.Helpers.*;
 
 /**
  * The type EventMessageCollectionOperations
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class EventMessageCollectionOperations extends MessageCollectionOperations{
 
     /**

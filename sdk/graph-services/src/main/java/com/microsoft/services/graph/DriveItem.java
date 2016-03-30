@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.ODataStream;
 
 /**
  * The type Drive Item.
-*/
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
 public class DriveItem extends Entity {
 
     public DriveItem(){

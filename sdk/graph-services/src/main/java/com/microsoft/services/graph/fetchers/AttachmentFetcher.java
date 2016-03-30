@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  Attachment
+ * @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class AttachmentFetcher extends OrcEntityFetcher<Attachment,AttachmentOperations> 
                                      implements Readable<Attachment> {
 

@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  Drive
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class DriveFetcher extends OrcEntityFetcher<Drive,DriveOperations> 
                                      implements Readable<Drive> {
 

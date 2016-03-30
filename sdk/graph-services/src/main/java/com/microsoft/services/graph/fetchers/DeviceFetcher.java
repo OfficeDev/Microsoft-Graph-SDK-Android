@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  Device
+ * @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class DeviceFetcher extends OrcEntityFetcher<Device,DeviceOperations> 
                                      implements Readable<Device> {
 
