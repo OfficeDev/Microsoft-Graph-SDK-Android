@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  DirectoryRole
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class DirectoryRoleFetcher extends OrcEntityFetcher<DirectoryRole,DirectoryRoleOperations> 
                                      implements Readable<DirectoryRole> {
 

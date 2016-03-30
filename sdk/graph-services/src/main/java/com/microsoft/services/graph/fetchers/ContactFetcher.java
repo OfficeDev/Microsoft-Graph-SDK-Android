@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  Contact
+ * @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class ContactFetcher extends OrcEntityFetcher<Contact,ContactOperations> 
                                      implements Readable<Contact> {
 

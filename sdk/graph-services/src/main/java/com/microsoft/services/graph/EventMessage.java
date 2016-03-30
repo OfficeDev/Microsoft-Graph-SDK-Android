@@ -19,7 +19,9 @@ package com.microsoft.services.graph;
 
 /**
  * The type Event Message.
-*/
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
 public class EventMessage extends Message {
 
     public EventMessage(){

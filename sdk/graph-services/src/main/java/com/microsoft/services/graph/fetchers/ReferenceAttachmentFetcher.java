@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  ReferenceAttachment
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class ReferenceAttachmentFetcher extends OrcEntityFetcher<ReferenceAttachment,ReferenceAttachmentOperations> 
                                      implements Readable<ReferenceAttachment> {
 

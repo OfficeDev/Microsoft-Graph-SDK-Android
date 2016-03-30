@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.Readable;
 
 /**
  * The type  Post
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class PostFetcher extends OrcEntityFetcher<Post,PostOperations> 
                                      implements Readable<Post> {
 

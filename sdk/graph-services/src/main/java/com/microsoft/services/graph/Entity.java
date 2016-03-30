@@ -20,7 +20,9 @@ import com.microsoft.services.orc.core.ODataBaseEntity;
 
 /**
  * The type Entity.
-*/
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
+ */
+@Deprecated
 public class Entity extends ODataBaseEntity {
 
     public Entity(){

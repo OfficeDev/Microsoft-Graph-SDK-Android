@@ -22,7 +22,9 @@ import com.microsoft.services.orc.serialization.JsonSerializer;
 
 /**
  * The type MailFolderOperations.
+* @deprecated This SDK is deprecated. Please review the README for further information (https://github.com/OfficeDev/Microsoft-Graph-SDK-Android).
  */
+@Deprecated
 public class MailFolderOperations extends EntityOperations {
 
      /**
